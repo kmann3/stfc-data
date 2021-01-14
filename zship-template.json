@@ -1,0 +1,23 @@
+{
+    "author-comment": "UNFINISHED TEMPLATE. COPIED FROM SYSTEM.",
+    "guid": "",
+    "lastModified": "2021-01-14T11:18:35-06:00",
+    "type": "Ship",
+
+    "name": "",
+    "level": 1,
+    "faction": "",
+    "ships": [
+        {
+            "name": "",
+            "level": 1,
+            "type": "",
+            "shipGuid": "",
+            "strength": 1,
+            "cargo": {
+                "name": "",
+                "count": 1
+            }
+        }
+    ]
+}
