@@ -1,7 +1,7 @@
 {
     "author-comment": "",
     "guid": "8A4FDA90-DAFD-455C-8BE4-165A0DB200A1",
-    "lastModified": "2021-01-14T10:24:48-06:00",
+    "lastModified": "2021-01-14T10:58:31-06:00",
     "type": "Officer",
 
     "name": "",
@@ -15,7 +15,7 @@
     ],
     "synergy-command": 0,
     "synergy-engineering": 0,
-    "synergy-science": 50,
+    "synergy-science": 0,
     "rank": {
         "max-rank": 5,
         "1": {
