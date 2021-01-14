@@ -1,7 +1,7 @@
-{
+[{
     "author-comment": "",
     "guid": "8A4FDA90-DAFD-455C-8BE4-165A0DB200A1",
-    "lastModified": "2021-01-14T11:07:23-06:00",
+    "lastModified": "2021-01-14T11:34:24-06:00",
     "type": "Officer",
 
     "name": "T'Laan",
@@ -75,4 +75,4 @@
         }
     },
     "image-url": "images/officers/TLaan.png"
-}
+}]

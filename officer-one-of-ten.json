@@ -1,7 +1,7 @@
-{
+[{
     "author-comment": "",
     "guid": "47741C2D-20FB-4565-8409-CCC236B46D96",
-    "lastModified": "2021-01-14T11:16:26-06:00",
+    "lastModified": "2021-01-14T11:34:25-06:00",
     "type": "Officer",
 
     "name": "One of Ten",
@@ -107,4 +107,4 @@
         }
     },
     "image-url": "images/officers/OneOfTen.png"
-}
+}]
