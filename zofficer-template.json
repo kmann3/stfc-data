@@ -1,10 +1,10 @@
-{
+[{
     "author-comment": "",
     "guid": "",
-    "lastModified": "2021-01-14T11:12:37-06:00",
+    "lastModified": "2021-01-14T11:37:10-06:00",
     "type": "Officer",
-
     "name": "",
+
     "class": "",
     "description": "",
     "faction": "",
@@ -42,4 +42,4 @@
         }
     },
     "image-url": "images/officers/empty.png"
-}
+}]

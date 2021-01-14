@@ -1,10 +1,10 @@
-{
+[{
     "author-comment": "",
     "guid": "",
-    "lastModified": "2021-01-14T11:19:08-06:00",
+    "lastModified": "2021-01-14T11:36:40-06:00",
     "type": "System",
-
     "name": "",
+
     "level": 1,
     "faction": "",
     "ships": [
@@ -20,4 +20,4 @@
             }
         }
     ]
-}
+}]

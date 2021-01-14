@@ -1,10 +1,10 @@
-{
+[{
     "author-comment": "UNFINISHED TEMPLATE. COPIED FROM SYSTEM.",
     "guid": "",
-    "lastModified": "2021-01-14T11:18:35-06:00",
+    "lastModified": "2021-01-14T11:36:45-06:00",
     "type": "Ship",
-
     "name": "",
+
     "level": 1,
     "faction": "",
     "ships": [
@@ -20,4 +20,4 @@
             }
         }
     ]
-}
+}]
