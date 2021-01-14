@@ -1,0 +1,23 @@
+{
+    "author-comment": "",
+    "guid": "FDBCB2EC-419A-4CA7-9A93-3DD321CC5867",
+    "lastModified": "2021-01-14T10:28:29-06:00",
+    "type": "System",
+
+    "name": "Kohva",
+    "level": 15,
+    "faction": "Independant",
+    "ships": [
+        {
+            "name": "Swarm Cluster",
+            "level": 15,
+            "type": "Interceptor",
+            "shipGuid": "30DC261A-4577-48C8-9356-E3D61EAB7508",
+            "strength": 14549,
+            "cargo": {
+                "name": "Frequency Modulators",
+                "count": 1
+            }
+        }
+    ]
+}

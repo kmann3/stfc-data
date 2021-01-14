@@ -1,0 +1,45 @@
+{
+    "author-comment": "",
+    "guid": "8A4FDA90-DAFD-455C-8BE4-165A0DB200A1",
+    "lastModified": "2021-01-14T10:24:48-06:00",
+    "type": "Officer",
+
+    "name": "",
+    "class": "",
+    "description": "",
+    "faction": "",
+    "group": "",
+    "rarity": "",
+    "tags": [
+        "empty"
+    ],
+    "synergy-command": 0,
+    "synergy-engineering": 0,
+    "synergy-science": 50,
+    "rank": {
+        "max-rank": 5,
+        "1": {
+            "max-level": "5",
+            "name": "",
+            "shards-required": 0,
+            "resource-cost": null,
+            "xp": 0
+        }       
+    },
+    "captain-maneuver": {
+        "name": "",
+        "description:": ""
+    },
+    "officer-ability": {
+        "name": "",
+        "description": "",
+        "rank": {
+            "1": 5,
+            "2": 7,
+            "3": 10,
+            "4": 15,
+            "5": 20
+        }
+    },
+    "image-url": "images/officers/empty.png"
+}
