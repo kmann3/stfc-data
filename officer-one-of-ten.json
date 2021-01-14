@@ -1,7 +1,7 @@
 {
     "author-comment": "",
     "guid": "47741C2D-20FB-4565-8409-CCC236B46D96",
-    "lastModified": "2021-01-14T11:12:48-06:00",
+    "lastModified": "2021-01-14T11:16:26-06:00",
     "type": "Officer",
 
     "name": "One of Ten",
@@ -11,7 +11,12 @@
     "group": "Unimatrix Twelve",
     "rarity": "Rare",
     "tags": [
-        "empty"
+        "borg",
+        "federation",
+        "shield-mitigations",
+        "shields",
+        "protected-cargo",
+        "mining"
     ],
     "synergy-command": 1,
     "synergy-engineering": 2,
@@ -88,7 +93,7 @@
     },
     "captain-maneuver": {
         "name": "Adaptive Shielding",
-        "description:": "=5% damage mitigated by the shields."
+        "description:": "+5% damage mitigated by the shields."
     },
     "officer-ability": {
         "name": "Bodyguard",
