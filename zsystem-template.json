@@ -1,0 +1,23 @@
+{
+    "author-comment": "",
+    "guid": "",
+    "lastModified": "2021-01-14T11:12:23-06:00",
+    "type": "System",
+
+    "name": "",
+    "level": 1,
+    "faction": "",
+    "ships": [
+        {
+            "name": "",
+            "level": 1,
+            "type": "",
+            "shipGuid": "",
+            "strength": 1,
+            "cargo": {
+                "name": "",
+                "count": 1
+            }
+        }
+    ]
+}
