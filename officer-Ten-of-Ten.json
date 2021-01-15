@@ -1,7 +1,7 @@
 [{
     "author-comment": "",
     "guid": "FE57B1BF-FC51-4CB4-B799-BF2C6CAA96CF",
-    "lastModified": "2021-01-14T13:13:45-06:00",
+    "lastModified": "2021-01-14T18:37:42-06:00",
     "type": "Officer",
     "name": "Ten of Ten",
 
@@ -25,11 +25,83 @@
         "max-rank": 5,
         "1": {
             "max-level": "5",
-            "name": "",
-            "shards-required": 0,
+            "name": "Ensign I",
+            "shards-required": 115,
             "resource-cost": null,
             "xp": 0
-        }       
+        },
+        "2": {
+            "max-level": "10",
+            "name": "Lt. JG II",
+            "shards-required": 115,
+            "resource-cost": [
+                {
+                "type": "Active Nanoprobes",
+                "count": 3000
+                }
+            ],
+            "xp": 0
+        },
+        "3": {
+            "max-level": "15",
+            "name": "Lt. III",
+            "shards-required": 230,
+            "resource-cost": [
+                {
+                    "type": "Independent Credits",
+                    "count": 1300
+                },
+                {
+                    "type": "Active Nanoprobes",
+                    "count": 5000
+                },
+                {
+                    "type": "Engineering Badges",
+                    "count": 1
+                }
+            ],
+            "xp": 0
+        },
+        "4": {
+            "max-level": "20",
+            "name": "Lt. Cmdr IV",
+            "shards-required": 345,
+            "resource-cost": [
+                {
+                    "type": "Independent Credits",
+                    "count": 13000
+                },
+                {
+                    "type": "Active Nanoprobes",
+                    "count": 475000
+                },
+                {
+                    "type": "Engineering Badges",
+                    "count": 2
+                }
+            ],
+            "xp": 0
+        },
+        "5": {
+            "max-level": "30",
+            "name": "Commander V",
+            "shards-required": 920,
+            "resource-cost": [
+                {
+                    "type": "Independent Credits",
+                    "count": 28600
+                },
+                {
+                    "type": "Active Nanoprobes",
+                    "count": 1100000
+                },
+                {
+                    "type": "Engineering Badges",
+                    "count": 4
+                }
+            ],
+            "xp": 0
+        }
     },
     "captain-maneuver": {
         "name": "Multiplicative Extraction",
