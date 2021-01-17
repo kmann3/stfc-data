@@ -1,0 +1,55 @@
+[{
+    "author-comment": "TBI / Remember to add to chest for Prime Research. Source: LCARS / discord.gg/lcars",
+    "guid": "F3B15EFD-3191-40BC-8BAE-AC8E53D461D7",
+    "lastModified": "2021-01-15T10:37:26-06:00",
+    "type": "Refinery",
+    "name": "G3",
+
+    "operationsLevel":[
+        {
+            "minLevel": 20,
+            "maxLevel": 21,
+    
+            "cost": {
+                "oneChest": 1750
+            },
+            "rewards": {
+                "common": [7, 5, 4],
+                "uncommon": [4],
+                "rare": [1]
+            }
+        },
+        
+        {
+            "minLevel": 22,
+            "maxLevel": 23,
+    
+            "cost": {
+                "oneChest": 1750,
+                "twoChest": 12000
+            },
+            "rewards": {
+                "common": [23, 18, 14],
+                "uncommon": [18, 8, 7],
+                "rare": [5, 2, 1]
+            }
+        },
+
+        {
+            "minLevel": 24,
+            "maxLevel": 25,
+    
+            "cost": {
+                "oneChest": 1750,
+                "twoChest": 12000,
+                "threeChest": 75000
+            },
+            "rewards": {
+                "common": [30, 24, 18],
+                "uncommon": [19, 9, 7],
+                "rare": [5, 1, 3]
+            }
+        }
+
+    ]
+}]

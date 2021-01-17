@@ -1,0 +1,45 @@
+[{
+    "author-comment": "TBI",
+    "guid": "542CF2D4-1B9A-4C0F-A127-2FB4867F0413",
+    "lastModified": "2021-01-14T18:53:56-06:00",
+    "type": "Officer",
+    "name": "Five of Ten",
+
+    "class": "Engineering",
+    "description": "",
+    "faction": "Neutral",
+    "group": "Unimatrix Twelve",
+    "rarity": "",
+    "tags": [
+        "empty"
+    ],
+    "synergy-command": 400,
+    "synergy-engineering": 200,
+    "synergy-science": 400,
+    "rank": {
+        "max-rank": 5,
+        "1": {
+            "max-level": "5",
+            "name": "",
+            "shards-required": 0,
+            "resource-cost": null,
+            "xp": 0
+        }       
+    },
+    "captain-maneuver": {
+        "name": "",
+        "description:": ""
+    },
+    "officer-ability": {
+        "name": "",
+        "description": "",
+        "rank": {
+            "1": 5,
+            "2": 7,
+            "3": 10,
+            "4": 15,
+            "5": 20
+        }
+    },
+    "image-url": "images/officers/FiveOfTen.png"
+}]
