@@ -1,17 +1,17 @@
 [{
-    "author-comment": "TBI",
+    "author-comment": "",
     "guid": "542CF2D4-1B9A-4C0F-A127-2FB4867F0413",
-    "lastModified": "2021-01-14T18:53:56-06:00",
+    "lastModified": "2021-01-18T16:06:07-06:00",
     "type": "Officer",
     "name": "Five of Ten",
 
     "class": "Engineering",
-    "description": "",
+    "description": "TBI",
     "faction": "Neutral",
     "group": "Unimatrix Twelve",
-    "rarity": "",
+    "rarity": "Epic",
     "tags": [
-        "empty"
+        "TBI"
     ],
     "synergy-command": 400,
     "synergy-engineering": 200,
@@ -20,25 +20,96 @@
         "max-rank": 5,
         "1": {
             "max-level": "5",
-            "name": "",
-            "shards-required": 0,
-            "resource-cost": null,
-            "xp": 0
-        }       
+            "name": "Ensign I",
+            "shards-required": 125,
+            "resource-cost": null
+        },
+        "2": {
+            "max-level": "10",
+            "name": "Lt. JG II",
+            "shards-required": 125,
+            "resource-cost": [
+                {
+                    "type": "Independent Credits",
+                    "count": 1350
+                },
+                {
+                    "type": "Active Nanoprobes",
+                    "count": 6000
+                }
+            ]
+        },
+        "3": {
+            "max-level": "15",
+            "name": "Lt. III",
+            "shards-required": 250,
+            "resource-cost": [
+                {
+                    "type": "Independent Credits",
+                    "count": 5250
+                },
+                {
+                    "type": "Active Nanoprobes",
+                    "count": 120000
+                },
+                {
+                    "type": "Engineering Badges",
+                    "count": 1
+                }
+            ]
+        },
+        "4": {
+            "max-level": "20",
+            "name": "Lt. Cmdr IV",
+            "shards-required": 375,
+            "resource-cost": [
+                {
+                    "type": "Independent Credits",
+                    "count": 13225
+                },
+                {
+                    "type": "Active Nanoprobes",
+                    "count": 500000
+                },
+                {
+                    "type": "Engineering Badges",
+                    "count": 2
+                }
+            ]
+        },
+        "5": {
+            "max-level": "30",
+            "name": "Commander V",
+            "shards-required": 1000,
+            "resource-cost": [
+                {
+                    "type": "Independent Credits",
+                    "count": 30000
+                },
+                {
+                    "type": "Active Nanoprobes",
+                    "count": 1150000
+                },
+                {
+                    "type": "Engineering Badges",
+                    "count": 4
+                }
+            ]
+        }
     },
     "captain-maneuver": {
-        "name": "",
-        "description:": ""
+        "name": "Weaponary is irrelevant",
+        "description:": "200% of the crew's Health bonus to Mitigation."
     },
     "officer-ability": {
-        "name": "",
-        "description": "",
+        "name": "You will be assimilated",
+        "description": "+%i to resources dropped by hostiles.",
         "rank": {
-            "1": 5,
-            "2": 7,
-            "3": 10,
-            "4": 15,
-            "5": 20
+            "1": 20,
+            "2": 40,
+            "3": 60,
+            "4": 80,
+            "5": 100
         }
     },
     "image-url": "images/officers/FiveOfTen.png"
