@@ -1,23 +1,7 @@
 {
-    "comment": "As things are added, the item here will be removed. TOS stuff that just came out is NOT in here.",
-    "lastModified": "2021-01-18T16:06:31-06:00",
+    "comment": "As things are added, the item here will be removed. TOS stuff that just came out is NOT in here. THIS IS NOT THE REAL LIST.",
+    "lastModified": "2021-02-01T11:51:06-06:00",
 
-    
-    "tags": [
-        "borg",
-        "dilithium",
-        "federation",
-        "mining-speed",
-        "mining",
-        "parsteel",
-        "protected-cargo",
-        "pve",
-        "shield-mitigations",
-        "shields",
-        "ship-xp",
-        "tritanium",
-        "xp"
-    ],
     "factions": [
         "Augment",
         "Federation",
