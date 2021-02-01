@@ -1,11 +1,20 @@
 {
-    "lastModified": "2021-01-14T11:36:10-06:00",
+    "lastModified": "2021-02-01T11:52:39-06:00",
 
     "tags": [
+        "borg",
+        "dilithium",
         "federation",
+        "mining-speed",
+        "mining",
+        "parsteel",
+        "protected-cargo",
         "pve",
+        "shield-mitigations",
+        "shields",
         "ship-xp",
-        "xp"        
+        "tritanium",
+        "xp"
     ],
     "systems": [
 
@@ -220,6 +229,10 @@
         "Associate",
         "Friendly",
         "Ally"
+    ],
+    "currencies": [
+        "Independant Credits",
+        "Federation Credits",
+        "Dilithium"
     ]
-
 }
