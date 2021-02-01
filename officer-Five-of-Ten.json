@@ -1,7 +1,7 @@
 [{
-    "author-comment": "",
+    "author-comment": "#HelpWithTags",
     "guid": "542CF2D4-1B9A-4C0F-A127-2FB4867F0413",
-    "lastModified": "2021-01-18T16:06:07-06:00",
+    "lastModified": "2021-02-01T11:54:36-06:00",
     "type": "Officer",
     "name": "Five of Ten",
 
@@ -11,7 +11,8 @@
     "group": "Unimatrix Twelve",
     "rarity": "Epic",
     "tags": [
-        "TBI"
+        "borg",
+        "resource"
     ],
     "synergy-command": 400,
     "synergy-engineering": 200,
