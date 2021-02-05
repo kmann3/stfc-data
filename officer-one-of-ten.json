@@ -1,7 +1,7 @@
 [{
     "author-comment": "",
     "guid": "47741C2D-20FB-4565-8409-CCC236B46D96",
-    "lastModified": "2021-01-14T18:37:43-06:00",
+    "lastModified": "2021-02-05T12:07:02-06:00",
     "type": "Officer",
     "name": "One of Ten",
     
@@ -21,88 +21,92 @@
     "synergy-command": 1,
     "synergy-engineering": 2,
     "synergy-science": 2,
-    "rank": {
-        "max-rank": 5,
-        "1": {
-            "max-level": "5",
-            "name": "Ensign I",
-            "shards-required": 40,
-            "resource-cost": null,
-            "xp": 0
-        },
-        "2": {
-            "max-level": "10",
-            "name": "Lt. JG II",
-            "shards-required": 65,
-            "resource-cost": [
-                {
-                "type": "Active Nanoprobes",
-                "count": 3000
-                }
-            ],
-            "xp": 0
-        },
-        "3": {
-            "max-level": "15",
-            "name": "Lt. III",
-            "shards-required": 125,
-            "resource-cost": [
-                {
-                    "type": "Independent Credits",
-                    "count": 1300
-                },
-                {
+    "ranks": [
+            {
+                "rank": 1,
+                "max-level": "5",
+                "name": "Ensign I",
+                "shards-required": 40,
+                "resource-cost": null,
+                "xp": 0
+            },
+            {
+                "rank": 2,
+                "max-level": "10",
+                "name": "Lt. JG II",
+                "shards-required": 65,
+                "resource-cost": [
+                    {
                     "type": "Active Nanoprobes",
-                    "count": 25000
-                },
-                {
-                    "type": "Command Badges",
-                    "count": 1
-                }
-            ],
-            "xp": 0
-        },
-        "4": {
-            "max-level": "20",
-            "name": "Lt. Cmdr IV",
-            "shards-required": 170,
-            "resource-cost": [
-                {
-                    "type": "Independent Credits",
-                    "count": 5200
-                },
-                {
-                    "type": "Active Nanoprobes",
-                    "count": 100000
-                },
-                {
-                    "type": "Engineering Badges",
-                    "count": 2
-                }
-            ],
-            "xp": 0
-        },
-        "5": {
-            "max-level": "30",
-            "name": "Commander V",
-            "shards-required": 250,
-            "resource-cost": [
-                {
-                    "type": "Independent Credits",
-                    "count": 13000
-                },
-                {
-                    "type": "Active Nanoprobes",
-                    "count": 500000
-                },
-                {
-                    "type": "Engineering Badges",
-                    "count": 4
-                }
-            ],
-            "xp": 0
-        }
-    },
+                    "count": 3000
+                    }
+                ],
+                "xp": 0
+            },
+            {
+                "rank": 3,
+                "max-level": "15",
+                "name": "Lt. III",
+                "shards-required": 125,
+                "resource-cost": [
+                    {
+                        "type": "Independent Credits",
+                        "count": 1300
+                    },
+                    {
+                        "type": "Active Nanoprobes",
+                        "count": 25000
+                    },
+                    {
+                        "type": "Command Badges",
+                        "count": 1
+                    }
+                ],
+                "xp": 0
+            },
+            {
+                "rank": 4,
+                "max-level": "20",
+                "name": "Lt. Cmdr IV",
+                "shards-required": 170,
+                "resource-cost": [
+                    {
+                        "type": "Independent Credits",
+                        "count": 5200
+                    },
+                    {
+                        "type": "Active Nanoprobes",
+                        "count": 100000
+                    },
+                    {
+                        "type": "Engineering Badges",
+                        "count": 2
+                    }
+                ],
+                "xp": 0
+            },
+            {
+                "rank": 5,
+                "max-level": "30",
+                "name": "Commander V",
+                "shards-required": 250,
+                "resource-cost": [
+                    {
+                        "type": "Independent Credits",
+                        "count": 13000
+                    },
+                    {
+                        "type": "Active Nanoprobes",
+                        "count": 500000
+                    },
+                    {
+                        "type": "Engineering Badges",
+                        "count": 4
+                    }
+                ],
+                "xp": 0
+            }
+        ],
     "captain-maneuver": {
         "name": "Adaptive Shielding",
         "description:": "+5% damage mitigated by the shields."
