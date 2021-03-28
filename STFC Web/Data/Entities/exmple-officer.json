@@ -22,15 +22,15 @@
     "synergy-command": 1,
     "synergy-engineering": 2,
     "synergy-science": 2,
-    "ranks": [
-      {
+    "ranks": {
+      "1": {
         "level-range": "1-5",
         "name": "Ensign I",
         "shards-required": 40,
         "resource-cost": null,
         "xp": 0
       },
-      {
+      "2" : {
         "level-range": "6-10",
         "name": "Lt. JG II",
         "shards-required": 65,
@@ -42,7 +42,7 @@
         ],
         "xp": 0
       },
-      {
+      "3" : {
         "level-range": "11-15",
         "name": "Lt. III",
         "shards-required": 125,
@@ -62,7 +62,7 @@
         ],
         "xp": 0
       },
-      {
+      "4": {
         "level-range": "16-20",
         "name": "Lt. Cmdr IV",
         "shards-required": 170,
@@ -82,7 +82,7 @@
         ],
         "xp": 0
       },
-      {
+      "5" : {
         "level-range": "21-30",
         "name": "Commander V",
         "shards-required": 250,
@@ -102,7 +102,7 @@
         ],
         "xp": 0
       }
-    ],
+    },
     "captain-maneuver": {
       "name": "Adaptive Shielding",
       "description:": "+5% damage mitigated by the shields."

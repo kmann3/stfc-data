@@ -1,10 +1,8 @@
 [{
-    "author-comment": "",
     "guid": "8A4FDA90-DAFD-455C-8BE4-165A0DB200A1",
-    "lastModified": "2021-01-14T11:37:10-06:00",
+    "lastModified": "2021-03-27T18:15:51-05:00",
     "type": "Officer",
     "name": "T'Laan",
-
     "class": "Science",
     "description": "T'Lann is an incredibly intelligent vulcan cadet in the academy. Though she had initally wanted to return to her people and help in the settling of New Vulcan, her eperience with Lucia, Grace, Shev, and Vel convinced her to stay in the academy and Starfleet.",
     "faction": "Federation",
@@ -20,37 +18,36 @@
     "synergy-engineering": 5,
     "synergy-science": 5,
     "rank": {
-        "max-rank": 5,
         "1": {
-            "max-level": "5",
+            "level-range": "1-5",
             "name": "Ensign I",
             "shards-required": 4,
             "resource-cost": null,
             "xp": 0
         },
         "2": {
-            "max-level": "10",
+            "level-range": "6-10",
             "name": "Lt. JG II",
             "shards-required": 8,
             "resource-cost": null,
             "xp": 500
         },
         "3": {
-            "max-level": "15",
+            "level-range": "11-15",
             "name": "Lt. III",
             "shards-required": 20,
             "resource-cost": null,
             "xp": 5000
         },
         "4": {
-            "max-level": "20",
+            "level-range": "16-20",
             "name": "Lt. Cmdr IV",
             "shards-required": 48,
             "resource-cost": null,
             "xp": 50000
         },    
         "5": {
-            "max-level": "30",
+            "level-range": "21-30",
             "name": "Commander V",
             "shards-required": 88,
             "resource-cost": {
