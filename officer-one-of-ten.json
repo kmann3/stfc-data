@@ -1,7 +1,7 @@
 [{
     "author-comment": "",
     "guid": "47741C2D-20FB-4565-8409-CCC236B46D96",
-    "lastModified": "2021-03-27T18:23:47-05:00",
+    "lastModified": "2021-02-05T12:07:02-06:00",
     "type": "Officer",
     "name": "One of Ten",
     
@@ -21,17 +21,13 @@
     "synergy-command": 1,
     "synergy-engineering": 2,
     "synergy-science": 2,
-    "ranks": [
-            {
-                "level-range": "1-5",
-                "name": "Ensign I",
+    "ranks": {
+           "1" : {
                 "shards-required": 40,
                 "resource-cost": null,
                 "xp": 0
             },
-            {
-                "level-range": "6-10",
-                "name": "Lt. JG II",
+            "2": {
                 "shards-required": 65,
                 "resource-cost": [
                     {
@@ -41,9 +37,7 @@
                 ],
                 "xp": 0
             },
-            {
-                "level-range": "11-15",
-                "name": "Lt. III",
+            "3": {
                 "shards-required": 125,
                 "resource-cost": [
                     {
@@ -61,9 +55,7 @@
                 ],
                 "xp": 0
             },
-            {
-                "level-range": "16-20",
-                "name": "Lt. Cmdr IV",
+            "4" : {
                 "shards-required": 170,
                 "resource-cost": [
                     {
@@ -81,9 +73,7 @@
                 ],
                 "xp": 0
             },
-            {
-                "level-range": "21-30",
-                "name": "Commander V",
+            "5" : {
                 "shards-required": 250,
                 "resource-cost": [
                     {
@@ -101,7 +91,7 @@
                 ],
                 "xp": 0
             }
-        ],
+    },
     "captain-maneuver": {
         "name": "Adaptive Shielding",
         "description:": "+5% damage mitigated by the shields."

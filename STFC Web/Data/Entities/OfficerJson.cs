@@ -1,12 +1,14 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿    using System;
+    using System.Collections.Generic;
+
+    using System.Globalization;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
 namespace STFC_Web.Data.Entities
 {
     // Root myDeserializedClass = JsonSerializer.Deserialize<Root>(myJsonResponse);
-
-    public partial class OfficerJson
+    public partial class StfcOfficerJson
     {
         [JsonProperty("author-comment")]
         public string AuthorComment { get; set; }
@@ -86,12 +88,6 @@ namespace STFC_Web.Data.Entities
 
     public partial class Rank
     {
-        [JsonProperty("level-range")]
-        public string LevelRange { get; set; }
-
-        [JsonProperty("name")]
-        public string Name { get; set; }
-
         [JsonProperty("shards-required")]
         public long ShardsRequired { get; set; }
 
