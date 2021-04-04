@@ -21,14 +21,11 @@ namespace STFC_Web.Data.Entities
         public int? SynergyEngineering { get; set; }
         public int? SynergyScience { get; set; }
 
-        // Ranks
-        public string? RankName_1_5 { get; set; }
         public int? RankShardsReq_1_5 { get; set; }
         public int? RankXP_1_5 { get; set; }
         public Guid? RankResourceCost_1_5Id { get; set; }
         public RankResourceCost? RankResourceCost_1_5 { get; set; }
 
-        public string? RankName_6_10 { get; set; }
         public int? RankShardsReq_6_10 { get; set; }
         public int? RankXP_6_10 { get; set; }
         public Guid? RankResourceCost_6_10Id { get; set; }
@@ -40,13 +37,11 @@ namespace STFC_Web.Data.Entities
         public Guid? RankResourceCost_11_15Id { get; set; }
         public RankResourceCost? RankResourceCost_11_15 { get; set; }
 
-        public string? RankName_16_20 { get; set; }
         public int? RankShardsReq_16_20 { get; set; }
         public int? RankXP_16_20 { get; set; }
         public Guid? RankResourceCost_16_20Id { get; set; }
         public RankResourceCost? RankResourceCost_16_20 { get; set; }
 
-        public string? RankName_21_30 { get; set; }
         public int? RankShardsReq_21_30 { get; set; }
         public int? RankXP_21_30 { get; set; }
         public Guid? RankResourceCost_21_30Id { get; set; }
@@ -74,11 +69,11 @@ namespace STFC_Web.Data.Entities
             {
                 return Class != null && !String.IsNullOrEmpty(Description) &&
                     Faction != null && Group != null && Rarity != null &&
-                    !String.IsNullOrWhiteSpace(RankName_1_5) && RankShardsReq_1_5 != null && RankXP_1_5 != null && //RankResourceCost_1_5 != null &&
-                    !String.IsNullOrWhiteSpace(RankName_6_10) && RankShardsReq_6_10 != null && RankXP_6_10 != null && //RankResourceCost_6_10 != null &&
-                    !String.IsNullOrWhiteSpace(RankName_11_15) && RankShardsReq_11_15 != null && RankXP_11_15 != null && //RankResourceCost_11_15 != null &&
-                    !String.IsNullOrWhiteSpace(RankName_16_20) && RankShardsReq_16_20 != null && RankXP_16_20 != null && //RankResourceCost_16_20 != null &&
-                    !String.IsNullOrWhiteSpace(RankName_21_30) && RankShardsReq_21_30 != null && RankXP_21_30 != null && //RankResourceCost_21_30 != null &&
+                    RankShardsReq_1_5 != null && RankXP_1_5 != null && RankResourceCost_1_5Id != null &&
+                    && RankShardsReq_6_10 != null && RankXP_6_10 != null && RankResourceCost_6_10Id != null &&
+                    && RankShardsReq_11_15 != null && RankXP_11_15 != null && RankResourceCost_11_15Id != null &&
+                    && RankShardsReq_16_20 != null && RankXP_16_20 != null && RankResourceCost_16_20Id != null &&
+                    && RankShardsReq_21_30 != null && RankXP_21_30 != null && RankResourceCost_21_30Id != null &&
                     SynergyCommand != null && SynergyEngineering != null && SynergyScience != null &&
                     !String.IsNullOrWhiteSpace(CaptainManeuverName) && !String.IsNullOrWhiteSpace(CaptainManeuverDescription) &&
                     !String.IsNullOrWhiteSpace(OfficerAbilityName) && !String.IsNullOrWhiteSpace(OfficerAbilityDescription) &&
@@ -93,12 +88,13 @@ namespace STFC_Web.Data.Entities
         {
             get
             {
-                OfficerJSON.Root returnData = new();
+
+                OfficerJson.Officer returnData = new();
                 returnData.Guid = Id.ToString();
                 returnData.LastModified = LastModified;
                 returnData.Name = Name;
                 
-                returnData.CaptainManeuver = new OfficerJSON.CaptainManeuver()
+                returnData.CaptainManeuver = new OfficerJson.CaptainManeuver
                 {
                     Name = CaptainManeuverName ?? "",
                     Description = CaptainManeuverDescription ?? ""
@@ -108,26 +104,50 @@ namespace STFC_Web.Data.Entities
                 returnData.Faction = Faction?.Name ?? "";
                 returnData.Group = Group?.Name ?? "";
                 returnData.ImageUrl = ""; // TBI
-                returnData.OfficerAbility = new OfficerJSON.OfficerAbility()
+                returnData.Ranks = new Dictionary<string, OfficerJson.Rank>()
+                {
+                    {"1", ConvertRankToJsonRank(RankShardsReq_1_5, RankXP_1_5, RankResourceCost_1_5) },
+                    {"2", ConvertRankToJsonRank(RankShardsReq_6_10, RankXP_6_10, RankResourceCost_6_10) },
+                    {"3", ConvertRankToJsonRank(RankShardsReq_11_15, RankXP_11_15, RankResourceCost_11_15) },
+                    {"4", ConvertRankToJsonRank(RankShardsReq_16_20, RankXP_16_20, RankResourceCost_16_20) },
+                    {"5", ConvertRankToJsonRank(RankShardsReq_21_30, RankXP_21_30, RankResourceCost_21_30) },
+                };
+
+                returnData.OfficerAbility = new OfficerJson.OfficerAbility()
                 {
                     Name = OfficerAbilityName ?? "",
                     Description = OfficerAbilityDescription ?? "",
-                    Rank = new OfficerJSON.Rank()
-                    {
-                        _1 = new OfficerJSON._1()
-                        {
-                            LevelRange = "1-5",
-                            Name = RankName_1_5 ?? "",
-                            //ResourceCost = RankResourceCost_1_5.Name ?? "",
-                            ShardsRequired = RankShardsReq_1_5 ?? -1,
-                            Xp = RankXP_1_5 ?? -1
-                        }
+                    Rank = new Dictionary<string, long>()
+                    { 
+                        {"1", OfficerAbilityRank1Value ?? -1},
+                        {"2", OfficerAbilityRank2Value ?? -1},
+                        {"3", OfficerAbilityRank3Value ?? -1},
+                        {"4", OfficerAbilityRank4Value ?? -1},
+                        {"5", OfficerAbilityRank5Value ?? -1},
                     }
                 };
+                returnData.Tags = Tags;
 
 
                 return returnData?.ToString() ?? "";
             }
+        }
+
+        public OfficerJson.Rank ConvertRankToJsonRank(int? shards, int? xp, RankResourceCost? cost)
+        {
+            OfficerJson.Rank returnData = new();
+            returnData.ShardsRequired = shards ?? -1;
+            returnData.Xp = xp ?? -1;
+            if (cost != null)
+            {
+                returnData.ResourceCost = new List<OfficerJson.ResourceCost>();
+                returnData.ResourceCost.AddRange(cost.ToJsonResourceCost());
+            } else
+            {
+                returnData.ResourceCost = null;
+            }
+
+            return returnData;
         }
 
         public override void Configure(EntityTypeBuilder<Officer> builder)

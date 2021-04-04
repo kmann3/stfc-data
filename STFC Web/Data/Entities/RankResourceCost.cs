@@ -42,11 +42,51 @@ namespace STFC_Web.Data.Entities
             modelBuilder.HasIndex(k => k.Name).IsUnique(true);
         }
 
-        public OfficerJSON.ResourceCost ToJSONString()
+        public List<OfficerJson.ResourceCost> ToJsonResourceCost()
         {
-            OfficerJSON.ResourceCost returnItem = new();
-            
-            return null;
+            List<OfficerJson.ResourceCost> returnData = new();
+
+            if(ActiveNanoprobes != null)
+            {
+                returnData.Add(new OfficerJson.ResourceCost() { Count = (long)ActiveNanoprobes, Type = "Active Nanoprobes" });
+            }
+
+            if (IndependantCredits != null)
+            {
+                returnData.Add(new OfficerJson.ResourceCost() { Count = (long)IndependantCredits, Type = "Independant Credits" });
+            }
+
+            if (FederationCredits != null)
+            {
+                returnData.Add(new OfficerJson.ResourceCost() { Count = (long)FederationCredits, Type = "Federation Credits" });
+            }
+
+            if (RomulanCredits != null)
+            {
+                returnData.Add(new OfficerJson.ResourceCost() { Count = (long)RomulanCredits, Type = "Romulan Credits" });
+            }
+
+            if (KlingonCredits != null)
+            {
+                returnData.Add(new OfficerJson.ResourceCost() { Count = (long)KlingonCredits, Type = "Klingon Credits" });
+            }
+
+            if (CommandBadges != null)
+            {
+                returnData.Add(new OfficerJson.ResourceCost() { Count = (long)CommandBadges, Type = "Command Badges" });
+            }
+
+            if (ScienceBadges != null)
+            {
+                returnData.Add(new OfficerJson.ResourceCost() { Count = (long)ScienceBadges, Type = "Science Badges" });
+            }
+
+            if (EngineeringBadges != null)
+            {
+                returnData.Add(new OfficerJson.ResourceCost() { Count = (long)EngineeringBadges, Type = "Engineering Badges" });
+            }
+
+            return returnData;
         }
     }
 }
