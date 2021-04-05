@@ -9,6 +9,7 @@ namespace STFC_Web.Data.Entities
 {
     public class Officer : BasicTable<Officer>, IEntityTypeConfiguration<Officer>
     {
+        public Guid? ClassId { get; set; }
         public Class? Class { get; set; }
 
         public string? Description { get; set; }
@@ -69,17 +70,17 @@ namespace STFC_Web.Data.Entities
             {
                 return Class != null && !String.IsNullOrEmpty(Description) &&
                     Faction != null && Group != null && Rarity != null &&
-                    RankShardsReq_1_5 != null && RankXP_1_5 != null && RankResourceCost_1_5Id != null &&
-                    && RankShardsReq_6_10 != null && RankXP_6_10 != null && RankResourceCost_6_10Id != null &&
-                    && RankShardsReq_11_15 != null && RankXP_11_15 != null && RankResourceCost_11_15Id != null &&
-                    && RankShardsReq_16_20 != null && RankXP_16_20 != null && RankResourceCost_16_20Id != null &&
-                    && RankShardsReq_21_30 != null && RankXP_21_30 != null && RankResourceCost_21_30Id != null &&
-                    SynergyCommand != null && SynergyEngineering != null && SynergyScience != null &&
-                    !String.IsNullOrWhiteSpace(CaptainManeuverName) && !String.IsNullOrWhiteSpace(CaptainManeuverDescription) &&
-                    !String.IsNullOrWhiteSpace(OfficerAbilityName) && !String.IsNullOrWhiteSpace(OfficerAbilityDescription) &&
-                    OfficerAbilityRank1Value != null && OfficerAbilityRank2Value != null && OfficerAbilityRank3Value != null && OfficerAbilityRank4Value != null && OfficerAbilityRank5Value != null &&
+                    RankShardsReq_1_5 != null && RankXP_1_5 != null && RankResourceCost_1_5Id != null
+                    && RankShardsReq_6_10 != null && RankXP_6_10 != null && RankResourceCost_6_10Id != null
+                    && RankShardsReq_11_15 != null && RankXP_11_15 != null && RankResourceCost_11_15Id != null
+                    && RankShardsReq_16_20 != null && RankXP_16_20 != null && RankResourceCost_16_20Id != null
+                    && RankShardsReq_21_30 != null && RankXP_21_30 != null && RankResourceCost_21_30Id != null
+                    && SynergyCommand != null && SynergyEngineering != null && SynergyScience != null
+                    && !String.IsNullOrWhiteSpace(CaptainManeuverName) && !String.IsNullOrWhiteSpace(CaptainManeuverDescription)
+                    && !String.IsNullOrWhiteSpace(OfficerAbilityName) && !String.IsNullOrWhiteSpace(OfficerAbilityDescription)
+                    && OfficerAbilityRank1Value != null && OfficerAbilityRank2Value != null && OfficerAbilityRank3Value != null && OfficerAbilityRank4Value != null && OfficerAbilityRank5Value != null
                     // Ranks
-                    Image != null && Tags.Count > 0;
+                    && Image != null && Tags.Count > 0;
             }
         }
 
@@ -126,7 +127,12 @@ namespace STFC_Web.Data.Entities
                         {"5", OfficerAbilityRank5Value ?? -1},
                     }
                 };
-                returnData.Tags = Tags;
+                List<String> tagList = new();
+                foreach(var tag in Tags)
+                {
+                    tagList.Add(tag.Name);
+                }
+                returnData.Tags = tagList.Count == 0 ? null : tagList;
 
 
                 return returnData?.ToString() ?? "";
@@ -153,6 +159,7 @@ namespace STFC_Web.Data.Entities
         public override void Configure(EntityTypeBuilder<Officer> builder)
         {
             builder.HasMany(x => x.Tags).WithMany(x => x.Officers).UsingEntity(x => x.ToTable("Link_Officer_Tag"));
+            builder.HasOne(x => x.Class).WithMany(x => x.Officers).HasForeignKey(x => x.ClassId);
 
             builder.HasIndex(k => k.Name).IsUnique(true);
         }

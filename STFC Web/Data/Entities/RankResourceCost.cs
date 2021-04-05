@@ -39,7 +39,7 @@ namespace STFC_Web.Data.Entities
             //modelBuilder.HasOne(x => x.Officer).WithOne(x => x.RankResourceCost_11_15).HasForeignKey<Officer>(x => x.Id);
             //modelBuilder.HasOne(x => x.Officer).WithOne(x => x.RankResourceCost_16_20).HasForeignKey<Officer>(x => x.Id);
             //modelBuilder.HasOne(x => x.Officer).WithOne(x => x.RankResourceCost_21_30).HasForeignKey<Officer>(x => x.Id);
-            modelBuilder.HasIndex(k => k.Name).IsUnique(true);
+            //modelBuilder.HasIndex(k => k.).IsUnique(true);
         }
 
         public List<OfficerJson.ResourceCost> ToJsonResourceCost()

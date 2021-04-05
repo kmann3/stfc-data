@@ -13,7 +13,7 @@ namespace STFC_Web.Data.Entities
 
         public override void Configure(EntityTypeBuilder<Class> modelBuilder)
         {
-            modelBuilder.HasIndex(k => k.Name).IsUnique(true);
+            modelBuilder.HasIndex(k => k.Id).IsUnique(true);
         }
     }
 }

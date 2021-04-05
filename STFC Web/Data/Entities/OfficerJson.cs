@@ -2,7 +2,9 @@
     using System.Collections.Generic;
 
     using System.Globalization;
-    using Newtonsoft.Json;
+using System.IO;
+using System.Text;
+using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
 
 namespace STFC_Web.Data.Entities
@@ -65,6 +67,12 @@ namespace STFC_Web.Data.Entities
 
             [JsonProperty("image-url")]
             public string ImageUrl { get; set; }
+
+            public override string ToString()
+            {
+
+                return JsonConvert.SerializeObject(this);
+            }
         }
 
         public partial class CaptainManeuver

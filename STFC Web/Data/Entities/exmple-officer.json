@@ -109,7 +109,7 @@
     },
     "officer-ability": {
       "name": "Bodyguard",
-      "description": "+%i% to the Protected Cargo of the ship",
+      "description": "+[%i]% to the Protected Cargo of the ship",
       "rank": {
         "1": 30,
         "2": 35,
