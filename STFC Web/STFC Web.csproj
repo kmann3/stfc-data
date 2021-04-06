@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <UserSecretsId>aspnet-STFC_Web-51F213FF-619F-4F66-8D40-5D82D6B96613</UserSecretsId>
     <RootNamespace>STFC_Web</RootNamespace>
-    <FileVersion>2021.4.5.139</FileVersion>
+    <FileVersion>2021.4.5.140</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

@@ -13,7 +13,8 @@ namespace STFC_Web.Pages
         Data.ApplicationDbContext _context;
         void OnButtonClicked()
         {
-            _context = new();
+            /*
+             * _context = new();
             var off = (from o in _context.Officers select o).FirstOrDefault();
             if(off == null)
             {
@@ -31,7 +32,7 @@ namespace STFC_Web.Pages
 
             }
             string x = Data.Seeds.Officer_OneOfTen.ToJSON;
-            Console.WriteLine(x);
+            Console.WriteLine(x);*/
         }
     }
 }
