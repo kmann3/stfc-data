@@ -1,6 +1,6 @@
 [{
     "guid": "8A4FDA90-DAFD-455C-8BE4-165A0DB200A1",
-    "lastModified": "2021-03-27T18:15:51-05:00",
+    "lastModified": "2021-04-06T13:44:39-05:00",
     "type": "Officer",
     "name": "T'Laan",
     "class": "Science",
@@ -10,45 +10,37 @@
     "rarity": "Common",
     "tags": [
         "federation",
+        "kinetic-reduction",
+        "kinetic",
+        "pve",
         "ship-xp",
-        "xp",
-        "pve"
+        "xp"
     ],
     "synergy-command": 5,
     "synergy-engineering": 5,
-    "synergy-science": 5,
+    "synergy-science": 3,
     "rank": {
         "1": {
-            "level-range": "1-5",
-            "name": "Ensign I",
             "shards-required": 4,
-            "resource-cost": null,
-            "xp": 0
+            "resource-cost": null
         },
         "2": {
-            "level-range": "6-10",
-            "name": "Lt. JG II",
             "shards-required": 8,
             "resource-cost": null,
             "xp": 500
+
         },
         "3": {
-            "level-range": "11-15",
-            "name": "Lt. III",
             "shards-required": 20,
             "resource-cost": null,
             "xp": 5000
         },
         "4": {
-            "level-range": "16-20",
-            "name": "Lt. Cmdr IV",
             "shards-required": 48,
             "resource-cost": null,
             "xp": 50000
         },    
         "5": {
-            "level-range": "21-30",
-            "name": "Commander V",
             "shards-required": 88,
             "resource-cost": {
                 "federation-credits": 1050
