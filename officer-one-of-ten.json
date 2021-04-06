@@ -1,111 +1,108 @@
-[{
-    "author-comment": "",
-    "guid": "47741C2D-20FB-4565-8409-CCC236B46D96",
-    "lastModified": "2021-02-05T12:07:02-06:00",
-    "type": "Officer",
-    "name": "One of Ten",
-    
-    "class": "Command",
-    "description": "An engineer assigned to active duty aboard the USS Westchester, Daniel Morgan was a promising young officer with a potentially bright future in Starfleet Operations. However when the Westchester encountered the Borg in the mid 23rd century, this future was irrevocable altered. With his fellow crewmates quickly assimilated into the Borg Collective, Morgan was the last to undergo this procedure. With a fateful last-minute intervention from a Starfleet rescue fleet, the assimilation of Morgan was interrupted and he returned to the care of the Federation. With both the memories and scars of the incident now a party of him for the rest of his life, Morgan uses his brief experience as part of the Collective in order to combat the Borg threat.",
-    "faction": "Neutral",
-    "group": "Unimatrix Twelve",
-    "rarity": "Rare",
-    "tags": [
+[
+    {
+      "author-comment": "",
+      "guid": "47741C2D-20FB-4565-8409-CCC236B46D96",
+      "lastModified": "2021-04-06T13:34:38-05:00",
+      "type": "Officer",
+      "name": "One of Ten",
+  
+      "class": "Command",
+      "description": "An engineer assigned to active duty aboard the USS Westchester, Daniel Morgan was a promising young officer with a potentially bright future in Starfleet Operations. However when the Westchester encountered the Borg in the mid 23rd century, this future was irrevocable altered. With his fellow crewmates quickly assimilated into the Borg Collective, Morgan was the last to undergo this procedure. With a fateful last-minute intervention from a Starfleet rescue fleet, the assimilation of Morgan was interrupted and he returned to the care of the Federation. With both the memories and scars of the incident now a party of him for the rest of his life, Morgan uses his brief experience as part of the Collective in order to combat the Borg threat.",
+      "faction": "Neutral",
+      "group": "Unimatrix Twelve",
+      "rarity": "Rare",
+      "tags": [
         "borg",
         "federation",
         "shield-mitigations",
         "shields",
         "protected-cargo",
         "mining"
-    ],
-    "synergy-command": 1,
-    "synergy-engineering": 2,
-    "synergy-science": 2,
-    "ranks": {
-           "1" : {
-                "shards-required": 40,
-                "resource-cost": null,
-                "xp": 0
-            },
-            "2": {
-                "shards-required": 65,
-                "resource-cost": [
-                    {
-                    "type": "Active Nanoprobes",
-                    "count": 3000
-                    }
-                ],
-                "xp": 0
-            },
-            "3": {
-                "shards-required": 125,
-                "resource-cost": [
-                    {
-                        "type": "Independent Credits",
-                        "count": 1300
-                    },
-                    {
-                        "type": "Active Nanoprobes",
-                        "count": 25000
-                    },
-                    {
-                        "type": "Command Badges",
-                        "count": 1
-                    }
-                ],
-                "xp": 0
-            },
-            "4" : {
-                "shards-required": 170,
-                "resource-cost": [
-                    {
-                        "type": "Independent Credits",
-                        "count": 5200
-                    },
-                    {
-                        "type": "Active Nanoprobes",
-                        "count": 100000
-                    },
-                    {
-                        "type": "Engineering Badges",
-                        "count": 2
-                    }
-                ],
-                "xp": 0
-            },
-            "5" : {
-                "shards-required": 250,
-                "resource-cost": [
-                    {
-                        "type": "Independent Credits",
-                        "count": 13000
-                    },
-                    {
-                        "type": "Active Nanoprobes",
-                        "count": 500000
-                    },
-                    {
-                        "type": "Engineering Badges",
-                        "count": 4
-                    }
-                ],
-                "xp": 0
+      ],
+      "synergy-command": 1,
+      "synergy-engineering": 2,
+      "synergy-science": 2,
+      "ranks": {
+        "1": {
+          "shards-required": 40,
+          "resource-cost": null
+        },
+        "2" : {
+          "shards-required": 65,
+          "resource-cost": [
+            {
+              "type": "Active Nanoprobes",
+              "count": 3000
             }
-    },
-    "captain-maneuver": {
+          ]
+        },
+        "3" : {
+          "shards-required": 125,
+          "resource-cost": [
+            {
+              "type": "Independent Credits",
+              "count": 1300
+            },
+            {
+              "type": "Active Nanoprobes",
+              "count": 25000
+            },
+            {
+              "type": "Command Badges",
+              "count": 1
+            }
+          ]
+        },
+        "4": {
+          "shards-required": 170,
+          "resource-cost": [
+            {
+              "type": "Independent Credits",
+              "count": 5200
+            },
+            {
+              "type": "Active Nanoprobes",
+              "count": 100000
+            },
+            {
+              "type": "Engineering Badges",
+              "count": 2
+            }
+          ]
+        },
+        "5" : {
+          "shards-required": 250,
+          "resource-cost": [
+            {
+              "type": "Independent Credits",
+              "count": 13000
+            },
+            {
+              "type": "Active Nanoprobes",
+              "count": 500000
+            },
+            {
+              "type": "Engineering Badges",
+              "count": 4
+            }
+          ]
+        }
+      },
+      "captain-maneuver": {
         "name": "Adaptive Shielding",
         "description:": "+5% damage mitigated by the shields."
-    },
-    "officer-ability": {
+      },
+      "officer-ability": {
         "name": "Bodyguard",
-        "description": "+%i% to the Protected Cargo of the ship",
+        "description": "+[%i]% to the Protected Cargo of the ship",
         "rank": {
-            "1": 30,
-            "2": 35,
-            "3": 40,
-            "4": 45,
-            "5": 50
+          "1": 30,
+          "2": 35,
+          "3": 40,
+          "4": 45,
+          "5": 50
         }
-    },
-    "image-url": "images/officers/OneOfTen.png"
-}]
+      },
+      "image-url": "images/officers/OneOfTen.png"
+    }
+  ]
