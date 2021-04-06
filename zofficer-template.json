@@ -1,7 +1,7 @@
 [{
     "author-comment": "",
     "guid": "",
-    "lastModified": "2021-01-14T11:37:10-06:00",
+    "lastModified": "2021-04-06T13:31:30-05:00",
     "type": "Officer",
     "name": "",
 
@@ -11,19 +11,36 @@
     "group": "",
     "rarity": "",
     "tags": [
-        "empty"
+        "TBI"
     ],
     "synergy-command": 0,
     "synergy-engineering": 0,
     "synergy-science": 0,
     "rank": {
-        "max-rank": 5,
         "1": {
-            "max-level": "5",
-            "name": "",
             "shards-required": 0,
-            "resource-cost": null,
-            "xp": 0
+            "resource-cost": null
+        },       
+        "2": {
+            "shards-required": 0,
+            "resource-cost": null
+        },       
+        "3": {
+            "shards-required": 0,
+            "resource-cost": [
+                {
+                  "type": "Independent Credits",
+                  "count": 1300
+                }
+            ]
+        },       
+        "4": {
+            "shards-required": 0,
+            "resource-cost": null
+        },       
+        "5": {
+            "shards-required": 0,
+            "resource-cost": null
         }       
     },
     "captain-maneuver": {
@@ -34,11 +51,11 @@
         "name": "",
         "description": "",
         "rank": {
-            "1": 5,
-            "2": 7,
-            "3": 10,
-            "4": 15,
-            "5": 20
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0 
         }
     },
     "image-url": "images/officers/empty.png"
