@@ -1,7 +1,7 @@
 [{
     "author-comment": "",
     "guid": "",
-    "lastModified": "2021-05-14T09:17:54-05:00",
+    "lastModified": "2021-05-14T09:47:01-05:00",
     "type": "Officer",
     "name": "",
 
@@ -57,7 +57,7 @@
         "description_rank2": "",
         "description_rank3": "",
         "description_rank4": "",
-        "description_rank5": "",
+        "description_rank5": ""
     },
     "image-url": "images/officers/empty.png"
 }]
