@@ -1,21 +1,21 @@
 [{
-    "author-comment": "",
-    "guid": "",
-    "lastModified": "2021-05-14T09:17:54-05:00",
+    "guid": "B510E8C1-FB26-478C-B911-B40C0E3EBD2E",
+    "lastModified": "2021-05-14T09:58:21-05:00",
     "type": "Officer",
-    "name": "",
+    "name": "Ahvix",
 
-    "class": "",
+    "class": "Engineering",
     "description": "",
-    "faction": "",
-    "group": "",
-    "rarity": "",
+    "faction": "Independant",
+    "group": "Mudd's Company",
+    "rarity": "Rare",
     "tags": [
-        "TBI"
+        "eclipse",
+        "CHC"
     ],
-    "synergy-command": 0,
-    "synergy-engineering": 0,
-    "synergy-science": 0,
+    "synergy-command": 10,
+    "synergy-engineering": 5,
+    "synergy-science": 10,
     "rank": {
         "1": {
             "shards-required": 0,
@@ -24,40 +24,58 @@
         "2": {
             "shards-required": 0,
             "resource-cost": null,
-            "xp": 0
+            "xp": 10000
         },       
         "3": {
             "shards-required": 0,
-            "resource-cost": null,
-            "xp": 0
+            "resource-cost": [
+                {
+                  "type": "Independent Credits",
+                  "count": 1000
+                }
+            ],
+            "xp": 100000
         },       
         "4": {
             "shards-required": 0,
-            "resource-cost": null,
-            "xp": 0
+            "resource-cost": [
+                {
+                  "type": "Independent Credits",
+                  "count": 4000
+                },
+                {
+                    "type": "Engineering Badges",
+                    "count": 1
+                }
+            ],
+            "xp": 250000
         },       
         "5": {
             "shards-required": 0,
             "resource-cost": [
                 {
                   "type": "Independent Credits",
-                  "count": 1300
+                  "count": 10000
+                },
+                {
+                    "type": "Engineering Badges",
+                    "count": 2
                 }
             ],
-            "xp": 0
+            "xp": 500000
         }       
     },
     "captain-maneuver": {
-        "name": "",
-        "description:": ""
+        "name": "Chirurgical Precision",
+        "description:": "+20% to Critical Hit Chance for the first three rounds against Eclipse hostiles."
     },
     "officer-ability": {
-        "name": "",
-        "description_rank1": "",
-        "description_rank2": "",
-        "description_rank3": "",
-        "description_rank4": "",
-        "description_rank5": "",
+        "name": "Shield Remodulation",
+        "description_rank1": "%25 chance to reduce Eclipse hostiles's mitigation by 40%",
+        "description_rank2": "%30 chance to reduce Eclipse hostiles's mitigation by 40%",
+        "description_rank3": "%35 chance to reduce Eclipse hostiles's mitigation by 40%",
+        "description_rank4": "%40 chance to reduce Eclipse hostiles's mitigation by 40%",
+        "description_rank5": "%50 chance to reduce Eclipse hostiles's mitigation by 40%"
     },
-    "image-url": "images/officers/empty.png"
+    "image-url": "images/officers/Ahvix.png"
 }]

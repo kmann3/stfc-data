@@ -1,0 +1,73 @@
+[{
+    "guid": "CA98EE95-09D3-4585-ACC3-C2B3CBCB0A83",
+    "lastModified": "2021-05-14T09:58:29-05:00",
+    "type": "Officer",
+    "name": "Airiam",
+
+    "class": "Command",
+    "description": "",
+    "faction": "Federation",
+    "group": "Discovery Crew",
+    "rarity": "Uncommon",
+    "tags": [
+        "burning",
+        "isogen",
+        "mining"
+    ],
+    "synergy-command": 10,
+    "synergy-engineering": 20,
+    "synergy-science": 20,
+    "rank": {
+        "1": {
+            "shards-required": 0,
+            "resource-cost": null
+        },       
+        "2": {
+            "shards-required": 0,
+            "resource-cost": null,
+            "xp": 2000
+        },       
+        "3": {
+            "shards-required": 0,
+            "resource-cost": null,
+            "xp": 50000
+        },       
+        "4": {
+            "shards-required": 0,
+            "resource-cost": [
+                {
+                  "type": "Federation Credits",
+                  "count": 1050
+                }
+            ],
+            "xp": 125000
+        },       
+        "5": {
+            "shards-required": 0,
+            "resource-cost": [
+                {
+                  "type": "Federation Credits",
+                  "count": 4200
+                },
+                {
+                    "type": "Command Badge",
+                    "count": 1
+                }
+            ],
+            "xp": 250000
+        }       
+    },
+    "captain-maneuver": {
+        "name": "Isogen Miner",
+        "description:": "+40% to Isogen Mining Speed"
+    },
+    "officer-ability": {
+        "name": "Cybernetic Tactician",
+        "description_rank1": "+%60 chance to inflict Burning when defending on a Node",
+        "description_rank2": "+%70 chance to inflict Burning when defending on a Node",
+        "description_rank3": "+%80 chance to inflict Burning when defending on a Node",
+        "description_rank4": "+%90 chance to inflict Burning when defending on a Node",
+        "description_rank5": "+%95 chance to inflict Burning when defending on a Node"
+    },
+    "image-url": "images/officers/Airiam.png"
+}]
