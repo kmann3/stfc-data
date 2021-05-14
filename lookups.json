@@ -1,5 +1,5 @@
 {
-    "lastModified": "2021-04-06T13:48:28-05:00",
+    "lastModified": "2021-05-14T09:29:22-05:00",
 
     "tags": [
         "borg",
@@ -54,6 +54,7 @@
         "Arkady",
         "Azetbur",
         "Barot",
+        "Beverly Crusher",        
         "Bones",
         "Cadet Kirk",
         "Cadet Mccoy",
@@ -67,6 +68,7 @@
         "Chen",
         "Culber",
         "Darwin",
+        "Data",
         "Decius",
         "D'Jaoki",
         "Domitia",
@@ -76,6 +78,7 @@
         "Eurydice",
         "Five of Ten",
         "Gaila",
+        "Geordi La Forge",
         "Georgiou",
         "Gonzales",
         "Goon",
@@ -122,6 +125,11 @@
         "Mudd",
         "Navi",
         "Nero",
+        "Next Gen Data",
+        "Next Gen Troi",
+        "Next Gen Crusher",
+        "Next Gen La Forge",
+        "Next Gen Riker",
         "Nine of Ten",
         "One of Ten",
         "Origins Burnham",
@@ -175,7 +183,8 @@
     "aquisitions": [
         "reputation",
         "quest",
-        "iap"
+        "iap",
+        "event"
     ],
     "ship-types": [
         "battleship",
