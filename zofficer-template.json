@@ -1,7 +1,7 @@
 [{
     "author-comment": "",
     "guid": "",
-    "lastModified": "2021-04-06T13:43:03-05:00",
+    "lastModified": "2021-05-14T09:17:54-05:00",
     "type": "Officer",
     "name": "",
 
@@ -53,14 +53,11 @@
     },
     "officer-ability": {
         "name": "",
-        "description": "",
-        "rank": {
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0 
-        }
+        "description_rank1": "",
+        "description_rank2": "",
+        "description_rank3": "",
+        "description_rank4": "",
+        "description_rank5": "",
     },
     "image-url": "images/officers/empty.png"
 }]

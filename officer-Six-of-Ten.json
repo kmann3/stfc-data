@@ -1,7 +1,7 @@
 [{
-    "author-comment": "#HelpWithTags",
+    "author-comment": "",
     "guid": "31553268-2271-41F0-A99D-DFAC19B7DE89",
-    "lastModified": "2021-02-01T12:02:02-06:00",
+    "lastModified": "2021-05-14T09:16:35-05:00",
     "type": "Officer",
     "name": "Six of Ten",
 
@@ -11,37 +11,97 @@
     "group": "Unimatrix Twelve",
     "rarity": "Epic",
     "tags": [
-        "born",
+        "borg",
         "shields",
-        "armada"
+        "armada",
+        "SHP"
     ],
-    "synergy-command": 0,
-    "synergy-engineering": 0,
-    "synergy-science": 0,
-    "rank": {
-        "max-rank": 5,
+    "synergy-command": 10,
+    "synergy-engineering": 40,
+    "synergy-science": 40,
+    "ranks": {
         "1": {
-            "max-level": "5",
-            "name": "",
-            "shards-required": 0,
-            "resource-cost": null,
-            "xp": 0
-        }       
-    },
-    "captain-maneuver": {
-        "name": "",
-        "description:": ""
-    },
-    "officer-ability": {
-        "name": "",
-        "description": "",
-        "rank": {
-            "1": 5,
-            "2": 7,
-            "3": 10,
-            "4": 15,
-            "5": 20
+            "shards-required": 115,
+            "resource-cost": null
+        },
+        "2": {
+            "shards-required": 115,
+            "resource-cost": [
+                {
+                  "type": "Independent Credits",
+                  "count": 1300
+                },
+                {
+                  "type": "Active Nanoprobes",
+                  "count": 5000
+                }
+            ]
+        },
+        "3": {
+            "shards-required": 230,
+            "resource-cost": [
+                {
+                  "type": "Independent Credits",
+                  "count": 5200
+                },
+                {
+                  "type": "Active Nanoprobes",
+                  "count": 110000
+                },
+                {
+                  "type": "Command Badges",
+                  "count": 1
+                }
+              ]
+        },
+        "4": {
+            "shards-required": 345,
+            "resource-cost": [
+                {
+                  "type": "Independent Credits",
+                  "count": 13000
+                },
+                {
+                  "type": "Active Nanoprobes",
+                  "count": 475000
+                },
+                {
+                  "type": "Command Badges",
+                  "count": 2
+                }
+              ]
+        },
+        "5": {
+            "shards-required": 920,
+            "resource-cost": [
+                {
+                  "type": "Independent Credits",
+                  "count": 28600
+                },
+                {
+                  "type": "Active Nanoprobes",
+                  "count": 1100000
+                },
+                {
+                  "type": "Command Badges",
+                  "count": 4
+                }
+              ]
         }
     },
-    "image-url": "images/officers/empty.png"
+    "captain-maneuver": {
+        "name": "We are the Borg",
+        "description:": "20% of Defense removed from opponent's SHP when hitting the opponent",
+        "note": "Weapons with multiple shots will only trigger this maneuver once per attack."
+    },
+    "officer-ability": {
+        "name": "Defenses are irrelevant",
+        "description_rank1": "5% of Attack added to Penetration values when firing at Armada Targets",
+        "description_rank2": "10% of Attack added to Penetration values when firing at Armada Targets",
+        "description_rank3": "20% of Attack added to Penetration values when firing at Armada Targets",
+        "description_rank4": "30% of Attack added to Penetration values when firing at Armada Targets",
+        "description_rank5": "40% of Attack added to Penetration values when firing at Armada Targets",
+        "note": "Weapons with multiple shots will only trigger this maneuver once per attack."
+    },
+    "image-url": "images/officers/SixOfTen.png"
 }]

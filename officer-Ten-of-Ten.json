@@ -1,7 +1,7 @@
 [{
     "author-comment": "",
     "guid": "FE57B1BF-FC51-4CB4-B799-BF2C6CAA96CF",
-    "lastModified": "2021-01-14T18:37:42-06:00",
+    "lastModified": "2021-05-14T09:17:34-05:00",
     "type": "Officer",
     "name": "Ten of Ten",
 
@@ -21,30 +21,21 @@
     "synergy-command": 75,
     "synergy-engineering": 25,
     "synergy-science": 75,
-    "rank": {
-        "max-rank": 5,
+    "ranks": {
         "1": {
-            "max-level": "5",
-            "name": "Ensign I",
             "shards-required": 115,
-            "resource-cost": null,
-            "xp": 0
+            "resource-cost": null
         },
         "2": {
-            "max-level": "10",
-            "name": "Lt. JG II",
             "shards-required": 115,
             "resource-cost": [
                 {
                 "type": "Active Nanoprobes",
                 "count": 3000
                 }
-            ],
-            "xp": 0
+            ]
         },
         "3": {
-            "max-level": "15",
-            "name": "Lt. III",
             "shards-required": 230,
             "resource-cost": [
                 {
@@ -59,12 +50,9 @@
                     "type": "Engineering Badges",
                     "count": 1
                 }
-            ],
-            "xp": 0
+            ]
         },
         "4": {
-            "max-level": "20",
-            "name": "Lt. Cmdr IV",
             "shards-required": 345,
             "resource-cost": [
                 {
@@ -79,12 +67,9 @@
                     "type": "Engineering Badges",
                     "count": 2
                 }
-            ],
-            "xp": 0
+            ]
         },
         "5": {
-            "max-level": "30",
-            "name": "Commander V",
             "shards-required": 920,
             "resource-cost": [
                 {
@@ -99,8 +84,7 @@
                     "type": "Engineering Badges",
                     "count": 4
                 }
-            ],
-            "xp": 0
+            ]
         }
     },
     "captain-maneuver": {
@@ -109,14 +93,11 @@
     },
     "officer-ability": {
         "name": "Tribble Mining Collective",
-        "description": "+%i to Mining Speed",
-        "rank": {
-            "1": 80,
-            "2": 100,
-            "3": 120,
-            "4": 140,
-            "5": 160
-        }
+        "description_rank1": "+80% to Mining Speed",
+        "description_rank2": "+100% to Mining Speed",
+        "description_rank3": "+120% to Mining Speed",
+        "description_rank4": "+140% to Mining Speed",
+        "description_rank5": "+160% to Mining Speed"
     },
     "image-url": "images/officers/TenOfTen.png"
 }]
