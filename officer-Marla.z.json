@@ -1,11 +1,11 @@
 {
   "guid": "F7BECB19-1259-4FED-83E3-715D53D35A6C",
-  "lastModified": "2021-05-15T20:40:29.3568753-05:00",
+  "lastModified": "2021-05-16T18:23:43.2041807-05:00",
   "type": "Officer",
   "name": "Marla",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

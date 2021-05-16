@@ -1,11 +1,11 @@
 {
   "guid": "F641BC75-912E-4E03-BE6B-627C0A7A0914",
-  "lastModified": "2021-05-15T20:40:29.249559-05:00",
+  "lastModified": "2021-05-16T18:23:42.7571123-05:00",
   "type": "Officer",
   "name": "D'Jaoki",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

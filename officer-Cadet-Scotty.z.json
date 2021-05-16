@@ -1,11 +1,11 @@
 {
   "guid": "41C418FA-DB0A-41F7-A09D-8901E3A16813",
-  "lastModified": "2021-05-15T20:40:29.220663-05:00",
+  "lastModified": "2021-05-16T18:23:42.6222152-05:00",
   "type": "Officer",
   "name": "Cadet Scotty",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

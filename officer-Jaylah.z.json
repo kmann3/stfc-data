@@ -1,11 +1,11 @@
 {
   "guid": "F2ECA3AC-D9A3-4799-BE4F-CF50B9B0578E",
-  "lastModified": "2021-05-15T20:40:29.2855438-05:00",
+  "lastModified": "2021-05-16T18:23:42.9556635-05:00",
   "type": "Officer",
   "name": "Jaylah",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

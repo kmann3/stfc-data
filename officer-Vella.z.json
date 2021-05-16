@@ -1,11 +1,11 @@
 {
   "guid": "695CEAC0-0F3B-4AF7-8E31-FAE8A6EA261A",
-  "lastModified": "2021-05-15T20:40:29.5491973-05:00",
+  "lastModified": "2021-05-16T18:23:43.6468303-05:00",
   "type": "Officer",
   "name": "Vella",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

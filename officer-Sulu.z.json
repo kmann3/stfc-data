@@ -1,11 +1,11 @@
 {
   "guid": "5E2027C7-6A8B-4A6F-9C66-DDDFA023DAA7",
-  "lastModified": "2021-05-15T20:40:29.4952363-05:00",
+  "lastModified": "2021-05-16T18:23:43.4837366-05:00",
   "type": "Officer",
   "name": "Sulu",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

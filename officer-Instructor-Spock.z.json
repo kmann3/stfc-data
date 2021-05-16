@@ -1,11 +1,11 @@
 {
   "guid": "F44D8EBB-D893-41D4-AB4E-1217C60CC712",
-  "lastModified": "2021-05-15T20:40:29.2732232-05:00",
+  "lastModified": "2021-05-16T18:23:42.9349111-05:00",
   "type": "Officer",
   "name": "Instructor Spock",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

@@ -1,11 +1,11 @@
 {
   "guid": "EA05F728-DD51-40CA-BBB1-324347B2BCD8",
-  "lastModified": "2021-05-15T20:40:29.5542429-05:00",
+  "lastModified": "2021-05-16T18:23:43.7105739-05:00",
   "type": "Officer",
   "name": "Yuki",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

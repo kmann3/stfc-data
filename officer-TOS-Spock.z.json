@@ -1,11 +1,11 @@
 {
   "guid": "587328ED-0258-4E5B-9571-ADAC46852E13",
-  "lastModified": "2021-05-15T20:40:29.5171444-05:00",
+  "lastModified": "2021-05-16T18:23:43.5620724-05:00",
   "type": "Officer",
   "name": "TOS Spock",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

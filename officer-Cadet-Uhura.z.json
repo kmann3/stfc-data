@@ -1,11 +1,11 @@
 {
   "guid": "B57B5CA9-064B-4590-B094-67CB0B127D61",
-  "lastModified": "2021-05-15T20:40:29.2260572-05:00",
+  "lastModified": "2021-05-16T18:23:42.6469636-05:00",
   "type": "Officer",
   "name": "Cadet Uhura",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

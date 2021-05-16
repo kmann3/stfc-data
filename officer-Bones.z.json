@@ -1,11 +1,11 @@
 {
   "guid": "E1120909-DA65-40F6-8082-8C72DDD98562",
-  "lastModified": "2021-05-15T20:40:29.2151104-05:00",
+  "lastModified": "2021-05-16T18:23:42.5873631-05:00",
   "type": "Officer",
   "name": "Bones",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

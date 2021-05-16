@@ -1,11 +1,11 @@
 {
   "guid": "766E4AD7-BF70-4AC6-915C-AEA7E3FB673A",
-  "lastModified": "2021-05-15T20:40:29.4649062-05:00",
+  "lastModified": "2021-05-16T18:23:43.4134123-05:00",
   "type": "Officer",
   "name": "Rukor",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

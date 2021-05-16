@@ -1,11 +1,11 @@
 {
   "guid": "240DD5E8-75F1-4B65-A304-93EADE022FAE",
-  "lastModified": "2021-05-15T20:40:29.2503578-05:00",
+  "lastModified": "2021-05-16T18:23:42.7680037-05:00",
   "type": "Officer",
   "name": "Domitia",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

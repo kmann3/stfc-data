@@ -1,11 +1,11 @@
 {
   "guid": "007F07B6-50E6-441D-8866-BD7B69E09524",
-  "lastModified": "2021-05-15T20:40:29.2478183-05:00",
+  "lastModified": "2021-05-16T18:23:42.7352491-05:00",
   "type": "Officer",
   "name": "Data",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

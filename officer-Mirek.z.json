@@ -1,11 +1,11 @@
 {
   "guid": "7F6B1AC5-278D-4022-BC99-FC699719C203",
-  "lastModified": "2021-05-15T20:40:29.3837945-05:00",
+  "lastModified": "2021-05-16T18:23:43.2301696-05:00",
   "type": "Officer",
   "name": "Mirek",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

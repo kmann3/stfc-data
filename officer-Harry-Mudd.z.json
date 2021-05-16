@@ -1,11 +1,11 @@
 {
   "guid": "68324CF3-952B-47EE-B51F-6E92AF090E95",
-  "lastModified": "2021-05-15T20:40:29.2667103-05:00",
+  "lastModified": "2021-05-16T18:23:42.9037837-05:00",
   "type": "Officer",
   "name": "Harry Mudd",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

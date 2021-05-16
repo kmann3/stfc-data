@@ -1,11 +1,11 @@
 {
   "guid": "D69876A4-8F24-44BA-980B-5A6EA5108054",
-  "lastModified": "2021-05-15T20:40:29.4864873-05:00",
+  "lastModified": "2021-05-16T18:23:43.4763926-05:00",
   "type": "Officer",
   "name": "Stonn",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

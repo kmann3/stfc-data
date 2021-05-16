@@ -1,11 +1,11 @@
 {
   "guid": "6B331462-221A-488F-9AFD-91997AFF64B1",
-  "lastModified": "2021-05-15T20:40:29.4402113-05:00",
+  "lastModified": "2021-05-16T18:23:43.3413237-05:00",
   "type": "Officer",
   "name": "Origins Stamets",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

@@ -1,11 +1,11 @@
 {
   "guid": "A288AC56-D34C-4198-8E4B-60A832857F33",
-  "lastModified": "2021-05-15T20:40:29.2140503-05:00",
+  "lastModified": "2021-05-16T18:23:42.5485195-05:00",
   "type": "Officer",
   "name": "Barot",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

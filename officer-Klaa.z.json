@@ -1,11 +1,11 @@
 {
   "guid": "F59ED2AF-E0A5-4308-B4CA-1FA31F368379",
-  "lastModified": "2021-05-15T20:40:29.3054707-05:00",
+  "lastModified": "2021-05-16T18:23:43.0631695-05:00",
   "type": "Officer",
   "name": "Klaa",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

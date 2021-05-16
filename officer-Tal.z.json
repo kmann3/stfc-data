@@ -1,11 +1,11 @@
 {
   "guid": "09A2541E-57FD-4D08-96F0-E411E3D21527",
-  "lastModified": "2021-05-15T20:40:29.4985772-05:00",
+  "lastModified": "2021-05-16T18:23:43.4952688-05:00",
   "type": "Officer",
   "name": "Tal",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

@@ -1,11 +1,11 @@
 {
   "guid": "F9C43239-099B-457F-BCD0-20ABDDA87FC9",
-  "lastModified": "2021-05-15T20:40:29.4219515-05:00",
+  "lastModified": "2021-05-16T18:23:43.3155788-05:00",
   "type": "Officer",
   "name": "Next Gen Riker",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

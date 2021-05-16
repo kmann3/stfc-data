@@ -1,11 +1,11 @@
 {
   "guid": "4AC29533-23C8-45B1-B1FA-546BADDCC00D",
-  "lastModified": "2021-05-15T20:40:29.4547677-05:00",
+  "lastModified": "2021-05-16T18:23:43.377867-05:00",
   "type": "Officer",
   "name": "Pike",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

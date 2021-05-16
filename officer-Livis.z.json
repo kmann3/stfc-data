@@ -1,11 +1,11 @@
 {
   "guid": "25B621CD-0703-4931-9643-C2F4AA9401AF",
-  "lastModified": "2021-05-15T20:40:29.3231898-05:00",
+  "lastModified": "2021-05-16T18:23:43.1469877-05:00",
   "type": "Officer",
   "name": "Livis",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

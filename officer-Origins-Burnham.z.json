@@ -1,11 +1,11 @@
 {
   "guid": "805FC296-3C9A-43B0-A212-2D8D0044202C",
-  "lastModified": "2021-05-16T07:35:42-05:00",
+  "lastModified": "2021-05-16T18:23:43.325868-05:00",
   "type": "Officer",
   "name": "Origins Burnham",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

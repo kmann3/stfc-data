@@ -1,11 +1,11 @@
 {
   "guid": "6B4E2BC9-044A-41F2-8AB7-2084EA6C8326",
-  "lastModified": "2021-05-15T20:40:29.2287862-05:00",
+  "lastModified": "2021-05-16T18:23:42.6682231-05:00",
   "type": "Officer",
   "name": "Carol",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

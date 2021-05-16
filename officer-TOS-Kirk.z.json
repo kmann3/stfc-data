@@ -1,11 +1,11 @@
 {
   "guid": "CF428D67-E8EB-4674-94F8-ED0C7C1ADAD8",
-  "lastModified": "2021-05-15T20:40:29.5110146-05:00",
+  "lastModified": "2021-05-16T18:23:43.5381134-05:00",
   "type": "Officer",
   "name": "TOS Kirk",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

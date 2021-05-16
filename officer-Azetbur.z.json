@@ -1,11 +1,11 @@
 {
   "guid": "C713373C-A40D-4153-A2D6-FF8EBF6C411A",
-  "lastModified": "2021-05-15T20:40:29.2135354-05:00",
+  "lastModified": "2021-05-16T18:23:42.4656034-05:00",
   "type": "Officer",
   "name": "Azetbur",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

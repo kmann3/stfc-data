@@ -1,11 +1,11 @@
 {
   "guid": "8D7FCAFD-3177-4F2A-B389-9E83C4E4A482",
-  "lastModified": "2021-05-15T20:40:29.2518342-05:00",
+  "lastModified": "2021-05-16T18:23:42.7871691-05:00",
   "type": "Officer",
   "name": "Eight of Ten",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

@@ -1,11 +1,11 @@
 {
   "guid": "33A102C9-A621-444E-9CD7-D60722897A0F",
-  "lastModified": "2021-05-15T20:40:29.556978-05:00",
+  "lastModified": "2021-05-16T18:23:43.7397385-05:00",
   "type": "Officer",
   "name": "Zhou",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

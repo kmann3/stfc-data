@@ -1,11 +1,11 @@
 {
   "guid": "397C3660-47F2-42A4-B060-05DAC2159D01",
-  "lastModified": "2021-05-15T20:40:29.2536195-05:00",
+  "lastModified": "2021-05-16T18:23:42.7984106-05:00",
   "type": "Officer",
   "name": "Emperor Georgiou",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }

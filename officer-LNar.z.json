@@ -1,11 +1,11 @@
 {
   "guid": "F5526DFB-2049-4E70-9E78-A7F3EA8AD41E",
-  "lastModified": "2021-05-15T20:40:29.3354516-05:00",
+  "lastModified": "2021-05-16T18:23:43.1545736-05:00",
   "type": "Officer",
   "name": "L'Nar",
   "class": "",
   "description": "",
-  "faction": null,
+  "faction": "",
   "group": "",
   "rarity": "",
   "tags": [
@@ -17,12 +17,7 @@
   "ranks": {
     "1": {
       "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "resource-cost": null
     },
     "2": {
       "shards-required": 0,
@@ -57,6 +52,10 @@
         {
           "type": "Independent Credits",
           "count": 0
+        },
+        {
+          "type": "Badge",
+          "count": 1
         }
       ]
     }
