@@ -1,11 +1,9 @@
 [{
     "guid": "B510E8C1-FB26-478C-B911-B40C0E3EBD2E",
-    "lastModified": "2021-05-14T09:58:21-05:00",
+    "lastModified": "2021-05-16T07:34:23-05:00",
     "type": "Officer",
     "name": "Ahvix",
-
     "class": "Engineering",
-    "description": "",
     "faction": "Independant",
     "group": "Mudd's Company",
     "rarity": "Rare",

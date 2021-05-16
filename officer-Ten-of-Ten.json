@@ -1,11 +1,9 @@
 [{
     "guid": "FE57B1BF-FC51-4CB4-B799-BF2C6CAA96CF",
-    "lastModified": "2021-05-14T09:59:27-05:00",
+    "lastModified": "2021-05-16T07:36:02-05:00",
     "type": "Officer",
     "name": "Ten of Ten",
-
     "class": "Engineering",
-    "description": "Tribbles are a fuzzy, simple species that are widely considered harmless, once their reproductive nature is kept under control. However beneat their furry exterior lies the potential for galactic ruin. The Born understand that the secrets to the TRibbles's rapid asexual reproduction could be used as a wweapon of mass destriction. 10 of 10 is the first test and if the Borg are not stopped, millions of this fluffy terror will flood across our universe.",
     "faction": "Neutral",
     "group": "Unimatrix Twelve",
     "rarity": "Uncommon",

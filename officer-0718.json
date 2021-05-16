@@ -1,12 +1,10 @@
 [{
     "author-comment": "",
     "guid": "6D7B3929-44DE-4AE0-99E9-4F6A9897E849",
-    "lastModified": "2021-05-14T09:17:26-05:00",
+    "lastModified": "2021-05-16T07:34:33-05:00",
     "type": "Officer",
     "name": "0718",
-
     "class": "Science",
-    "description": "Officer 0718 is a cybernetic life form created when the Enterprise was temporarily controlled by a mysterious alien entity. He has the ability to interface directly with the Enterprise's computer and input commands and data more rapidly than the rest of the crew. When not on duty, 0718 often spends time in the botanical lab.",
     "faction": "Federation",
     "group": "Auxiliary Controls",
     "rarity": "Uncommon",

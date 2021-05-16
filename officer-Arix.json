@@ -1,0 +1,68 @@
+{
+  "guid": "BBAAAA3E-28B2-46DA-9441-A0949C08F462",
+  "lastModified": "2021-05-16T07:34:04-05:00",
+  "type": "Officer",
+  "name": "Arix",
+  "class": "Science",
+  "faction": "Romulan",
+  "group": "Nero's Crew",
+  "rarity": "Uncommon",
+  "tags": [
+    "armor",
+    "burning",
+    "energy"
+  ],
+  "synergy-command": 5,
+  "synergy-engineering": 5,
+  "synergy-science": 2,
+  "ranks": {
+    "1": {
+      "shards-required": 14
+    },
+    "2": {
+      "shards-required": 28,
+      "xp": 2500
+    },
+    "3": {
+      "shards-required": 56,
+      "xp": 50000
+    },
+    "4": {
+      "shards-required": 98,
+      "resource-cost": [
+        {
+          "type": "Romulan Credits",
+          "count": 1100
+        }
+      ],
+      "xp": 125000
+    },
+    "5": {
+      "shards-required": 182,
+      "resource-cost": [
+        {
+          "type": "Romulan Credits",
+          "count": 4400
+        },
+        {
+          "type": "Science Badge",
+          "count": 1
+        }
+      ],
+      "xp": 250000
+    }
+  },
+  "captain-maneuver": {
+    "name": "Plasma Backlash",
+    "description:": "10% chance to cause Burning to the opponent after hitting it with an energy weapon"
+  },
+  "officer-ability": {
+    "name": "Powered Armor",
+    "description_rank1": "+15% to Armor when the ship has less than 70% Hull Health",
+    "description_rank2": "+20% to Armor when the ship has less than 70% Hull Health",
+    "description_rank3": "+30% to Armor when the ship has less than 70% Hull Health",
+    "description_rank4": "+40% to Armor when the ship has less than 70% Hull Health",
+    "description_rank5": "+50% to Armor when the ship has less than 70% Hull Health"
+  },
+  "image-url": "images/officers/Arix.png"
+}

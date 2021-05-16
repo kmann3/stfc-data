@@ -1,11 +1,9 @@
 [{
     "guid": "CA98EE95-09D3-4585-ACC3-C2B3CBCB0A83",
-    "lastModified": "2021-05-14T09:58:29-05:00",
+    "lastModified": "2021-05-16T07:34:40-05:00",
     "type": "Officer",
     "name": "Airiam",
-
     "class": "Command",
-    "description": "",
     "faction": "Federation",
     "group": "Discovery Crew",
     "rarity": "Uncommon",

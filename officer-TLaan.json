@@ -1,10 +1,9 @@
 [{
     "guid": "8A4FDA90-DAFD-455C-8BE4-165A0DB200A1",
-    "lastModified": "2021-05-14T20:53:29-05:00",
+    "lastModified": "2021-05-16T07:36:10-05:00",
     "type": "Officer",
     "name": "T'Laan",
     "class": "Science",
-    "description": "T'Lann is an incredibly intelligent vulcan cadet in the academy. Though she had initally wanted to return to her people and help in the settling of New Vulcan, her eperience with Lucia, Grace, Shev, and Vel convinced her to stay in the academy and Starfleet.",
     "faction": "Federation",
     "group": "Starfleet Academy",
     "rarity": "Common",
