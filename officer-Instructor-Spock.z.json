@@ -1,0 +1,77 @@
+{
+  "guid": "F44D8EBB-D893-41D4-AB4E-1217C60CC712",
+  "lastModified": "2021-05-15T20:40:29.2732232-05:00",
+  "type": "Officer",
+  "name": "Instructor Spock",
+  "class": "",
+  "description": "",
+  "faction": null,
+  "group": "",
+  "rarity": "",
+  "tags": [
+    "TBI"
+  ],
+  "synergy-command": 0,
+  "synergy-engineering": 0,
+  "synergy-science": 0,
+  "ranks": {
+    "1": {
+      "shards-required": 0,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 0
+        }
+      ]
+    },
+    "2": {
+      "shards-required": 0,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 0
+        }
+      ]
+    },
+    "3": {
+      "shards-required": 0,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 0
+        }
+      ]
+    },
+    "4": {
+      "shards-required": 0,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 0
+        }
+      ]
+    },
+    "5": {
+      "shards-required": 0,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 0
+        }
+      ]
+    }
+  },
+  "captain-maneuver": {
+    "name": "",
+    "description:": ""
+  },
+  "officer-ability": {
+    "name": "",
+    "description_rank1": "",
+    "description_rank2": "",
+    "description_rank3": "",
+    "description_rank4": "",
+    "description_rank5": ""
+  },
+  "image-url": "images/officers/InstructorSpock.png"
+}
