@@ -9,4 +9,4 @@ Each GUID for each officer, ship, system, etc should be unique.
 Should you find yourself bored and so inclined...
 I could use help with some simple stuff.
 * Pictures (e.g. images/officers/OneOfTen.png) -- filling that out would be a great help. Empty.png in the filename means that it's not been done.
-* 
+* Any items with a z in them such as officer-TLaan.z.json are INCOMPLETE
