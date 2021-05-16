@@ -1,0 +1,73 @@
+{
+  "guid": "E8C5B0FA-B89F-4257-A41E-2E2EA5208043",
+  "lastModified": "2021-05-16T07:44:29-05:00",
+  "type": "Officer",
+  "name": "Arkady",
+  "class": "Command",
+  "faction": "Federation",
+  "group": "Enterprise Crew",
+  "rarity": "Uncommon",
+  "tags": [
+    "morale",
+    "shields"
+  ],
+  "synergy-command": 10,
+  "synergy-engineering": 20,
+  "synergy-science": 20,
+  "ranks": {
+    "1": {
+      "shards-required": 12
+    },
+    "2": {
+      "shards-required": 24,
+      "xp": 2500
+    },
+    "3": {
+      "shards-required": 48,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 0
+        }
+      ],
+      "xp": 50000
+    },
+    "4": {
+      "shards-required": 84,
+      "resource-cost": [
+        {
+          "type": "Federation Credits",
+          "count": 0
+        }
+      ],
+      "xp": 125000
+    },
+    "5": {
+      "shards-required": 168,
+      "resource-cost": [
+        {
+          "type": "Federation Credits",
+          "count": 4400
+        },
+        {
+          "type": "Command Badge",
+          "count": 1
+        }
+      ],
+      "xp": 250000
+    }
+  },
+  "captain-maneuver": {
+    "name": "Always Enthusiast",
+    "description:": "50% chance to inspire Morale for 3 rounds when the Shield is depleted"
+  },
+  "officer-ability": {
+    "name": "Shields Refactor",
+    "description_rank1": "+10% to the Shield Health of the Ship",
+    "description_rank2": "+12% to the Shield Health of the Ship",
+    "description_rank3": "+14% to the Shield Health of the Ship",
+    "description_rank4": "+16% to the Shield Health of the Ship",
+    "description_rank5": "+20% to the Shield Health of the Ship"
+  },
+  "image-url": "images/officers/Arkady.png"
+}
