@@ -1,76 +1,85 @@
 {
   "guid": "C713373C-A40D-4153-A2D6-FF8EBF6C411A",
-  "lastModified": "2021-05-16T18:23:42.4656034-05:00",
+  "lastModified": "2021-06-01T18:23:42.4656034-05:00",
   "type": "Officer",
   "name": "Azetbur",
-  "class": "",
-  "description": "",
-  "faction": "",
-  "group": "",
-  "rarity": "",
+  "class": "Science",
+  "faction": "Klingon",
+  "group": "Klingon Patriots",
+  "rarity": "Rare",
   "tags": [
-    "TBI"
+    "TBI",
+    "hull beach",
+    "armor piercing",
   ],
-  "synergy-command": 0,
-  "synergy-engineering": 0,
-  "synergy-science": 0,
+  "synergy-command": 15,
+  "synergy-engineering": 15,
+  "synergy-science": 5,
   "ranks": {
     "1": {
-      "shards-required": 0,
+      "shards-required": 36,
       "resource-cost": null
     },
     "2": {
-      "shards-required": 0,
+      "shards-required": 54,
       "resource-cost": [
         {
           "type": "Independent Credits",
           "count": 0
         }
-      ]
+      ],
+      "xp": 10000
     },
     "3": {
-      "shards-required": 0,
+      "shards-required": 108,
       "resource-cost": [
         {
-          "type": "Independent Credits",
-          "count": 0
+          "type": "Klingon Credits",
+          "count": 1150
         }
-      ]
+      ],
+      "xp": 100000
     },
     "4": {
-      "shards-required": 0,
+      "shards-required": 144,
       "resource-cost": [
         {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
-    },
-    "5": {
-      "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
+          "type": "Klingong Credits",
+          "count": 4600
         },
         {
-          "type": "Badge",
+          "type": "Science Badge",
           "count": 1
         }
-      ]
+      ],
+      "xp": 250000
+    },
+    "5": {
+      "shards-required": 216,
+      "resource-cost": [
+        {
+          "type": "Klingong Credits",
+          "count": 11500
+        },
+        {
+          "type": "Science Badge",
+          "count": 2
+        }
+      ],
+      "xp": 500000
     }
   },
   "captain-maneuver": {
-    "name": "",
-    "description:": ""
+    "name": "Armor is obsolete",
+    "description:": "20% chance to cause Hull Beach for two rounds after hitting with a kinetic weapon"
   },
   "officer-ability": {
-    "name": "",
-    "description_rank1": "",
-    "description_rank2": "",
-    "description_rank3": "",
-    "description_rank4": "",
-    "description_rank5": ""
+    "name": "Contributon",
+    "description_rank1": "+10% to Armor Piercing every time the ship hits",
+    "description_rank2": "+15%",
+    "description_rank3": "+20%",
+    "description_rank4": "+30%",
+    "description_rank5": "+40%"
   },
   "image-url": "images/officers/Azetbur.png"
 }
