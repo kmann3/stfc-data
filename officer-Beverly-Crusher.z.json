@@ -3,74 +3,77 @@
   "lastModified": "2021-05-16T18:23:42.5589361-05:00",
   "type": "Officer",
   "name": "Beverly Crusher",
-  "class": "",
-  "description": "",
-  "faction": "",
-  "group": "",
-  "rarity": "",
+  "class": "Science",
+  "faction": "Federation",
+  "group": "TNG Crew",
+  "rarity": "Rare",
   "tags": [
-    "TBI"
+    "TBI",
+    "ship",
+    "armada",
+    "hostile",
+    "mitigation"
   ],
-  "synergy-command": 0,
-  "synergy-engineering": 0,
-  "synergy-science": 0,
+  "synergy-command": 100,
+  "synergy-engineering": 100,
+  "synergy-science": 50,
   "ranks": {
     "1": {
-      "shards-required": 0,
+      "shards-required": 36,
       "resource-cost": null
     },
     "2": {
-      "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "shards-required": 55,
+      "resource-cost": null,
+      "xp": 10000
     },
     "3": {
-      "shards-required": 0,
+      "shards-required": 105,
       "resource-cost": [
         {
-          "type": "Independent Credits",
-          "count": 0
+          "type": "Federation Credits",
+          "count": 1100
         }
       ]
     },
     "4": {
-      "shards-required": 0,
+      "shards-required": 145,
       "resource-cost": [
         {
-          "type": "Independent Credits",
-          "count": 0
+          "type": "Federation Credits",
+          "count": 4400
+        },
+        {
+          "type": "Science Badges",
+          "count": 1
         }
       ]
     },
     "5": {
-      "shards-required": 0,
+      "shards-required": 215,
       "resource-cost": [
         {
-          "type": "Independent Credits",
-          "count": 0
+          "type": "Federation Credits",
+          "count": 11000
         },
         {
-          "type": "Badge",
-          "count": 1
+          "type": "Science Badges",
+          "count": 2
         }
       ]
     }
   },
   "captain-maneuver": {
-    "name": "",
-    "description:": ""
+    "name": "First, Do No Harm",
+    "description:": "+200% to total crew Health restore to SHP each round when fighting Hostiles / Armadas"
   },
   "officer-ability": {
-    "name": "",
-    "description_rank1": "",
-    "description_rank2": "",
-    "description_rank3": "",
-    "description_rank4": "",
-    "description_rank5": ""
+    "name": "Unshakeable Moral Code",
+    "description_rank1": "+150% to all Mitigation stats when fighting Hostiles / Armadas",
+    "description_rank2": "+200% to all Mitigation stats when fighting Hostiles / Armadas",
+    "description_rank3": "+250% to all Mitigation stats when fighting Hostiles / Armadas",
+    "description_rank4": "+300% to all Mitigation stats when fighting Hostiles / Armadas",
+    "description_rank5": "+350% to all Mitigation stats when fighting Hostiles / Armadas"
   },
   "image-url": "images/officers/BeverlyCrusher.png"
 }

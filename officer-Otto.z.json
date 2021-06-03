@@ -3,59 +3,56 @@
   "lastModified": "2021-05-16T18:23:43.3494429-05:00",
   "type": "Officer",
   "name": "Otto",
-  "class": "",
-  "description": "",
-  "faction": "",
-  "group": "",
-  "rarity": "",
+  "class": "Engineering",
+  "faction": "Augment",
+  "group": "Khan's Crew",
+  "rarity": "Uncommon",
   "tags": [
-    "TBI"
+    "TBI",
+    "defense-platforms",
+    "officer-atack"
   ],
-  "synergy-command": 0,
-  "synergy-engineering": 0,
-  "synergy-science": 0,
+  "synergy-command": 10,
+  "synergy-engineering": 5,
+  "synergy-science": 10,
   "ranks": {
     "1": {
-      "shards-required": 0,
+      "shards-required": 16,
       "resource-cost": null
     },
     "2": {
-      "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "shards-required": 32,
+      "resource-cost": null,
+      "xp": 10000
     },
     "3": {
-      "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "shards-required": 64,
+      "resource-cost": null,
+      "xp": 100000
     },
     "4": {
-      "shards-required": 0,
+      "shards-required": 96,
       "resource-cost": [
         {
           "type": "Independent Credits",
-          "count": 0
+          "count": 1100
+        },
+        {
+          "type": "Engineering Badges",
+          "count": 1
         }
       ]
     },
     "5": {
-      "shards-required": 0,
+      "shards-required": 192,
       "resource-cost": [
         {
           "type": "Independent Credits",
-          "count": 0
+          "count": 4400
         },
         {
-          "type": "Badge",
-          "count": 1
+          "type": "Engineering Badges",
+          "count": 2
         }
       ]
     }
