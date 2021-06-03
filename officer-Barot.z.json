@@ -70,7 +70,7 @@
     "description_rank1": "-10% to the opponents Hull Health at the start of combat if attacked while mining",
     "description_rank2": "-15% to the opponents Hull Health at the start of combat if attacked while mining",
     "description_rank3": "-20% to the opponents Hull Health at the start of combat if attacked while mining",
-    "description_rank4": "-30% to the opponents Hull Health at the start of combat if attacked while mining",
+    "description_rank4": "-25% to the opponents Hull Health at the start of combat if attacked while mining",
     "description_rank5": "-30% to the opponents Hull Health at the start of combat if attacked while mining"
   },
   "image-url": "images/officers/Barot.png"
