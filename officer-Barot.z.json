@@ -3,74 +3,75 @@
   "lastModified": "2021-05-16T18:23:42.5485195-05:00",
   "type": "Officer",
   "name": "Barot",
-  "class": "",
-  "description": "",
-  "faction": "",
-  "group": "",
-  "rarity": "",
+  "class": "Science",
+  "faction": "Neutral",
+  "group": "Surveyors & Miners",
+  "rarity": "Rare",
   "tags": [
-    "TBI"
+    "TBI",
+    "crystal",
+    "mining",
+    "hull health",
+    "defense"
   ],
-  "synergy-command": 0,
-  "synergy-engineering": 0,
-  "synergy-science": 0,
+  "synergy-command": 30,
+  "synergy-engineering": 30,
+  "synergy-science": 20,
   "ranks": {
     "1": {
-      "shards-required": 0,
-      "resource-cost": null
+      "shards-required": 16,
+      "resource-cost": null,
     },
     "2": {
-      "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "shards-required": 36,
+      "resource-cost": null,
+      "xp": 10000
     },
     "3": {
-      "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
+      "shards-required": 72,
+      "resource-cost": null,
+      "xp": 100000
     },
     "4": {
-      "shards-required": 0,
+      "shards-required": 108,
       "resource-cost": [
         {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ]
-    },
-    "5": {
-      "shards-required": 0,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
+          "type": "Klingon Credits",
+          "count": 1200
         },
         {
-          "type": "Badge",
+          "type": "Science Badge",
           "count": 1
         }
-      ]
+      ],
+      "xp": 250000
+    },
+    "5": {
+      "shards-required": 198,
+      "resource-cost": [
+        {
+          "type": "Klingon Credits",
+          "count": 4800
+        },
+        {
+          "type": "Science Badge",
+          "count": 2
+        }
+      ],
+      "xp": 500000
     }
   },
   "captain-maneuver": {
-    "name": "",
-    "description:": ""
+    "name": "Crystal Mining",
+    "description:": "+40% to Crystal Mining rate"
   },
   "officer-ability": {
-    "name": "",
-    "description_rank1": "",
-    "description_rank2": "",
-    "description_rank3": "",
-    "description_rank4": "",
-    "description_rank5": ""
+    "name": "Deceptive Weakness",
+    "description_rank1": "-10% to the opponents Hull Health at the start of combat if attacked while mining",
+    "description_rank2": "-15% to the opponents Hull Health at the start of combat if attacked while mining",
+    "description_rank3": "-20% to the opponents Hull Health at the start of combat if attacked while mining",
+    "description_rank4": "-30% to the opponents Hull Health at the start of combat if attacked while mining",
+    "description_rank5": "-30% to the opponents Hull Health at the start of combat if attacked while mining"
   },
   "image-url": "images/officers/Barot.png"
 }
