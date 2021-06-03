@@ -20,7 +20,7 @@
   "ranks": {
     "1": {
       "shards-required": 16,
-      "resource-cost": null,
+      "resource-cost": null
     },
     "2": {
       "shards-required": 36,
