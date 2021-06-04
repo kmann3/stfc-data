@@ -1,6 +1,6 @@
 {
   "guid": "C713373C-A40D-4153-A2D6-FF8EBF6C411A",
-  "lastModified": "2021-06-04T09:21:12-05:00",
+  "lastModified": "2021-06-04T09:25:04-05:00",
   "type": "Officer",
   "name": "Azetbur",
   "class": "Science",
@@ -8,7 +8,6 @@
   "group": "Klingon Patriots",
   "rarity": "Rare",
   "tags": [
-    "TBI",
     "hull beach",
     "armor piercing"
   ],
@@ -22,12 +21,7 @@
     },
     "2": {
       "shards-required": 54,
-      "resource-cost": [
-        {
-          "type": "Independent Credits",
-          "count": 0
-        }
-      ],
+      "resource-cost": null,
       "xp": 10000
     },
     "3": {
@@ -44,7 +38,7 @@
       "shards-required": 144,
       "resource-cost": [
         {
-          "type": "Klingong Credits",
+          "type": "Klingon Credits",
           "count": 4600
         },
         {
@@ -58,7 +52,7 @@
       "shards-required": 216,
       "resource-cost": [
         {
-          "type": "Klingong Credits",
+          "type": "Klingon Credits",
           "count": 11500
         },
         {
@@ -76,10 +70,10 @@
   "officer-ability": {
     "name": "Contributon",
     "description_rank1": "+10% to Armor Piercing every time the ship hits",
-    "description_rank2": "+15%",
-    "description_rank3": "+20%",
-    "description_rank4": "+30%",
-    "description_rank5": "+40%"
+    "description_rank2": "+15% to Armor Piercing every time the ship hits",
+    "description_rank3": "+20% to Armor Piercing every time the ship hits",
+    "description_rank4": "+30% to Armor Piercing every time the ship hits",
+    "description_rank5": "+40% to Armor Piercing every time the ship hits"
   },
   "image-url": "images/officers/Azetbur.png"
 }
