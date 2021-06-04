@@ -10,7 +10,7 @@ namespace ConsoleTools
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             string fileName = @"D:\Programming\git\stfc-data.git\lookups.json";
 
@@ -20,29 +20,65 @@ namespace ConsoleTools
             int count = 0;
             foreach(string x in foo.Officers)
             {
+                count++;
                 string name = x.Replace(" ", "-").Replace("'", "");
                 string officerFileName = @"D:\Programming\git\stfc-data.git\officer-" + name + ".z.json";
                 bool exists = System.IO.File.Exists(officerFileName);
                 Console.WriteLine($"{x} : {exists} : {officerFileName}");
-                if (!exists) continue;
+                if (!exists)
+                {
+                    officerFileName = officerFileName.Replace(".z.json", ".json");
+                    if (!File.Exists(officerFileName)) continue;
+                }
 
                 //Lookups returnValue = JsonConvert.DeserializeObject<Lookups>(File.ReadAllText(fileName));
                 Officer o = JsonConvert.DeserializeObject<Officer>(File.ReadAllText(officerFileName));
+                
 
-                Console.WriteLine(o.Class);
-
-                o.Faction = "";
-                o.LastModified = DateTime.Now;
-
-                o.Ranks["1"].ResourceCost = null;
-
-                o.Ranks["5"].ResourceCost.Add(new ResourceCost()
+                Console.WriteLine(o.Name);
+                o.Id = count;
+                if (String.IsNullOrEmpty(o.Group))
                 {
-                    Count = 1,
-                    Type = "Badge"
-                });
+                    o.Ranks["1"].Xp = 0;
+                    o.Ranks["2"].Xp = 0;
+                    o.Ranks["3"].Xp = 0;
+                    o.Ranks["4"].Xp = 0;
+                    o.Ranks["5"].Xp = 0;
 
-                File.WriteAllText(officerFileName, JsonConvert.SerializeObject(o, Formatting.Indented));
+                    o.Ranks["1"].ResourceCost = null;
+
+                    o.Ranks["4"].ResourceCost[0].Type = " Credits";
+                    if (o.Ranks["4"].ResourceCost.Count == 2)
+                    {
+                        o.Ranks["4"].ResourceCost[1].Type = " Badges";
+                        o.Ranks["4"].ResourceCost[1].Count = 1;
+                    } else
+                    {
+                        o.Ranks["4"].ResourceCost.Add(new ResourceCost()
+                        {
+                            Count = 1,
+                            Type = " Badges"
+                        });
+                    }
+
+                    o.Ranks["5"].ResourceCost[0].Type = " Credits";
+                    o.Ranks["5"].ResourceCost[1].Type = " Badges";
+                    o.Ranks["5"].ResourceCost[1].Count = 2;
+
+
+                    o.LastModified = DateTime.Now.ToString("yyyy-MM-ddTHH:MM:ss-05:00");
+
+                    File.WriteAllText(officerFileName, JsonConvert.SerializeObject(o, Formatting.Indented));
+                } else
+                {
+                    o.Id = count;
+                    o.Ranks["1"].Xp = 0;
+                    o.Ranks["1"].ResourceCost = null;
+                    o.LastModified = DateTime.Now.ToString("yyyy-MM-ddTHH:MM:ss-05:00");
+                    
+                    
+                    File.WriteAllText(officerFileName, JsonConvert.SerializeObject(o, Formatting.Indented));
+                }
 
                 //officerFileName = "officer-" + name + ".z.json";
                 //Officer o = new Officer();

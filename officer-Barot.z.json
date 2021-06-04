@@ -1,6 +1,6 @@
 {
-  "guid": "A288AC56-D34C-4198-8E4B-60A832857F33",
-  "lastModified": "2021-06-04T09:21:06-05:00",
+  "id": 7,
+  "lastModified": "2021-06-04T10:06:12-05:00",
   "type": "Officer",
   "name": "Barot",
   "class": "Science",
@@ -20,7 +20,8 @@
   "ranks": {
     "1": {
       "shards-required": 16,
-      "resource-cost": null
+      "resource-cost": null,
+      "xp": 0
     },
     "2": {
       "shards-required": 36,

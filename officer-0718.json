@@ -1,69 +1,72 @@
-[{
-    "author-comment": "",
-    "guid": "6D7B3929-44DE-4AE0-99E9-4F6A9897E849",
-    "lastModified": "2021-05-16T07:46:47-05:00",
-    "type": "Officer",
-    "name": "0718",
-    "class": "Science",
-    "faction": "Federation",
-    "group": "Auxiliary Controls",
-    "rarity": "Uncommon",
-    "tags": [
-        "defense",
-        "critical-hit-defense",
-        "station-defense"
-    ],
-    "synergy-command": 4,
-    "synergy-engineering": 4,
-    "synergy-science": 2,
-    "ranks": {
-        "1": {
-            "shards-required": 14
-        },       
-        "2": {
-            "shards-required": 28,
-            "xp": 2500
-        },       
-        "3": {
-            "shards-required": 56,
-            "xp": 50000
-        },       
-        "4": {
-            "shards-required": 98,
-            "resource-cost": [
-                {
-                  "type": "Federation Credits",
-                  "count": 1100
-                }
-            ],
-            "xp": 125000
-        },       
-        "5": {
-            "shards-required": 102,
-            "resource-cost": [
-                {
-                  "type": "Federation Credits",
-                  "count": 4400
-                },
-                {
-                    "type": "Science Badges",
-                    "count": 1
-                }
-            ],
-            "xp": 250000
-        }       
+{
+  "id": 1,
+  "lastModified": "2021-06-04T10:06:12-05:00",
+  "type": "Officer",
+  "name": "0718",
+  "class": "Science",
+  "faction": "Federation",
+  "group": "Auxiliary Controls",
+  "rarity": "Uncommon",
+  "tags": [
+    "defense",
+    "critical-hit-defense",
+    "station-defense"
+  ],
+  "synergy-command": 4,
+  "synergy-engineering": 4,
+  "synergy-science": 2,
+  "ranks": {
+    "1": {
+      "shards-required": 14,
+      "resource-cost": null,
+      "xp": 0
     },
-    "captain-maneuver": {
-        "name": "Station Knowledge",
-        "description:": "+4% to Critical Hit chances when defending the station"
+    "2": {
+      "shards-required": 28,
+      "resource-cost": null,
+      "xp": 2500
     },
-    "officer-ability": {
-        "name": "Computer Precision",
-        "description_rank1": "+5 to the Defense of all Officers on the ship",
-        "description_rank2": "+7 to the Defense of all Officers on the ship",
-        "description_rank3": "+9 to the Defense of all Officers on the ship",
-        "description_rank4": "+12 to the Defense of all Officers on the ship",
-        "description_rank5": "+15 to the Defense of all Officers on the ship"
+    "3": {
+      "shards-required": 56,
+      "resource-cost": null,
+      "xp": 50000
     },
-    "image-url": "images/officers/empty.png"
-}]
+    "4": {
+      "shards-required": 98,
+      "resource-cost": [
+        {
+          "type": "Federation Credits",
+          "count": 1100
+        }
+      ],
+      "xp": 125000
+    },
+    "5": {
+      "shards-required": 102,
+      "resource-cost": [
+        {
+          "type": "Federation Credits",
+          "count": 4400
+        },
+        {
+          "type": "Science Badges",
+          "count": 1
+        }
+      ],
+      "xp": 250000
+    }
+  },
+  "captain-maneuver": {
+    "name": "Station Knowledge",
+    "description:": "+4% to Critical Hit chances when defending the station"
+  },
+  "officer-ability": {
+    "name": "Computer Precision",
+    "description_rank1": "+5 to the Defense of all Officers on the ship",
+    "description_rank2": "+7 to the Defense of all Officers on the ship",
+    "description_rank3": "+9 to the Defense of all Officers on the ship",
+    "description_rank4": "+12 to the Defense of all Officers on the ship",
+    "description_rank5": "+15 to the Defense of all Officers on the ship"
+  },
+  "image-url": "images/officers/empty.png"
+}

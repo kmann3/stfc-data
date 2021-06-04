@@ -8,11 +8,11 @@
 
     public partial class Officer
     {
-        [JsonProperty("guid")]
-        public string Guid { get; set; }
+        [JsonProperty("id")]
+        public long Id { get; set; }
 
         [JsonProperty("lastModified")]
-        public DateTimeOffset LastModified { get; set; }
+        public string LastModified { get; set; }
 
         [JsonProperty("type")]
         public string Type { get; set; }
@@ -22,9 +22,6 @@
 
         [JsonProperty("class")]
         public string Class { get; set; }
-
-        [JsonProperty("description")]
-        public string Description { get; set; }
 
         [JsonProperty("faction")]
         public string Faction { get; set; }
@@ -97,6 +94,9 @@
 
         [JsonProperty("resource-cost")]
         public List<ResourceCost> ResourceCost { get; set; }
+
+        [JsonProperty("xp")]
+        public long? Xp { get; set; }
     }
 
     public partial class ResourceCost

@@ -1,6 +1,6 @@
 {
-  "guid": "E8C5B0FA-B89F-4257-A41E-2E2EA5208043",
-  "lastModified": "2021-05-16T07:44:29-05:00",
+  "id": 5,
+  "lastModified": "2021-06-04T10:06:12-05:00",
   "type": "Officer",
   "name": "Arkady",
   "class": "Command",
@@ -16,10 +16,13 @@
   "synergy-science": 20,
   "ranks": {
     "1": {
-      "shards-required": 12
+      "shards-required": 12,
+      "resource-cost": null,
+      "xp": 0
     },
     "2": {
       "shards-required": 24,
+      "resource-cost": null,
       "xp": 2500
     },
     "3": {

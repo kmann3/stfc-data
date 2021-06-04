@@ -1,6 +1,6 @@
 {
-  "guid": "D0EBBE50-BB0C-4968-8BAB-683E5765E438",
-  "lastModified": "2021-06-04T09:21:08-05:00",
+  "id": 8,
+  "lastModified": "2021-06-04T10:06:12-05:00",
   "type": "Officer",
   "name": "Beverly Crusher",
   "class": "Science",
@@ -20,7 +20,8 @@
   "ranks": {
     "1": {
       "shards-required": 36,
-      "resource-cost": null
+      "resource-cost": null,
+      "xp": 0
     },
     "2": {
       "shards-required": 55,
@@ -34,7 +35,8 @@
           "type": "Federation Credits",
           "count": 1100
         }
-      ]
+      ],
+      "xp": 0
     },
     "4": {
       "shards-required": 145,
@@ -47,7 +49,8 @@
           "type": "Science Badges",
           "count": 1
         }
-      ]
+      ],
+      "xp": 0
     },
     "5": {
       "shards-required": 215,
@@ -60,7 +63,8 @@
           "type": "Science Badges",
           "count": 2
         }
-      ]
+      ],
+      "xp": 0
     }
   },
   "captain-maneuver": {

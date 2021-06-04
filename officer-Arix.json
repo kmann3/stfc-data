@@ -1,6 +1,6 @@
 {
-  "guid": "BBAAAA3E-28B2-46DA-9441-A0949C08F462",
-  "lastModified": "2021-05-16T07:34:04-05:00",
+  "id": 4,
+  "lastModified": "2021-06-04T10:06:12-05:00",
   "type": "Officer",
   "name": "Arix",
   "class": "Science",
@@ -17,14 +17,18 @@
   "synergy-science": 2,
   "ranks": {
     "1": {
-      "shards-required": 14
+      "shards-required": 14,
+      "resource-cost": null,
+      "xp": 0
     },
     "2": {
       "shards-required": 28,
+      "resource-cost": null,
       "xp": 2500
     },
     "3": {
       "shards-required": 56,
+      "resource-cost": null,
       "xp": 50000
     },
     "4": {
