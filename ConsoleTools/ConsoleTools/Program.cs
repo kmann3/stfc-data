@@ -31,8 +31,6 @@ namespace ConsoleTools
                 {
                     Debug.Assert(File.Exists(officerFileName) || File.Exists(officerFileNameNoZ));
                     officerFileName = officerFileName.Replace("-z-", "-");
-                    if (!File.Exists(officerFileName)) 
-                        continue;
                 }
 
                 //Lookups returnValue = JsonConvert.DeserializeObject<Lookups>(File.ReadAllText(fileName));
