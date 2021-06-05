@@ -5,6 +5,7 @@ using System.IO;
 using System.Globalization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System.Diagnostics;
 
 namespace ConsoleTools
 {
@@ -22,63 +23,35 @@ namespace ConsoleTools
             {
                 count++;
                 string name = x.Replace(" ", "-").Replace("'", "");
-                string officerFileName = @"D:\Programming\git\stfc-data.git\officer-" + name + ".z.json";
+                string officerFileName = @"D:\Programming\git\stfc-data.git\officer-z-" + name + ".json";
+                string officerFileNameNoZ = @"D:\Programming\git\stfc-data.git\officer-" + name + ".json";
                 bool exists = System.IO.File.Exists(officerFileName);
                 Console.WriteLine($"{x} : {exists} : {officerFileName}");
                 if (!exists)
                 {
-                    officerFileName = officerFileName.Replace(".z.json", ".json");
-                    if (!File.Exists(officerFileName)) continue;
+                    Debug.Assert(File.Exists(officerFileName) || File.Exists(officerFileNameNoZ));
+                    officerFileName = officerFileName.Replace("-z-", "-");
+                    if (!File.Exists(officerFileName)) 
+                        continue;
                 }
 
                 //Lookups returnValue = JsonConvert.DeserializeObject<Lookups>(File.ReadAllText(fileName));
-                Officer o = JsonConvert.DeserializeObject<Officer>(File.ReadAllText(officerFileName));
+                OfficerJson o = JsonConvert.DeserializeObject<OfficerJson>(File.ReadAllText(officerFileName));
                 
 
                 Console.WriteLine(o.Name);
                 o.Id = count;
-                if (String.IsNullOrEmpty(o.Group))
-                {
-                    o.Ranks["1"].Xp = 0;
-                    o.Ranks["2"].Xp = 0;
-                    o.Ranks["3"].Xp = 0;
-                    o.Ranks["4"].Xp = 0;
-                    o.Ranks["5"].Xp = 0;
+                o.SynergyCommand = 55;
+                o.LastModified = DateTime.Now.ToString("yyyy-MM-ddTHH:MM:ss-05:00");
+                int i = o.Ranks["1"].Xp;
+                int a = o.Ranks["2"].Xp;
+                int b = o.Ranks["3"].Xp;
+                int c = o.Ranks["4"].Xp;
+                int d = o.Ranks["5"].Xp;
 
-                    o.Ranks["1"].ResourceCost = null;
-
-                    o.Ranks["4"].ResourceCost[0].Type = " Credits";
-                    if (o.Ranks["4"].ResourceCost.Count == 2)
-                    {
-                        o.Ranks["4"].ResourceCost[1].Type = " Badges";
-                        o.Ranks["4"].ResourceCost[1].Count = 1;
-                    } else
-                    {
-                        o.Ranks["4"].ResourceCost.Add(new ResourceCost()
-                        {
-                            Count = 1,
-                            Type = " Badges"
-                        });
-                    }
-
-                    o.Ranks["5"].ResourceCost[0].Type = " Credits";
-                    o.Ranks["5"].ResourceCost[1].Type = " Badges";
-                    o.Ranks["5"].ResourceCost[1].Count = 2;
-
-
-                    o.LastModified = DateTime.Now.ToString("yyyy-MM-ddTHH:MM:ss-05:00");
-
-                    File.WriteAllText(officerFileName, JsonConvert.SerializeObject(o, Formatting.Indented));
-                } else
-                {
-                    o.Id = count;
-                    o.Ranks["1"].Xp = 0;
-                    o.Ranks["1"].ResourceCost = null;
-                    o.LastModified = DateTime.Now.ToString("yyyy-MM-ddTHH:MM:ss-05:00");
-                    
-                    
-                    File.WriteAllText(officerFileName, JsonConvert.SerializeObject(o, Formatting.Indented));
-                }
+                Console.WriteLine(i + a + b + c + d);
+                //File.WriteAllText(officerFileName + ".tmp.json", JsonConvert.SerializeObject(o, Formatting.Indented));
+                //if (count > 2) break;
 
                 //officerFileName = "officer-" + name + ".z.json";
                 //Officer o = new Officer();
@@ -146,8 +119,6 @@ namespace ConsoleTools
 
 
                 //File.WriteAllText(officerFileName, JsonConvert.SerializeObject(o, Formatting.Indented));
-                //
-
             }
             Console.WriteLine("End " + count);
             Console.Read();

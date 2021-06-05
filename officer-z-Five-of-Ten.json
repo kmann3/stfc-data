@@ -1,0 +1,105 @@
+{
+  "id": 30,
+  "lastModified": "2021-06-04T20:55:30-05:00",
+  "type": "Officer",
+  "name": "Five of Ten",
+  "class": "Engineering",
+  "faction": "Neutral",
+  "group": "Unimatrix Twelve",
+  "rarity": "Epic",
+  "tags": [
+    "borg",
+    "resource"
+  ],
+  "synergy-command": 400,
+  "synergy-engineering": 200,
+  "synergy-science": 400,
+  "ranks": {
+    "1": {
+      "shards-required": 125,
+      "resource-cost": null,
+      "xp": 0
+    },
+    "2": {
+      "shards-required": 125,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 1350
+        },
+        {
+          "type": "Active Nanoprobes",
+          "count": 6000
+        }
+      ],
+      "xp": 0
+    },
+    "3": {
+      "shards-required": 250,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 5250
+        },
+        {
+          "type": "Active Nanoprobes",
+          "count": 120000
+        },
+        {
+          "type": "Engineering Badges",
+          "count": 1
+        }
+      ],
+      "xp": 0
+    },
+    "4": {
+      "shards-required": 375,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 13225
+        },
+        {
+          "type": "Active Nanoprobes",
+          "count": 500000
+        },
+        {
+          "type": "Engineering Badges",
+          "count": 2
+        }
+      ],
+      "xp": 0
+    },
+    "5": {
+      "shards-required": 1000,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 30000
+        },
+        {
+          "type": "Active Nanoprobes",
+          "count": 1150000
+        },
+        {
+          "type": "Engineering Badges",
+          "count": 4
+        }
+      ],
+      "xp": 0
+    }
+  },
+  "captain-maneuver": {
+    "name": "Weaponary is irrelevant",
+    "description:": "200% of the crew's Health bonus to Mitigation."
+  },
+  "officer-ability": {
+    "name": "You will be assimilated",
+    "description_rank1": "+20% to resources dropped by hostiles.",
+    "description_rank2": "+40% to resources dropped by hostiles.",
+    "description_rank3": "+60% to resources dropped by hostiles.",
+    "description_rank4": "+80% to resources dropped by hostiles.",
+    "description_rank5": "+100% to resources dropped by hostiles."
+  },
+  "image-url": "images/officers/FiveOfTen.png"
+}

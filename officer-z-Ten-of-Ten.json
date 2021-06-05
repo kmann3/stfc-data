@@ -1,0 +1,105 @@
+{
+  "id": 108,
+  "lastModified": "2021-06-04T20:58:53-05:00",
+  "type": "Officer",
+  "name": "Ten of Ten",
+  "class": "Engineering",
+  "faction": "Neutral",
+  "group": "Unimatrix Twelve",
+  "rarity": "Uncommon",
+  "tags": [
+    "borg",
+    "dilithium",
+    "mining",
+    "mining-speed",
+    "parsteel",
+    "tritanium"
+  ],
+  "synergy-command": 75,
+  "synergy-engineering": 25,
+  "synergy-science": 75,
+  "ranks": {
+    "1": {
+      "shards-required": 115,
+      "resource-cost": null,
+      "xp": 0
+    },
+    "2": {
+      "shards-required": 115,
+      "resource-cost": [
+        {
+          "type": "Active Nanoprobes",
+          "count": 3000
+        }
+      ],
+      "xp": 0
+    },
+    "3": {
+      "shards-required": 230,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 1300
+        },
+        {
+          "type": "Active Nanoprobes",
+          "count": 5000
+        },
+        {
+          "type": "Engineering Badges",
+          "count": 1
+        }
+      ],
+      "xp": 0
+    },
+    "4": {
+      "shards-required": 345,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 13000
+        },
+        {
+          "type": "Active Nanoprobes",
+          "count": 475000
+        },
+        {
+          "type": "Engineering Badges",
+          "count": 2
+        }
+      ],
+      "xp": 0
+    },
+    "5": {
+      "shards-required": 920,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 28600
+        },
+        {
+          "type": "Active Nanoprobes",
+          "count": 1100000
+        },
+        {
+          "type": "Engineering Badges",
+          "count": 4
+        }
+      ],
+      "xp": 0
+    }
+  },
+  "captain-maneuver": {
+    "name": "Multiplicative Extraction",
+    "description:": "+50% Parsteel, Tritanium, and Dilithium Mining Speed."
+  },
+  "officer-ability": {
+    "name": "Tribble Mining Collective",
+    "description_rank1": "+80% to Mining Speed",
+    "description_rank2": "+100% to Mining Speed",
+    "description_rank3": "+120% to Mining Speed",
+    "description_rank4": "+140% to Mining Speed",
+    "description_rank5": "+160% to Mining Speed"
+  },
+  "image-url": "images/officers/TenOfTen.png"
+}

@@ -1,0 +1,105 @@
+{
+  "id": 85,
+  "lastModified": "2021-06-04T20:55:46-05:00",
+  "type": "Officer",
+  "name": "One of Ten",
+  "class": "Command",
+  "faction": "Neutral",
+  "group": "Unimatrix Twelve",
+  "rarity": "Rare",
+  "tags": [
+    "borg",
+    "federation",
+    "shield-mitigations",
+    "shields",
+    "protected-cargo",
+    "mining"
+  ],
+  "synergy-command": 1,
+  "synergy-engineering": 2,
+  "synergy-science": 2,
+  "ranks": {
+    "1": {
+      "shards-required": 40,
+      "resource-cost": null,
+      "xp": 0
+    },
+    "2": {
+      "shards-required": 65,
+      "resource-cost": [
+        {
+          "type": "Active Nanoprobes",
+          "count": 3000
+        }
+      ],
+      "xp": 0
+    },
+    "3": {
+      "shards-required": 125,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 1300
+        },
+        {
+          "type": "Active Nanoprobes",
+          "count": 25000
+        },
+        {
+          "type": "Command Badges",
+          "count": 1
+        }
+      ],
+      "xp": 0
+    },
+    "4": {
+      "shards-required": 170,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 5200
+        },
+        {
+          "type": "Active Nanoprobes",
+          "count": 100000
+        },
+        {
+          "type": "Engineering Badges",
+          "count": 2
+        }
+      ],
+      "xp": 0
+    },
+    "5": {
+      "shards-required": 250,
+      "resource-cost": [
+        {
+          "type": "Independent Credits",
+          "count": 13000
+        },
+        {
+          "type": "Active Nanoprobes",
+          "count": 500000
+        },
+        {
+          "type": "Engineering Badges",
+          "count": 4
+        }
+      ],
+      "xp": 0
+    }
+  },
+  "captain-maneuver": {
+    "name": "Adaptive Shielding",
+    "description:": "+5% damage mitigated by the shields."
+  },
+  "officer-ability": {
+    "name": "Bodyguard",
+    "description_rank1": "+30% to the Protected Cargo of the ship",
+    "description_rank2": "+35% to the Protected Cargo of the ship",
+    "description_rank3": "+40% to the Protected Cargo of the ship",
+    "description_rank4": "+45% to the Protected Cargo of the ship",
+    "description_rank5": "+50% to the Protected Cargo of the ship"
+  },
+  "image-url": "images/officers/OneOfTen.png"
+}
