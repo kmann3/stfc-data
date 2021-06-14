@@ -88,6 +88,9 @@ namespace StfcWeb.Data
         }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<News> News { get; set; }
+        public DbSet<Officer> Officers { get; set; }
+        
 
         public static void SeedUsers(UserManager<ApplicationUser> userManager)
         {
