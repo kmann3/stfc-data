@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity;
 using System.Linq;
-using DAL.Entities;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore.Design;
 using System.IO;
@@ -90,6 +89,8 @@ namespace StfcWeb.Data
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<News> News { get; set; }
         public DbSet<Officer> Officers { get; set; }
+        public DbSet<OfficerRankResources> OfficerRankResources { get; set; }
+        public DbSet<Tag> Tags { get; set; }
         
 
         public static void SeedUsers(UserManager<ApplicationUser> userManager)
@@ -162,5 +163,4 @@ namespace StfcWeb.Data
     }
 
 
-}
 }

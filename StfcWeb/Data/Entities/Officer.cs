@@ -11,16 +11,23 @@ namespace StfcWeb.Data.Entities
         //public Class Class { get; set; }
         //public Faction Faction {get;set;}
         //public Rarity Rarity { get; set; }
-        //public List<Tags> Tags { get; set; }
+        
+        public List<Tag> Tags { get; set; }
 
         public int SynergyCommand { get; set; }
         public int SynergyEngineering { get; set; }
         public int SynergyScience { get; set; }
 
-        public int Rank1Shards { get; set; }
-        public int Rank1Xp { get; set; }
-        //public ResourceType Rank1ReourseCost1Type { get; set; }
-        public int Rank1ReousrceCost1Count { get; set; }
+        public int Rank1ResourceId { get; set; }
+        public OfficerRankResources Rank1Resource { get; set; }
+        public int Rank2ResourceId { get; set; }
+        public OfficerRankResources Rank2Resource { get; set; }
+        public int Rank3ResourceId { get; set; }
+        public OfficerRankResources Rank3Resource { get; set; }
+        public int Rank4ResourceId { get; set; }
+        public OfficerRankResources Rank4Resource { get; set; }
+        public int Rank5ResourceId { get; set; }
+        public OfficerRankResources Rank5Resource { get; set; }
 
         public string CaptainManeuverName { get; set; }
         public string CaptainManeuverDescription { get; set; }
