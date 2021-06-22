@@ -8,9 +8,9 @@ namespace StfcWeb.Data.Entities
 {
     public class Officer : BasicTable<Officer>, IEntityTypeConfiguration<Officer>
     {
-        //public Class Class { get; set; }
-        //public Faction Faction {get;set;}
-        //public Rarity Rarity { get; set; }
+        public Class Class { get; set; }
+        public Faction Faction {get;set;}
+        public Rarity Rarity { get; set; }
         
         public List<Tag> Tags { get; set; }
 

@@ -87,6 +87,9 @@ namespace StfcWeb.Data
         }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<Class> Classes { get; set; }
+        public DbSet<Faction> Factions { get; set; }
+        public DbSet<Rarity> Rarities { get; set; }
         public DbSet<News> News { get; set; }
         public DbSet<Officer> Officers { get; set; }
         public DbSet<OfficerRankResources> OfficerRankResources { get; set; }
