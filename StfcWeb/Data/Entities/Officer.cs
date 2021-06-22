@@ -12,7 +12,7 @@ namespace StfcWeb.Data.Entities
         public Faction Faction {get;set;}
         public Rarity Rarity { get; set; }
         
-        public List<Tag> Tags { get; set; }
+        public ICollection<Tag> Tags { get; set; }
 
         public int SynergyCommand { get; set; }
         public int SynergyEngineering { get; set; }

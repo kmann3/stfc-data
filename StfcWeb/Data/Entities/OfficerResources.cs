@@ -12,10 +12,10 @@ namespace StfcWeb.Data.Entities
 {
     public class OfficerRankResources : BasicTable<OfficerRankResources>, IEntityTypeConfiguration<OfficerRankResources>
     {
-        [Required]
-        public int OfficerId { get; set; }
-        public Officer Officer { get; set; }
-        public int ActiveNanoprobes { get; set } = 0;
+        //[Required]
+        //public int OfficerId { get; set; }
+        //public Officer Officer { get; set; }
+        public int ActiveNanoprobes { get; set; } = 0;
         public int AugmentCredits { get; set; } = 0;
         public int CommandBadges { get; set; } = 0;
         public int EngineeringBadges { get; set; } = 0;

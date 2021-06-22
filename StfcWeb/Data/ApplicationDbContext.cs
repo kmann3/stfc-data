@@ -50,7 +50,7 @@ namespace StfcWeb.Data
             get
             {
 #if DEBUG
-                return "Data Source=KENNY-MSI-LAPTO;Initial Catalog=StfcWeb;Integrated Security=true;";
+                return "Data Source=DESKTOP-NCCCO01;Initial Catalog=StfcWeb;Integrated Security=true;";
 #else
             return "";
 #endif
