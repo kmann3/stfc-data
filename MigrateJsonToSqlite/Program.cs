@@ -6,7 +6,10 @@ namespace MigrateJsonToSqlite
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            // Load JSON into memory
+            // Add to SQLite
+            // Add to SQL Server
         }
     }
 }

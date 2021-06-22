@@ -1,17 +1,47 @@
-﻿using System;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Globalization;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using System.Diagnostics;
+using System.IO;
+using StfcWeb.Data;
+using StfcWeb.Data.Entities;
 
 namespace ConsoleTools
 {
     class Program
     {
+        public static List<OfficerJson> jsonList = new List<OfficerJson>();
+        public static string stfcDirectory = @"D:\Programming\git\stfc-data\";
+        public static string lookupFileName = stfcDirectory + @"lookups.json";
+        public static Lookups lookupData = Lookups.GetLookupsFromFile(lookupFileName);
         static void Main()
+        {
+            LoadJsonList();
+            
+
+
+            Console.Read();
+        }
+
+        public static void LoadJsonList()
+        {
+            foreach (string officer in lookupData.Officers)
+{
+                string name = officer.Replace(" ", "-").Replace("'", "");
+                string officerFileName = stfcDirectory + @"officer-z-" + name + ".json";
+                string officerFileNameNoZ = stfcDirectory +  @"officer-" + name + ".json";
+                bool exists = File.Exists(officerFileName);
+                if (!exists)
+                {
+                    Debug.Assert(File.Exists(officerFileName) || File.Exists(officerFileNameNoZ));
+                    officerFileName = officerFileName.Replace("-z-", "-");
+                }
+
+                jsonList.Add(JsonConvert.DeserializeObject<OfficerJson>(File.ReadAllText(officerFileName)));
+            }
+        }
+
+        public static void DoThing()
         {
             string fileName = @"D:\Programming\git\stfc-data.git\lookups.json";
 
@@ -19,7 +49,7 @@ namespace ConsoleTools
 
             Console.WriteLine(foo.LastModified);
             int count = 0;
-            foreach(string x in foo.Officers)
+            foreach (string x in foo.Officers)
             {
                 count++;
                 string name = x.Replace(" ", "-").Replace("'", "");
@@ -35,7 +65,7 @@ namespace ConsoleTools
 
                 //Lookups returnValue = JsonConvert.DeserializeObject<Lookups>(File.ReadAllText(fileName));
                 OfficerJson o = JsonConvert.DeserializeObject<OfficerJson>(File.ReadAllText(officerFileName));
-                
+
 
                 Console.WriteLine(o.Name);
                 o.Id = count;
@@ -119,7 +149,6 @@ namespace ConsoleTools
                 //File.WriteAllText(officerFileName, JsonConvert.SerializeObject(o, Formatting.Indented));
             }
             Console.WriteLine("End " + count);
-            Console.Read();
         }
     }
 }

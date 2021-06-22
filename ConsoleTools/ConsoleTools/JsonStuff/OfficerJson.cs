@@ -55,6 +55,11 @@
 
         [JsonProperty("image-url")]
         public string ImageUrl { get; set; }
+
+        public override string ToString()
+        {
+            return $"{this.Id} | {this.Name}";
+        }
     }
 
     public partial class CaptainManeuver
