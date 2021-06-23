@@ -1,5 +1,5 @@
 {
-    "lastModified": "2021-05-14T09:29:22-05:00",
+    "lastModified": "2021-06-22T20:00:34-05:00",
 
     "tags": [
         "borg",
@@ -18,6 +18,17 @@
     ],
     "systems": [
         "Kohva"
+    ],
+    "rarities": [
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Epic"
+    ],
+    "classes": [
+        "Command",
+        "Engineering",
+        "Science"
     ],
     "factions": [
         "Augment",

@@ -18,6 +18,12 @@
         [JsonProperty("systems")]
         public List<string> Systems { get; set; }
 
+        [JsonProperty("rarities")]
+        public List<String> Rarities { get; set; }
+
+        [JsonProperty("classes")]
+        public List<String> Classes { get; set; }
+
         [JsonProperty("factions")]
         public List<string> Factions { get; set; }
 

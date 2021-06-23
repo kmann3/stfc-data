@@ -18,7 +18,21 @@ namespace ConsoleTools
         {
             LoadJsonList();
             
+            using(ApplicationDbContext dbContext = new ApplicationDbContext())
+            {
+                foreach(string c in lookupData.Classes)
+                {
 
+                }
+                foreach(string f in lookupData.Factions)
+                {
+
+                }
+                foreach(string t in lookupData.Tags)
+                {
+
+                }
+            }
 
             Console.Read();
         }
