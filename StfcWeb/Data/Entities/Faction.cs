@@ -12,6 +12,14 @@ namespace StfcWeb.Data.Entities
 {
     public class Faction : BasicTable<Faction>, IEntityTypeConfiguration<Faction>
     {
+        public Faction()
+        {
+
+        }
+        public Faction(string name)
+        {
+            this.Name = name;
+        }
         public override void Configure(EntityTypeBuilder<Faction> builder)
         {
             builder.HasIndex(k => k.Name).IsUnique(true);

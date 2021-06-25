@@ -12,6 +12,14 @@ namespace StfcWeb.Data.Entities
 {
     public class Tag : BasicTable<Tag>, IEntityTypeConfiguration<Tag>
     {
+        public Tag()
+        {
+
+        }
+        public Tag(string name)
+        {
+            this.Name = name;
+        }
         public override void Configure(EntityTypeBuilder<Tag> builder)
         {
             builder.HasIndex(k => k.Name).IsUnique(true);

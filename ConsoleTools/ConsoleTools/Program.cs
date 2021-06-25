@@ -5,6 +5,8 @@ using System.Diagnostics;
 using System.IO;
 using StfcWeb.Data;
 using StfcWeb.Data.Entities;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace ConsoleTools
 {
@@ -14,26 +16,64 @@ namespace ConsoleTools
         public static string stfcDirectory = @"D:\Programming\git\stfc-data\";
         public static string lookupFileName = stfcDirectory + @"lookups.json";
         public static Lookups lookupData = Lookups.GetLookupsFromFile(lookupFileName);
-        static void Main()
+        static async Task Main()
         {
             LoadJsonList();
             
             using(ApplicationDbContext dbContext = new ApplicationDbContext())
             {
-                foreach(string c in lookupData.Classes)
-                {
+                // Core tables that may reference lookups
+                await dbContext.Database.ExecuteSqlRawAsync("DELETE [Officers]");
 
+                // Lookups
+                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Classes]");
+                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Factions]");
+                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [News]");
+                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [OfficerRankResources]");
+                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Rarities]");
+                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Tags]");
+
+                List<Class> classList = new List<Class>();
+                Dictionary<string, int> classDictionary = new Dictionary<string, int>();
+                List<Faction> factionList = new List<Faction>();
+                Dictionary<string, int> factionDictionary = new Dictionary<string, int>();
+                List<Tag> tagList = new List<Tag>();
+                Dictionary<string, int> tagDictionary = new Dictionary<string, int>();
+
+                foreach (string c in lookupData.Classes)
+                {
+                    Console.WriteLine($"Class: {c}");
+                    classList.Add(new Class(c));
                 }
+                dbContext.Classes.AddRange(classList);
+
+
                 foreach(string f in lookupData.Factions)
                 {
-
+                    Console.WriteLine($"Factions {f}");
+                    factionList.Add(new Faction(f));
                 }
+                dbContext.Factions.AddRange(factionList);
+
                 foreach(string t in lookupData.Tags)
                 {
-
+                    Console.WriteLine($"Tags: {t}");
+                    tagList.Add(new Tag(t));
                 }
+                dbContext.Tags.AddRange(tagList);
+
+                dbContext.SaveChanges();
+
+                foreach(OfficerJson oj in jsonList)
+                {
+                    Officer newOfficer = new Officer();
+                    newOfficer.Name = oj.Name;
+                    newOfficer.ClassId = classDictionary[oj.Class];
+                }
+
             }
 
+            Console.WriteLine("Done.");
             Console.Read();
         }
 
