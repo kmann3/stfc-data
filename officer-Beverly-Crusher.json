@@ -1,6 +1,6 @@
 {
   "id": 8,
-  "lastModified": "2021-06-04T10:06:12-05:00",
+  "lastModified": "2021-06-25T19:11:46-05:00",
   "type": "Officer",
   "name": "Beverly Crusher",
   "class": "Science",
@@ -8,7 +8,6 @@
   "group": "TNG Crew",
   "rarity": "Rare",
   "tags": [
-    "TBI",
     "ship",
     "armada",
     "hostile",
@@ -36,7 +35,7 @@
           "count": 1100
         }
       ],
-      "xp": 0
+      "xp": 100000
     },
     "4": {
       "shards-required": 145,
@@ -50,7 +49,7 @@
           "count": 1
         }
       ],
-      "xp": 0
+      "xp": 250000
     },
     "5": {
       "shards-required": 215,
@@ -64,7 +63,7 @@
           "count": 2
         }
       ],
-      "xp": 0
+      "xp": 500000
     }
   },
   "captain-maneuver": {

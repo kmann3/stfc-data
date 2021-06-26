@@ -1,6 +1,6 @@
 {
   "id": 7,
-  "lastModified": "2021-06-04T10:06:12-05:00",
+  "lastModified": "2021-06-25T18:55:10-05:00",
   "type": "Officer",
   "name": "Barot",
   "class": "Science",
@@ -8,7 +8,6 @@
   "group": "Surveyors & Miners",
   "rarity": "Rare",
   "tags": [
-    "TBI",
     "crystal",
     "mining",
     "hull health",
