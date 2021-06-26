@@ -1,6 +1,6 @@
 {
   "id": 108,
-  "lastModified": "2021-06-04T20:58:53-05:00",
+  "lastModified": "2021-06-25T19:38:03-05:00",
   "type": "Officer",
   "name": "Ten of Ten",
   "class": "Engineering",
@@ -28,8 +28,12 @@
       "shards-required": 115,
       "resource-cost": [
         {
+          "type": "Independent Credits",
+          "count": 1300
+        },
+        {
           "type": "Active Nanoprobes",
-          "count": 3000
+          "count": 5000
         }
       ],
       "xp": 0
@@ -39,11 +43,11 @@
       "resource-cost": [
         {
           "type": "Independent Credits",
-          "count": 1300
+          "count": 5200
         },
         {
           "type": "Active Nanoprobes",
-          "count": 5000
+          "count": 110000
         },
         {
           "type": "Engineering Badges",
