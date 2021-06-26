@@ -1,6 +1,6 @@
 {
   "id": 46,
-  "lastModified": "2021-06-25T19:23:04-05:00",
+  "lastModified": "2021-06-25T19:24:25-05:00",
   "type": "Officer",
   "name": "JoaQuin",
   "class": "Command",
@@ -8,8 +8,9 @@
   "group": "Khan's Crew",
   "rarity": "Uncommon",
   "tags": [
-    "data",
-    "protectedCargo"
+    "data-mining",
+    "mining",
+    "protected-cargo"
   ],
   "synergy-command": 15,
   "synergy-engineering": 25,
