@@ -1,6 +1,6 @@
 {
   "id": 1,
-  "lastModified": "2021-08-07T08:08:58-05:00",
+  "lastModified": "2021-08-07T09:04:16-05:00",
   "type": "Officer",
   "name": "0718",
   "class": "Science",
@@ -62,12 +62,12 @@
   },
   "officer-ability": {
     "name": "Computer Precision",
-    "description_text": "",
-    "description_value1": null,
-    "description_value2": null,
-    "description_value3": null,
-    "description_value4": null,
-    "description_value5": null
+    "description_text": "+[%i] to the Defense of all Officers on the ship",
+    "description_value1": 5,
+    "description_value2": 7,
+    "description_value3": 9,
+    "description_value4": 12,
+    "description_value5": 15
   },
   "stats": {
     "1": {
