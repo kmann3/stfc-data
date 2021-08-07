@@ -1,7 +1,52 @@
-﻿<h3>CrewBuild</h3>
+﻿@page "/CrewBuild"
+<h3>CrewBuild</h3>
 
-(parse captain and two officers)
+30k limit in text. Anything more will not work. Need option to upload data.
+
+<input @bind="data" />
+
+(parse captain, two officers, suggested context, suggested ship, notes)<br />
+<hr />
+
+Captain: Kick<br />
+<br />
+Officer 1: Spock<br />
+<br />
+Officer 2: Gaila<br />
+<br />
+Ships: Stella<br />
+<br />
+Usage Applications:["Eclipse Armadas", "Armadas", "Eclipse Transports"],<br />
+<br />
+Notes: Can swap Gaila for Chen if you need more defense against energy weapons. When you max out Azetbur then swap with Spock. This is purely an example. This is NOT A REAL BUILD.<br />
+<br />
+<hr />
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">Name</th>
+      <th scope="col">Ability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Captain</th>
+      <td><img src="images/officers/TLaan.png" width="100px" height="100px" />TLaan</td>
+      <td>Cap: +15% more Ship XP from battles<br /> Off:-%[5,7,10,15,20] to Kinetic Damage dealt by enemy Hostiles</td>
+    </tr>
+    <tr>
+      <th scope="row">Officer 1</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+    </tr>
+    <tr>
+      <th scope="row">3Officer 2</th>
+      <td>Larry the Bird</td>
+    </tr>
+  </tbody>
+</table>
 
 @code {
-
+    private string data;
 }

@@ -10,8 +10,8 @@ using StfcWeb.Data;
 namespace StfcWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210622124211_000-init")]
-    partial class _000init
+    [Migration("20210630181034_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -50,8 +50,8 @@ namespace StfcWeb.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "24c19afc-2e30-43c1-991c-d0321a97cd76",
-                            ConcurrencyStamp = "959e445b-3782-4de3-bc01-f59ce879ac6d",
+                            Id = "45266099-c755-4b4d-a0ca-78854da29859",
+                            ConcurrencyStamp = "316fe3cc-d995-49cd-87a8-599c843bfefd",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -378,31 +378,31 @@ namespace StfcWeb.Migrations
                     b.Property<string>("OfficerAbilityName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Rank1ResourceId")
+                    b.Property<int?>("Rank1ResourceId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Rank2ResourceId")
+                    b.Property<int?>("Rank2ResourceId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Rank3ResourceId")
+                    b.Property<int?>("Rank3ResourceId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Rank4ResourceId")
+                    b.Property<int?>("Rank4ResourceId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Rank5ResourceId")
+                    b.Property<int?>("Rank5ResourceId")
                         .HasColumnType("int");
 
                     b.Property<int?>("RarityId")
                         .HasColumnType("int");
 
-                    b.Property<int>("SynergyCommand")
+                    b.Property<int?>("SynergyCommand")
                         .HasColumnType("int");
 
-                    b.Property<int>("SynergyEngineering")
+                    b.Property<int?>("SynergyEngineering")
                         .HasColumnType("int");
 
-                    b.Property<int>("SynergyScience")
+                    b.Property<int?>("SynergyScience")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -463,11 +463,6 @@ namespace StfcWeb.Migrations
                     b.Property<DateTime>("LastModified")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
                     b.Property<int>("RogueCredits")
                         .HasColumnType("int");
 
@@ -484,9 +479,6 @@ namespace StfcWeb.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("Name")
-                        .IsUnique();
 
                     b.ToTable("OfficerRankResources");
                 });
@@ -624,32 +616,27 @@ namespace StfcWeb.Migrations
                     b.HasOne("StfcWeb.Data.Entities.OfficerRankResources", "Rank1Resource")
                         .WithMany()
                         .HasForeignKey("Rank1ResourceId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("StfcWeb.Data.Entities.OfficerRankResources", "Rank2Resource")
                         .WithMany()
                         .HasForeignKey("Rank2ResourceId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("StfcWeb.Data.Entities.OfficerRankResources", "Rank3Resource")
                         .WithMany()
                         .HasForeignKey("Rank3ResourceId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("StfcWeb.Data.Entities.OfficerRankResources", "Rank4Resource")
                         .WithMany()
                         .HasForeignKey("Rank4ResourceId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("StfcWeb.Data.Entities.OfficerRankResources", "Rank5Resource")
                         .WithMany()
                         .HasForeignKey("Rank5ResourceId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("StfcWeb.Data.Entities.Rarity", "Rarity")
                         .WithMany()

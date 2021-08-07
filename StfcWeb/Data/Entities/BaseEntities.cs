@@ -24,7 +24,7 @@ namespace StfcWeb.Data.Entities
             get
             {
                 TimeZoneInfo cstZone = TimeZoneInfo.FindSystemTimeZoneById("Central Standard Time");
-                return TimeZoneInfo.ConvertTimeFromUtc(CreatedOn, cstZone); ;
+                return TimeZoneInfo.ConvertTimeFromUtc(CreatedOn, cstZone);
             }
         }
         [Required, Display(Name = "Last Modified")]

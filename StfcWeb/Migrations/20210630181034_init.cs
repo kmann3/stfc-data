@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace StfcWeb.Migrations
 {
-    public partial class _000init : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -86,6 +86,8 @@ namespace StfcWeb.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LastModified = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ActiveNanoprobes = table.Column<int>(type: "int", nullable: false),
                     AugmentCredits = table.Column<int>(type: "int", nullable: false),
                     CommandBadges = table.Column<int>(type: "int", nullable: false),
@@ -97,10 +99,7 @@ namespace StfcWeb.Migrations
                     RomulanCredits = table.Column<int>(type: "int", nullable: false),
                     ScienceBadges = table.Column<int>(type: "int", nullable: false),
                     Shards = table.Column<int>(type: "int", nullable: false),
-                    Xp = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    LastModified = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    Xp = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -261,14 +260,14 @@ namespace StfcWeb.Migrations
                     ClassId = table.Column<int>(type: "int", nullable: true),
                     FactionId = table.Column<int>(type: "int", nullable: true),
                     RarityId = table.Column<int>(type: "int", nullable: true),
-                    SynergyCommand = table.Column<int>(type: "int", nullable: false),
-                    SynergyEngineering = table.Column<int>(type: "int", nullable: false),
-                    SynergyScience = table.Column<int>(type: "int", nullable: false),
-                    Rank1ResourceId = table.Column<int>(type: "int", nullable: false),
-                    Rank2ResourceId = table.Column<int>(type: "int", nullable: false),
-                    Rank3ResourceId = table.Column<int>(type: "int", nullable: false),
-                    Rank4ResourceId = table.Column<int>(type: "int", nullable: false),
-                    Rank5ResourceId = table.Column<int>(type: "int", nullable: false),
+                    SynergyCommand = table.Column<int>(type: "int", nullable: true),
+                    SynergyEngineering = table.Column<int>(type: "int", nullable: true),
+                    SynergyScience = table.Column<int>(type: "int", nullable: true),
+                    Rank1ResourceId = table.Column<int>(type: "int", nullable: true),
+                    Rank2ResourceId = table.Column<int>(type: "int", nullable: true),
+                    Rank3ResourceId = table.Column<int>(type: "int", nullable: true),
+                    Rank4ResourceId = table.Column<int>(type: "int", nullable: true),
+                    Rank5ResourceId = table.Column<int>(type: "int", nullable: true),
                     CaptainManeuverName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CaptainManeuverDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     OfficerAbilityName = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -360,7 +359,7 @@ namespace StfcWeb.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "24c19afc-2e30-43c1-991c-d0321a97cd76", "959e445b-3782-4de3-bc01-f59ce879ac6d", "Admin", "ADMIN" });
+                values: new object[] { "45266099-c755-4b4d-a0ca-78854da29859", "316fe3cc-d995-49cd-87a8-599c843bfefd", "Admin", "ADMIN" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -417,12 +416,6 @@ namespace StfcWeb.Migrations
                 name: "IX_News_CreatedById",
                 table: "News",
                 column: "CreatedById");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_OfficerRankResources_Name",
-                table: "OfficerRankResources",
-                column: "Name",
-                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Officers_ClassId",

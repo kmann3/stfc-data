@@ -1,6 +1,6 @@
 {
   "id": 108,
-  "lastModified": "2021-06-25T19:38:03-05:00",
+  "lastModified": "2021-08-07T08:08:58-05:00",
   "type": "Officer",
   "name": "Ten of Ten",
   "class": "Engineering",
@@ -99,11 +99,89 @@
   },
   "officer-ability": {
     "name": "Tribble Mining Collective",
-    "description_rank1": "+80% to Mining Speed",
-    "description_rank2": "+100% to Mining Speed",
-    "description_rank3": "+120% to Mining Speed",
-    "description_rank4": "+140% to Mining Speed",
-    "description_rank5": "+160% to Mining Speed"
+    "description_text": "",
+    "description_value1": null,
+    "description_value2": null,
+    "description_value3": null,
+    "description_value4": null,
+    "description_value5": null
+  },
+  "stats": {
+    "1": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "2": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "3": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "4": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "5": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "6": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "7": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "8": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "9": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "10": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "11": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "12": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "13": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "14": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "15": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    }
   },
   "image-url": "images/officers/TenOfTen.png"
 }

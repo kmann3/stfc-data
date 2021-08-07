@@ -53,13 +53,10 @@
         [JsonProperty("officer-ability")]
         public OfficerAbility OfficerAbility { get; set; }
 
+        [JsonProperty("stats")]
+        public Dictionary<string, Stat> Stats { get; set; }
         [JsonProperty("image-url")]
         public string ImageUrl { get; set; }
-
-        public override string ToString()
-        {
-            return $"{this.Id} | {this.Name}";
-        }
     }
 
     public partial class CaptainManeuver
@@ -76,32 +73,35 @@
         [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("description_rank1")]
-        public string DescriptionRank1 { get; set; }
+        [JsonProperty("description_text")]
+        public string DescriptionText { get; set; }
 
-        [JsonProperty("description_rank2")]
-        public string DescriptionRank2 { get; set; }
+        [JsonProperty("description_value1")]
+        public int? DescriptionValue1 { get; set; }
 
-        [JsonProperty("description_rank3")]
-        public string DescriptionRank3 { get; set; }
+        [JsonProperty("description_value2")]
+        public int? DescriptionValue2 { get; set; }
 
-        [JsonProperty("description_rank4")]
-        public string DescriptionRank4 { get; set; }
+        [JsonProperty("description_value3")]
+        public int? DescriptionValue3 { get; set; }
 
-        [JsonProperty("description_rank5")]
-        public string DescriptionRank5 { get; set; }
+        [JsonProperty("description_value4")]
+        public int? DescriptionValue4 { get; set; }
+
+        [JsonProperty("description_value5")]
+        public int? DescriptionValue5 { get; set; }
     }
 
     public partial class Rank
     {
         [JsonProperty("shards-required")]
-        public int ShardsRequired { get; set; }
+        public long ShardsRequired { get; set; }
 
         [JsonProperty("resource-cost")]
         public List<ResourceCost> ResourceCost { get; set; }
 
         [JsonProperty("xp")]
-        public int Xp { get; set; }
+        public long Xp { get; set; }
     }
 
     public partial class ResourceCost
@@ -110,6 +110,18 @@
         public string Type { get; set; }
 
         [JsonProperty("count")]
-        public int Count { get; set; }
+        public long Count { get; set; }
+    }
+
+    public partial class Stat
+    {
+        [JsonProperty("Attack")]
+        public int? Attack { get; set; }
+
+        [JsonProperty("Defense")]
+        public int? Defense { get; set; }
+
+        [JsonProperty("Health")]
+        public int? Health { get; set; }
     }
 }

@@ -3,33 +3,34 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StfcWeb.Data.Entities
 {
     public class Officer : BasicTable<Officer>, IEntityTypeConfiguration<Officer>
     {
-        public int ClassId { get; set; }
+        public int? ClassId { get; set; }
         public Class Class { get; set; }
-        public int FactionId { get; set; }
+        public int? FactionId { get; set; }
         public Faction Faction {get;set;}
-        public int RarityId { get; set; }
+        public int? RarityId { get; set; }
         public Rarity Rarity { get; set; }
         
         public ICollection<Tag> Tags { get; set; }
 
-        public int SynergyCommand { get; set; }
-        public int SynergyEngineering { get; set; }
-        public int SynergyScience { get; set; }
+        public int? SynergyCommand { get; set; }
+        public int? SynergyEngineering { get; set; }
+        public int? SynergyScience { get; set; }
 
-        public int Rank1ResourceId { get; set; }
+        public int? Rank1ResourceId { get; set; }
         public OfficerRankResources Rank1Resource { get; set; }
-        public int Rank2ResourceId { get; set; }
+        public int? Rank2ResourceId { get; set; }
         public OfficerRankResources Rank2Resource { get; set; }
-        public int Rank3ResourceId { get; set; }
+        public int? Rank3ResourceId { get; set; }
         public OfficerRankResources Rank3Resource { get; set; }
-        public int Rank4ResourceId { get; set; }
+        public int? Rank4ResourceId { get; set; }
         public OfficerRankResources Rank4Resource { get; set; }
-        public int Rank5ResourceId { get; set; }
+        public int? Rank5ResourceId { get; set; }
         public OfficerRankResources Rank5Resource { get; set; }
 
         public string CaptainManeuverName { get; set; }

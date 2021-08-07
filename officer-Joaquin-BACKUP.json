@@ -1,0 +1,76 @@
+{
+  "id": 46,
+  "lastModified": "2021-06-25T19:24:25-05:00",
+  "type": "Officer",
+  "name": "JoaQuin",
+  "class": "Command",
+  "faction": "Augment",
+  "group": "Khan's Crew",
+  "rarity": "Uncommon",
+  "tags": [
+    "data-mining",
+    "mining",
+    "protected-cargo"
+  ],
+  "synergy-command": 15,
+  "synergy-engineering": 25,
+  "synergy-science": 25,
+  "ranks": {
+    "1": {
+      "shards-required": 14,
+      "resource-cost": null,
+      "xp": 0
+    },
+    "2": {
+      "shards-required": 28,
+      "resource-cost": null,
+      "xp": 10000
+    },
+    "3": {
+      "shards-required": 56,
+      "resource-cost": null,
+      "xp": 100000
+    },
+    "4": {
+      "shards-required": 98,
+      "resource-cost": [
+        {
+          "type": "Independant Credits",
+          "count": 1050
+        },
+        {
+          "type": "Command Badges",
+          "count": 1
+        }
+      ],
+      "xp": 250000
+    },
+    "5": {
+      "shards-required": 182,
+      "resource-cost": [
+        {
+          "type": "Independant Credits",
+          "count": 4200
+        },
+        {
+          "type": "Command Badges",
+          "count": 2
+        }
+      ],
+      "xp": 500000
+    }
+  },
+  "captain-maneuver": {
+    "name": "Firewall Protection",
+    "description:": "+50% to the ship's Protected Cargo"
+  },
+  "officer-ability": {
+    "name": "Data Miner",
+    "description_rank1": "+40% to Corrupted and Decoded Data Mining Speed",
+    "description_rank2": "+60% to Corrupted and Decoded Data Mining Speed",
+    "description_rank3": "+80% to Corrupted and Decoded Data Mining Speed",
+    "description_rank4": "+100% to Corrupted and Decoded Data Mining Speed",
+    "description_rank5": "+125% to Corrupted and Decoded Data Mining Speed"
+  },
+  "image-url": "images/officers/JoaQuin.png"
+}

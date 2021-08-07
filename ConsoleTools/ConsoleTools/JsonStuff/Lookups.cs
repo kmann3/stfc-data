@@ -10,7 +10,7 @@
     public partial class Lookups
     {
         [JsonProperty("lastModified")]
-        public DateTimeOffset LastModified { get; set; }
+        public string LastModified { get; set; }
 
         [JsonProperty("tags")]
         public List<string> Tags { get; set; }

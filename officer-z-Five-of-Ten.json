@@ -1,6 +1,6 @@
 {
   "id": 30,
-  "lastModified": "2021-06-04T20:55:30-05:00",
+  "lastModified": "2021-08-07T08:08:58-05:00",
   "type": "Officer",
   "name": "Five of Ten",
   "class": "Engineering",
@@ -95,11 +95,89 @@
   },
   "officer-ability": {
     "name": "You will be assimilated",
-    "description_rank1": "+20% to resources dropped by hostiles.",
-    "description_rank2": "+40% to resources dropped by hostiles.",
-    "description_rank3": "+60% to resources dropped by hostiles.",
-    "description_rank4": "+80% to resources dropped by hostiles.",
-    "description_rank5": "+100% to resources dropped by hostiles."
+    "description_text": "",
+    "description_value1": null,
+    "description_value2": null,
+    "description_value3": null,
+    "description_value4": null,
+    "description_value5": null
+  },
+  "stats": {
+    "1": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "2": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "3": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "4": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "5": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "6": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "7": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "8": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "9": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "10": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "11": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "12": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "13": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "14": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "15": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    }
   },
   "image-url": "images/officers/FiveOfTen.png"
 }

@@ -7,6 +7,7 @@ using StfcWeb.Data;
 using StfcWeb.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace ConsoleTools
 {
@@ -19,59 +20,60 @@ namespace ConsoleTools
         static async Task Main()
         {
             LoadJsonList();
+            DoThing();
             
-            using(ApplicationDbContext dbContext = new ApplicationDbContext())
-            {
-                // Core tables that may reference lookups
-                await dbContext.Database.ExecuteSqlRawAsync("DELETE [Officers]");
+            //using(ApplicationDbContext dbContext = new ApplicationDbContext())
+            //{
+            //    // Core tables that may reference lookups
+            //    await dbContext.Database.ExecuteSqlRawAsync("DELETE [Officers]");
 
-                // Lookups
-                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Classes]");
-                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Factions]");
-                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [News]");
-                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [OfficerRankResources]");
-                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Rarities]");
-                await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Tags]");
+            //    // Lookups
+            //    await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Classes]");
+            //    await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Factions]");
+            //    await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [News]");
+            //    await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [OfficerRankResources]");
+            //    await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Rarities]");
+            //    await dbContext.Database.ExecuteSqlRawAsync("DELETE FROM [Tags]");
 
-                List<Class> classList = new List<Class>();
-                Dictionary<string, int> classDictionary = new Dictionary<string, int>();
-                List<Faction> factionList = new List<Faction>();
-                Dictionary<string, int> factionDictionary = new Dictionary<string, int>();
-                List<Tag> tagList = new List<Tag>();
-                Dictionary<string, int> tagDictionary = new Dictionary<string, int>();
+            //    List<Class> classList = new List<Class>();
+            //    Dictionary<string, int> classDictionary = new Dictionary<string, int>();
+            //    List<Faction> factionList = new List<Faction>();
+            //    Dictionary<string, int> factionDictionary = new Dictionary<string, int>();
+            //    List<Tag> tagList = new List<Tag>();
+            //    Dictionary<string, int> tagDictionary = new Dictionary<string, int>();
 
-                foreach (string c in lookupData.Classes)
-                {
-                    Console.WriteLine($"Class: {c}");
-                    classList.Add(new Class(c));
-                }
-                dbContext.Classes.AddRange(classList);
+            //    foreach (string c in lookupData.Classes)
+            //    {
+            //        Console.WriteLine($"Class: {c}");
+            //        classList.Add(new Class(c));
+            //    }
+            //    dbContext.Classes.AddRange(classList);
 
 
-                foreach(string f in lookupData.Factions)
-                {
-                    Console.WriteLine($"Factions {f}");
-                    factionList.Add(new Faction(f));
-                }
-                dbContext.Factions.AddRange(factionList);
+            //    foreach(string f in lookupData.Factions)
+            //    {
+            //        Console.WriteLine($"Factions {f}");
+            //        factionList.Add(new Faction(f));
+            //    }
+            //    dbContext.Factions.AddRange(factionList);
 
-                foreach(string t in lookupData.Tags)
-                {
-                    Console.WriteLine($"Tags: {t}");
-                    tagList.Add(new Tag(t));
-                }
-                dbContext.Tags.AddRange(tagList);
+            //    foreach(string t in lookupData.Tags)
+            //    {
+            //        Console.WriteLine($"Tags: {t}");
+            //        tagList.Add(new Tag(t));
+            //    }
+            //    dbContext.Tags.AddRange(tagList);
 
-                dbContext.SaveChanges();
+            //    dbContext.SaveChanges();
 
-                foreach(OfficerJson oj in jsonList)
-                {
-                    Officer newOfficer = new Officer();
-                    newOfficer.Name = oj.Name;
-                    newOfficer.ClassId = classDictionary[oj.Class];
-                }
+            //    foreach(OfficerJson oj in jsonList)
+            //    {
+            //        Officer newOfficer = new Officer();
+            //        newOfficer.Name = oj.Name;
+            //        newOfficer.ClassId = classDictionary[oj.Class];
+            //    }
 
-            }
+            //}
 
             Console.WriteLine("Done.");
             Console.Read();
@@ -97,24 +99,32 @@ namespace ConsoleTools
 
         public static void DoThing()
         {
-            string fileName = @"D:\Programming\git\stfc-data.git\lookups.json";
+            if(!File.Exists(lookupFileName))
+            {
+                Console.WriteLine("Lookups not found?");
+                throw new FileNotFoundException();
+            }
 
-            var foo = Lookups.GetLookupsFromFile(fileName);
+            Lookups foo = Lookups.GetLookupsFromFile(lookupFileName);
 
             Console.WriteLine(foo.LastModified);
             int count = 0;
-            foreach (string x in foo.Officers)
+            foreach (string x in foo.Officers.OrderBy(q => q)) // The orderby should just do a simple sort, and because we use the z to sort in Explorer, this should also work here
             {
                 count++;
                 string name = x.Replace(" ", "-").Replace("'", "");
-                string officerFileName = @"D:\Programming\git\stfc-data.git\officer-z-" + name + ".json";
-                string officerFileNameNoZ = @"D:\Programming\git\stfc-data.git\officer-" + name + ".json";
-                bool exists = System.IO.File.Exists(officerFileName);
+                string officerFileName = $"{stfcDirectory}officer-" + name + ".json";
+                bool exists = File.Exists(officerFileName);
                 Console.WriteLine($"{x} : {exists} : {officerFileName}");
                 if (!exists)
                 {
-                    Debug.Assert(File.Exists(officerFileName) || File.Exists(officerFileNameNoZ));
-                    officerFileName = officerFileName.Replace("-z-", "-");
+                    Debug.Assert(File.Exists(officerFileName) || File.Exists(officerFileName.Replace("officer-", "officer-z-")));
+                    officerFileName = officerFileName.Replace("officer-", "officer-z-");
+                } else
+                {
+                    // For the sake of sanity, let's make a backup.
+                    // We only care about work done, everything else can be scripted to be fixed somehow or another
+                    File.Copy(officerFileName, officerFileName.Replace(".json", "") + "-BACKUP.json", true);
                 }
 
                 //Lookups returnValue = JsonConvert.DeserializeObject<Lookups>(File.ReadAllText(fileName));
@@ -122,85 +132,29 @@ namespace ConsoleTools
 
 
                 Console.WriteLine(o.Name);
-                o.Id = count;
-                o.SynergyCommand = 55;
                 o.LastModified = DateTime.Now.ToString("yyyy-MM-ddTHH:MM:ss-05:00");
-                int i = o.Ranks["1"].Xp;
-                int a = o.Ranks["2"].Xp;
-                int b = o.Ranks["3"].Xp;
-                int c = o.Ranks["4"].Xp;
-                int d = o.Ranks["5"].Xp;
 
-                Console.WriteLine(i + a + b + c + d);
-                //File.WriteAllText(officerFileName + ".tmp.json", JsonConvert.SerializeObject(o, Formatting.Indented));
-                //if (count > 2) break;
+                // Things to do:
+                // 1 Update Officer ability
+                // 2 Add stats, for the moment, we will amke them all null
 
-                //officerFileName = "officer-" + name + ".z.json";
-                //Officer o = new Officer();
-                //o.Guid = Guid.NewGuid().ToString().ToUpper();
-                //o.LastModified = DateTime.Now;
-                //o.Name = x;
-                //o.Type = "Officer";
-                //o.Tags = new List<string>();
-                //o.Tags.Add("TBI");
-                //o.Class = "";
-                //o.Description = "";
-                //o.Group = "";
-                //o.Rarity = "";
-                //o.SynergyCommand = 0;
-                //o.SynergyEngineering = 0;
-                //o.SynergyScience = 0;
-                //o.Ranks = new Dictionary<string, Rank>();
-                //o.Ranks.Add("1", new Rank()
-                //{
-                //    ResourceCost = new System.Collections.Generic.List<ResourceCost>() { 
-                //        new ResourceCost() {
-                //    Type = "Independent Credits",
-                //            Count = 0 } },
-                //    ShardsRequired = 0
-                //});
-                //o.Ranks.Add("2", new Rank()
-                //{
-                //    ResourceCost = new System.Collections.Generic.List<ResourceCost>() { new ResourceCost() {
-                //    Type = "Independent Credits", Count = 0 } },
-                //    ShardsRequired = 0
-                //});
-                //o.Ranks.Add("3", new Rank()
-                //{
-                //    ResourceCost = new System.Collections.Generic.List<ResourceCost>() { new ResourceCost() {
-                //    Type = "Independent Credits", Count = 0 } },
-                //    ShardsRequired = 0
-                //});
-                //o.Ranks.Add("4", new Rank()
-                //{
-                //    ResourceCost = new System.Collections.Generic.List<ResourceCost>() { new ResourceCost() {
-                //    Type = "Independent Credits", Count = 0 } },
-                //    ShardsRequired = 0
-                //});
-                //o.Ranks.Add("5", new Rank()
-                //{
-                //    ResourceCost = new System.Collections.Generic.List<ResourceCost>() { new ResourceCost() {
-                //    Type = "Independent Credits", Count = 0 } },
-                //    ShardsRequired = 0
-                //});
+                // Let's work on Office Ability first
+                o.OfficerAbility.DescriptionText = "";
+                o.OfficerAbility.DescriptionValue1 = null;
+                o.OfficerAbility.DescriptionValue2 = null;
+                o.OfficerAbility.DescriptionValue3 = null;
+                o.OfficerAbility.DescriptionValue4 = null;
+                o.OfficerAbility.DescriptionValue5 = null;
 
-                //o.CaptainManeuver = new CaptainManeuver();
-                //o.CaptainManeuver.Name = "";
-                //o.CaptainManeuver.Description = "";
+                o.Stats = new Dictionary<string, Stat>();
 
-                //o.OfficerAbility = new OfficerAbility();
-                //o.OfficerAbility.Name = "";
-                //o.OfficerAbility.DescriptionRank1 = "";
-                //o.OfficerAbility.DescriptionRank2 = "";
-                //o.OfficerAbility.DescriptionRank3 = "";
-                //o.OfficerAbility.DescriptionRank4 = "";
-                //o.OfficerAbility.DescriptionRank5 = "";
-
-                //o.ImageUrl = "images/officers/" + x.Replace(" ", "").Replace("'", "") + ".png";
+                for(int i=1;i<=15;i++)
+                {
+                    o.Stats.Add(i.ToString(), new Stat() { Attack = null, Defense = null, Health = null });
+                }
 
 
-
-                //File.WriteAllText(officerFileName, JsonConvert.SerializeObject(o, Formatting.Indented));
+                File.WriteAllText(officerFileName, JsonConvert.SerializeObject(o, Formatting.Indented));
             }
             Console.WriteLine("End " + count);
         }

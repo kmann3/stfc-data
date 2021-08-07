@@ -83,6 +83,23 @@ namespace StfcWeb.Data
                 relationship.DeleteBehavior = DeleteBehavior.Restrict;
             }
 
+            //builder.Entity<Officer>()
+            //    .HasOne(o => o.Rank1Resource)
+            //    .WithMany(or => or.Officers);
+            //    //.HasForeignKey<Officer>(x => x.Rank1ResourceId)
+            //    //.HasPrincipalKey(x => x.Rank1ResourceId);
+
+            //builder.Entity<Officer>()
+            //    .HasOne(o => o.Rank2Resource)
+            //    .WithMany(or => or.Officers);
+            //    //.HasForeignKey<Officer>(x => x.Rank2ResourceId)
+            //    //.HasPrincipalKey<OfficerRankResources>(x => x.OfficerId);
+            //    //.HasPrincipalKey(x => x.Rank2ResourceId);
+
+            //builder.Entity<Officer>().HasOne(o => o.Rank3Resource).WithOne(or => or.Officer).HasForeignKey<Officer>(x => x.Rank3ResourceId);
+            //builder.Entity<Officer>().HasOne(o => o.Rank4Resource).WithOne(or => or.Officer).HasForeignKey<Officer>(x => x.Rank4ResourceId);
+            //builder.Entity<Officer>().HasOne(o => o.Rank5Resource).WithOne(or => or.Officer).HasForeignKey<Officer>(x => x.Rank5ResourceId);
+
             base.OnModelCreating(builder);
         }
 

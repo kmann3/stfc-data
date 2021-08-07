@@ -1,6 +1,6 @@
 {
   "id": 109,
-  "lastModified": "2021-06-04T10:06:18-05:00",
+  "lastModified": "2021-08-07T08:08:58-05:00",
   "type": "Officer",
   "name": "Tilly",
   "class": "",
@@ -74,11 +74,89 @@
   },
   "officer-ability": {
     "name": "",
-    "description_rank1": "",
-    "description_rank2": "",
-    "description_rank3": "",
-    "description_rank4": "",
-    "description_rank5": ""
+    "description_text": "",
+    "description_value1": null,
+    "description_value2": null,
+    "description_value3": null,
+    "description_value4": null,
+    "description_value5": null
+  },
+  "stats": {
+    "1": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "2": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "3": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "4": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "5": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "6": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "7": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "8": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "9": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "10": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "11": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "12": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "13": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "14": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    },
+    "15": {
+      "Attack": null,
+      "Defense": null,
+      "Health": null
+    }
   },
   "image-url": "images/officers/Tilly.png"
 }

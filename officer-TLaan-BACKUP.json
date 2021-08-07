@@ -1,0 +1,66 @@
+{
+  "id": 111,
+  "lastModified": "2021-06-04T10:06:12-05:00",
+  "type": "Officer",
+  "name": "T'Laan",
+  "class": "Science",
+  "faction": "Federation",
+  "group": "Starfleet Academy",
+  "rarity": "Common",
+  "tags": [
+    "federation",
+    "kinetic-reduction",
+    "kinetic",
+    "pve",
+    "ship-xp",
+    "xp"
+  ],
+  "synergy-command": 5,
+  "synergy-engineering": 5,
+  "synergy-science": 3,
+  "ranks": {
+    "1": {
+      "shards-required": 4,
+      "resource-cost": null,
+      "xp": 0
+    },
+    "2": {
+      "shards-required": 8,
+      "resource-cost": null,
+      "xp": 500
+    },
+    "3": {
+      "shards-required": 20,
+      "resource-cost": null,
+      "xp": 5000
+    },
+    "4": {
+      "shards-required": 48,
+      "resource-cost": null,
+      "xp": 50000
+    },
+    "5": {
+      "shards-required": 88,
+      "resource-cost": [
+        {
+          "type": "Federation Credits",
+          "count": 1050
+        }
+      ],
+      "xp": 100000
+    }
+  },
+  "captain-maneuver": {
+    "name": "Thorough Scans",
+    "description:": "+15% more Ship XP from battles."
+  },
+  "officer-ability": {
+    "name": "Objective Defense",
+    "description_rank1": "-%5 to Kinetic Damage dealt by enemy Hostiles",
+    "description_rank2": "-%7 to Kinetic Damage dealt by enemy Hostiles",
+    "description_rank3": "-%10 to Kinetic Damage dealt by enemy Hostiles",
+    "description_rank4": "-%15 to Kinetic Damage dealt by enemy Hostiles",
+    "description_rank5": "-%20 to Kinetic Damage dealt by enemy Hostiles"
+  },
+  "image-url": "images/officers/TLaan.png"
+}

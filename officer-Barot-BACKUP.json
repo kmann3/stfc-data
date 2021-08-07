@@ -1,0 +1,77 @@
+{
+  "id": 7,
+  "lastModified": "2021-06-25T18:55:10-05:00",
+  "type": "Officer",
+  "name": "Barot",
+  "class": "Science",
+  "faction": "Neutral",
+  "group": "Surveyors & Miners",
+  "rarity": "Rare",
+  "tags": [
+    "crystal",
+    "mining",
+    "hull health",
+    "defense"
+  ],
+  "synergy-command": 30,
+  "synergy-engineering": 30,
+  "synergy-science": 20,
+  "ranks": {
+    "1": {
+      "shards-required": 16,
+      "resource-cost": null,
+      "xp": 0
+    },
+    "2": {
+      "shards-required": 36,
+      "resource-cost": null,
+      "xp": 10000
+    },
+    "3": {
+      "shards-required": 72,
+      "resource-cost": null,
+      "xp": 100000
+    },
+    "4": {
+      "shards-required": 108,
+      "resource-cost": [
+        {
+          "type": "Klingon Credits",
+          "count": 1200
+        },
+        {
+          "type": "Science Badges",
+          "count": 1
+        }
+      ],
+      "xp": 250000
+    },
+    "5": {
+      "shards-required": 198,
+      "resource-cost": [
+        {
+          "type": "Klingon Credits",
+          "count": 4800
+        },
+        {
+          "type": "Science Badges",
+          "count": 2
+        }
+      ],
+      "xp": 500000
+    }
+  },
+  "captain-maneuver": {
+    "name": "Crystal Mining",
+    "description:": "+40% to Crystal Mining rate"
+  },
+  "officer-ability": {
+    "name": "Deceptive Weakness",
+    "description_rank1": "-10% to the opponents Hull Health at the start of combat if attacked while mining",
+    "description_rank2": "-15% to the opponents Hull Health at the start of combat if attacked while mining",
+    "description_rank3": "-20% to the opponents Hull Health at the start of combat if attacked while mining",
+    "description_rank4": "-25% to the opponents Hull Health at the start of combat if attacked while mining",
+    "description_rank5": "-30% to the opponents Hull Health at the start of combat if attacked while mining"
+  },
+  "image-url": "images/officers/Barot.png"
+}
