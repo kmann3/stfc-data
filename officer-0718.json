@@ -1,6 +1,6 @@
 {
   "id": 1,
-  "lastModified": "2021-06-04T10:06:12-05:00",
+  "lastModified": "2021-08-07T08:16:31-05:00",
   "type": "Officer",
   "name": "0718",
   "class": "Science",
@@ -68,5 +68,12 @@
     "description_rank4": "+12 to the Defense of all Officers on the ship",
     "description_rank5": "+15 to the Defense of all Officers on the ship"
   },
-  "image-url": "images/officers/empty.png"
+  "image-url": "images/officers/empty.png",
+  "stats": {
+    "15": {
+      "Attack" : 73,
+      "Defense": 98,
+      "Health": 122
+    }
+  }
 }
