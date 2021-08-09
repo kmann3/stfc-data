@@ -1,6 +1,6 @@
 {
   "id": 2,
-  "lastModified": "2021-08-07T08:08:58-05:00",
+  "lastModified": "2021-08-09T18:47:44-05:00",
   "type": "Officer",
   "name": "Ahvix",
   "class": "Engineering",
@@ -70,12 +70,12 @@
   },
   "officer-ability": {
     "name": "Shield Remodulation",
-    "description_text": "",
-    "description_value1": null,
-    "description_value2": null,
-    "description_value3": null,
-    "description_value4": null,
-    "description_value5": null
+    "description_text": "%[%i] chance to reduce Eclipse hostiles's mitigation by 40%",
+    "description_value1": 60,
+    "description_value2": 70,
+    "description_value3": 80,
+    "description_value4": 90,
+    "description_value5": 95
   },
   "stats": {
     "1": {
