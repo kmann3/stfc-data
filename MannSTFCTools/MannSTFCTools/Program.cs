@@ -1,5 +1,9 @@
 ﻿using MannSTFCTools.JsonClasses;
 using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 Dictionary<string, string> offClassDictionary = new Dictionary<string, string>();
 Dictionary<string, string> offFactionDictionary = new Dictionary<string, string>();
@@ -40,8 +44,6 @@ foreach (JsonOfficer officer in officerList)
 }
 
 Console.WriteLine("Fully loaded");
-
-
 
 
 

@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-
+using System.Collections.Generic;
 
 namespace MannSTFCTools.JsonClasses
 {
@@ -53,6 +53,15 @@ namespace MannSTFCTools.JsonClasses
         public OfficerAbility OfficerAbility { get; set; }
     }
 
+    public class Others
+    {
+        [JsonProperty("name")]
+        public string Name { get; set; }
+        
+        [JsonProperty("value")]
+        public long Value { get; set; }
+    }
+
     public class Requirements
     {
         [JsonProperty("badges")]
@@ -62,7 +71,7 @@ namespace MannSTFCTools.JsonClasses
         public int Credits { get; set; }
 
         [JsonProperty("others")]
-        public List<object> Others { get; set; }
+        public List<Others> Others { get; set; }
 
         [JsonProperty("shards")]
         public int Shards { get; set; }
@@ -129,6 +138,11 @@ namespace MannSTFCTools.JsonClasses
 
         [JsonProperty("synergy")]
         public Synergy Synergy { get; set; }
+
+        public override string ToString()
+        {
+            return OfficerName;
+        }
     }
 
 
