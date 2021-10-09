@@ -61,6 +61,7 @@ static List<JsonOfficer> GetOfficerList()
         // sanity check
         string offName = officer.OfficerName ?? throw new Exception($"Trouble with file, no data? Filename: {jsonData}");
 
+
         officerList.Add(officer);
     }
 

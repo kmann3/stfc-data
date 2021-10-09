@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Reflection.Emit;
 
 namespace MannSTFCTools.JsonClasses
 {
@@ -19,6 +21,11 @@ namespace MannSTFCTools.JsonClasses
 
         [JsonProperty("value")]
         public double Value { get; set; }
+
+        public override string ToString()
+        {
+            return $"[Cap Man] Name: {Name} | Buff: {Buff}";
+        }
     }
 
     public class OfficerAbility
@@ -33,6 +40,11 @@ namespace MannSTFCTools.JsonClasses
 
         [JsonProperty("percentage")]
         public bool Percentage { get; set; }
+
+        public override string ToString()
+        {
+            return $"[Off Ability] Name: {Name} | Buff: {Buff}";
+        }
     }
 
     public partial class Buff
@@ -42,6 +54,11 @@ namespace MannSTFCTools.JsonClasses
 
         [JsonProperty("type")]
         public string Type { get; set; }
+
+        public override string ToString()
+        {
+            return $"[Buff] Name: {Name} | Type: {Type}";
+        }
     }
 
     public class AbilityInfo
@@ -51,6 +68,11 @@ namespace MannSTFCTools.JsonClasses
 
         [JsonProperty("officer_ability")]
         public OfficerAbility OfficerAbility { get; set; }
+
+        public override string ToString()
+        {
+            return $"[AbilityInfo] Capt: {CaptainManeuver} | Off: {OfficerAbility}";
+        }
     }
 
     public class Others
@@ -93,6 +115,11 @@ namespace MannSTFCTools.JsonClasses
 
         [JsonProperty("requirements")]
         public Requirements Requirements { get; set; }
+
+        public override string ToString()
+        {
+            return $"[Rank] Name: {Name} | Value: {OfficerAbilityValue}";
+        }
     }
 
     public class Synergy
@@ -105,6 +132,40 @@ namespace MannSTFCTools.JsonClasses
 
         [JsonProperty("science")]
         public double Science { get; set; }
+
+        public override string ToString()
+        {
+            return $"[Synergy] C: {Command} E: {Engineering} S: {Science}";
+        }
+    }
+    public partial class Level
+    {
+        [JsonProperty("level")]
+        public long LevelLevel { get; set; }
+
+        [JsonProperty("trait_xp")]
+        public long TraitXp { get; set; }
+
+        public override string ToString()
+        {
+            return $"Level: {LevelLevel} | Trait XP: {TraitXp}";
+        }
+    }
+    public partial class Trait
+    {
+        [JsonProperty("name")]
+        public string Name { get; set; }
+        
+        [JsonProperty("levels")]
+        public List<Level> Levels { get; set; }
+
+        [JsonProperty("tier")]
+        public long Tier { get; set; }
+
+        public override string ToString()
+        {
+            return $"[Trait] Name: {Name} | Levels: {Levels.Count}";
+        }
     }
 
     public class JsonOfficer
@@ -138,6 +199,9 @@ namespace MannSTFCTools.JsonClasses
 
         [JsonProperty("synergy")]
         public Synergy Synergy { get; set; }
+        
+        [JsonProperty("traits")]
+        public List<Trait> Traits { get; set; }
 
         public override string ToString()
         {
