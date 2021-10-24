@@ -170,7 +170,7 @@ namespace MannSTFCTools.JsonClasses
             }
         }
 
-        public class JsonOfficer : Util<JsonOfficer>.JsonBase
+        public class JsonOfficer : JsonHelper<JsonOfficer>.IJsonBase
         {
             [JsonProperty("description")]
             public string Description { get; set; }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MannSTFCTools
 {
-    public class Util<T>
+    public class JsonHelper<T>
     {
         /// <summary>
         /// Given a folder, it will parse the folder for all officers
@@ -42,7 +42,7 @@ namespace MannSTFCTools
             return returnList;
         }
 
-        public interface JsonBase
+        public interface IJsonBase
         {
             public string Name { get; }
         }

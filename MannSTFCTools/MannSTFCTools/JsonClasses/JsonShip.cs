@@ -13,6 +13,11 @@ namespace MannSTFCTools.JsonClasses
 
             [JsonProperty("quantity")]
             public int Quantity { get; set; }
+
+            public override string ToString()
+            {
+                return $"Cost: {Cost} | Quantity: {Quantity}";
+            }
         }
 
         public class Requirement
@@ -22,6 +27,10 @@ namespace MannSTFCTools.JsonClasses
 
             [JsonProperty("level")]
             public int Level { get; set; }
+            public override string ToString()
+            {
+                return $"Name: {Name} | Level: {Level}";
+            }
         }
 
         public class ScrapInfo
@@ -31,6 +40,11 @@ namespace MannSTFCTools.JsonClasses
 
             [JsonProperty("scrappable")]
             public bool Scrappable { get; set; }
+
+            public override string ToString()
+            {
+                return $"Yard Level: {RequiredScrapyardLevel} | Scrappable: {Scrappable}";
+            }
         }
 
         public class ShipAbility
@@ -294,7 +308,7 @@ namespace MannSTFCTools.JsonClasses
             public int zTier { get; set; }
         }
 
-        public class JsonShip : Util<JsonShip>.JsonBase
+        public class JsonShip : JsonHelper<JsonShip>.IJsonBase
         {
             [JsonProperty("description")]
             public string Description { get; set; }
