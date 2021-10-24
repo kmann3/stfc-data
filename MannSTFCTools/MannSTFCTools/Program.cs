@@ -30,6 +30,11 @@ foreach(var o in officerList)
         factionDictionary.Add(o.Faction.ToLower(), o.Faction);
     }
 
+    if (offGroupDictionary.TryGetValue(o.Group.ToLower(), out _) == false)
+    {
+        offGroupDictionary.Add(o.Group.ToLower(), o.Group);
+    }
+
 }
 
 Console.WriteLine();
@@ -46,6 +51,14 @@ Console.WriteLine("-----------");
 foreach (var f in factionDictionary.Values.OrderBy(x => x))
 {
     Console.WriteLine(f);
+}
+
+Console.WriteLine();
+Console.WriteLine("[Groups]");
+Console.WriteLine("-----------");
+foreach (var g in offGroupDictionary.Values.OrderBy(x => x))
+{
+    Console.WriteLine(g);
 }
 
 Console.WriteLine("~~~~~~~~~~~~~~~~");
