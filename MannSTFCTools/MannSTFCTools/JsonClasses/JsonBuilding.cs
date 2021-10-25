@@ -24,6 +24,12 @@ namespace MannSTFCTools.JsonClasses
             public Bonus1 Bonus1 { get; set; }
         }
 
+        public class LevelBonuses
+        {
+            [JsonProperty("bonus1")]
+            public int Bonus1 { get; set; }
+        }
+
         public class Material
         {
             [JsonProperty("type")]
@@ -81,7 +87,7 @@ namespace MannSTFCTools.JsonClasses
         public class Level
         {
             [JsonProperty("bonuses")]
-            public Bonuses Bonuses { get; set; }
+            public LevelBonuses Bonuses { get; set; }
 
             [JsonProperty("build_costs")]
             public BuildCosts BuildCosts { get; set; }
@@ -115,6 +121,13 @@ namespace MannSTFCTools.JsonClasses
 
             [JsonProperty("levels")]
             public List<Level> Levels { get; set; }
+
+            public string Name => this.BuildingName;
+
+            public override string ToString()
+            {
+                return this.Name;
+            }
         }
 
 

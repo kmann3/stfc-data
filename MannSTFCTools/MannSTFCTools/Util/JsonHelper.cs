@@ -25,7 +25,7 @@ namespace MannSTFCTools
 
                 Console.WriteLine($"Loading '{f}");
                 string jsonData = File.ReadAllText(f) ?? throw new Exception($"Trouble with file, no data? Filename: {f}");
-                T item = JsonConvert.DeserializeObject<T>(jsonData) ?? throw new Exception($"ITem is empty. Perhaps this is empty? JSON Data: '{jsonData}'");
+                T item = JsonConvert.DeserializeObject<T>(jsonData) ?? throw new Exception($"Item is empty. Perhaps this is empty? JSON Data: '{jsonData}'");
                 returnList.Add(item);
                 if (item is MannSTFCTools.JsonClasses.Ship.JsonShip)
                 {
