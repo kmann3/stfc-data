@@ -50,8 +50,14 @@ foreach(var ship in shipList)
             {
                 partsDictionary.TryAdd(part.Type, part.Type);
             }
+        }
 
-            
+        foreach(var level in tier.Levels)
+        {
+            foreach (var reward in level.ScrapDetails.Rewards)
+            {
+
+            }
         }
     }
 }
@@ -74,6 +80,8 @@ static void WriteGroup(string name, Dictionary<string, string> group)
     Console.WriteLine("-----------");
     foreach (var g in group.Values.OrderBy(x => x))
     {
+        //2605 = *
+        //00a0 = (space)
         Console.WriteLine(g.Replace("\u2605", "*"));
     }
 }

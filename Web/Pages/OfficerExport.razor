@@ -1,0 +1,36 @@
+﻿@page "/OfficerExport"
+<h3>OfficerExport</h3>
+<PageTitle>Officer Export</PageTitle>
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Officer</th>
+      <th scope="col">Level</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">00</th>
+      <td>Carol Marcus</td>
+      <td><img src="images/off.png" width="50px" height="50px" /></td>
+      <td>5/5/5</td>
+    </tr>
+    @for(int i=1; i<=141;i++) {
+    <tr>
+      <th scope="row">@i</th>
+      <td><img src="images/officers/carol_marcus.png" width="50px" height="50px" /> <br /> Carol Marcus</td>
+      <td>Level: <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></td>
+      <td>She is blag abnlkdfa acnklasdnl</td>
+    </tr>
+    }
+  </tbody>
+</table>
+
+
+@code {
+
+}

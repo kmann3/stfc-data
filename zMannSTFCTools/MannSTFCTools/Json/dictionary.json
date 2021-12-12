@@ -1,0 +1,52 @@
+{
+  "dictionary": [
+    {
+      "name": "Burning",
+      "definition": "While in combat.... . Exiting combat will end burning. This was patched due to previously burning would continue allowing smaller ships to overwhelm larger ships.",
+      "example": ""
+    },
+
+    {
+      "name": "Critical Hit Chance",
+      "definition": "",
+      "example": ""
+    }
+
+    {
+      "name": "Hostile",
+      "definition": "",
+      "example": ""
+    }
+
+    {
+      "name": "Eclipse",
+      "definition": "",
+      "example": ""
+    }
+
+    {
+      "name": "",
+      "definition": "",
+      "example": ""
+    }
+
+    {
+      "name": "",
+      "definition": "",
+      "example": ""
+    }
+
+    {
+      "name": "",
+      "definition": "",
+      "example": ""
+    }
+
+    {
+      "name": "",
+      "definition": "",
+      "example": ""
+    }
+
+  ]
+}
