@@ -3,14 +3,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace STFCLibrary.Sqlite.Entities;
 
-internal class Class : BaseTable<Class>, IEntityTypeConfiguration<Class>
+internal class Faction : BaseTable<Faction>, IEntityTypeConfiguration<Faction>
 {
     /// <summary>
     /// Formal description, in game, of the officer.
     /// This should never be empty. If this is empty the JSON reading was incomplete.
     /// </summary>
 
-    public override void Configure(EntityTypeBuilder<Class> modelBuilder)
+    public override void Configure(EntityTypeBuilder<Faction> modelBuilder)
     {
         modelBuilder.HasIndex(k => k.Name).IsUnique(true);
     }

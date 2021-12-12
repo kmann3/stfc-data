@@ -13,4 +13,7 @@ internal class StfcLibDbContext : DbContext
     }
 
     public DbSet<Class> Classes { get; set; }
+    public DbSet<Faction> Factions { get; set; }
+    public DbSet<Group> Groups { get; set; }
+    public DbSet<Officer> Officers { get; set; }
 }

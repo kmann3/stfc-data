@@ -11,6 +11,8 @@
 *.sln.docstates
 *.sqlite
 *.sqlite3
+*.sqlite-shm
+*.sqlite-wal
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
