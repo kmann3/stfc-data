@@ -36,7 +36,6 @@ using (StreamWriter sw = new StreamWriter(@"off.json"))
 using (JsonWriter writer = new JsonTextWriter(sw))
 {
     serializer.Serialize(writer, output);
-    // {"ExpiryDate":new Date(1230375600000),"Price":0}
 }
 
 //WriteGroup("Classes", classDictionary);

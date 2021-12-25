@@ -85,75 +85,51 @@
   },
   {
     "Officer": "Domitia",
-    "Keywords": "",
-    "Cap": "{value} to Dilithium mining rate | ",
-    "Off": "{value} to Warp speed when the Cargo is full | "
+    "Keywords": "dilithium;warp-speed;cargo"
   },
   {
     "Officer": "D'jaoki",
-    "Keywords": "",
-    "Cap": "{value} to the Officers Health for 1 min after winning | ",
-    "Off": "{value} of the crew's Health to the Armor, Shield Deflection and Dodge while {buff} | [Buff] Name: Burning | Type: use"
+    "Keywords": "officer-health;crew-health;armor;shield-deflection;dodge;burning"
   },
   {
     "Officer": "Eight of Ten",
-    "Keywords": "",
-    "Cap": "{value} to Critical Hit Chance against Borg ships | ",
-    "Off": "{value} to the Attack of all Officers on the Ship | "
+    "Keywords": "criticial-hit-chance;borg;officer-attack"
   },
   {
     "Officer": "Elea Mäkinen",
-    "Keywords": "",
-    "Cap": "{value} to base Mining Speed | ",
-    "Off": "{value} to Isogen Mining Speed | "
+    "Keywords": "mining;isogen"
   },
   {
     "Officer": "Emperor Georgiou",
-    "Keywords": "",
-    "Cap": "{value} to opponent's Officer Defense | ",
-    "Off": "{value} to shots | "
+    "Keywords": "pvp;takeover;officer-defense;capture-node;weapon-shots"
   },
   {
     "Officer": "Eurydice",
-    "Keywords": "",
-    "Cap": "{value} to Damage when taking SHP damage | ",
-    "Off": "{value} chance to heal 5% shields when they're depleted. | "
+    "Keywords": "damage-shield-health;shields"
   },
   {
     "Officer": "Five of Ten",
-    "Keywords": "",
-    "Cap": "{value} of the crew's Health bonus to Mitigation | ",
-    "Off": "{value} to resources dropped by hostiles | "
+    "Keywords": "crew-health;mitigation;resources;hostiles"
   },
   {
     "Officer": "Four of Ten",
-    "Keywords": "",
-    "Cap": "Four of Ten increases Ore mining speed by {value} | ",
-    "Off": "Four of Ten increases Cargo size by {value} | "
+    "Keywords": "mining;ore;cargo-size;cargo",
   },
   {
     "Officer": "Frank Leslie",
-    "Keywords": "",
-    "Cap": "{value} Restored to Hull Health when it is under 35% | ",
-    "Off": "{value} to Ship XP earned on Battleships | "
+    "Keywords": "hull-health;ship-xp;battleship",
   },
   {
     "Officer": "Gabriel Lorca",
-    "Keywords": "",
-    "Cap": "{value} to opponent's Damage | ",
-    "Off": "{value} chance to inflict {buff} | [Buff] Name: Hull Breach | Type: apply"
+    "Keywords": "opponent-damage;hull-breach"
   },
   {
     "Officer": "Gaila",
-    "Keywords": "",
-    "Cap": "{value} to Parsteel rewards from Hostiles | ",
-    "Off": "{value} to Critical Damage from Hostiles | "
+    "Keywords": "mining;parsteel-rewards;hostiles;critical-damage"
   },
   {
     "Officer": "Gary Mitchell",
-    "Keywords": "",
-    "Cap": "{value} to all Officer Stats on Board when defending the station | ",
-    "Off": "{value} to Damage for one round when hit by a Critical Hit | "
+    "Keywords": "officer-stats;station-defense;damage;critical-hit"
   },
   {
     "Officer": "Geoffrey Hadley",
