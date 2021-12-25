@@ -1,12 +1,11 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using STFCLibrary.JsonClasses;
 using STFCLibrary.Util;
+using STFCLibrary.Sqlite;
 
-//MannSTFCTools.Sqlite.StfcDbContext db = new MannSTFCTools.Sqlite.StfcDbContext();
+StfcLibDbContext db = new StfcLibDbContext();
 
 Dictionary<string, string> classDictionary = new Dictionary<string, string>();
 Dictionary<string, string> factionDictionary = new Dictionary<string, string>();
@@ -15,7 +14,9 @@ Dictionary<string, string> offNameDictionary = new Dictionary<string, string>();
 Dictionary<string, string> rarityDictionary = new Dictionary<string, string>();
 
 string folder = @"STFCCommunity-data.git\";
-var officerList = JsonHelper<Officer.JsonOfficer>.GetListFromJsonFolder(folder + "officers");
+var officerList = JsonHelper<STFCLibrary.JsonClasses.Officer.JsonOfficer>.GetListFromJsonFolder(folder + "officers");
+
+// Generate Lookups
 
 foreach (var o in officerList)
 {

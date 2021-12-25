@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace STFCLibrary.Sqlite.Entities;
 
-internal class Faction : BaseTable<Faction>, IEntityTypeConfiguration<Faction>
+public class Faction : BaseTable<Faction>, IEntityTypeConfiguration<Faction>
 {
     /// <summary>
     /// Formal description, in game, of the officer.

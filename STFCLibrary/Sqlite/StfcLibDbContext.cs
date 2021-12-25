@@ -2,7 +2,8 @@
 using STFCLibrary.Sqlite.Entities;
 
 namespace STFCLibrary.Sqlite;
-internal class StfcLibDbContext : DbContext
+
+public class StfcLibDbContext : DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder options)
             => options.UseSqlite("Data Source=stfc.sqlite");
