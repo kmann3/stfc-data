@@ -217,7 +217,7 @@
   },
   {
     "Officer": "Joachim",
-    "Keywords": "ship-mitigation;station;opponent-ship;defense-platform"
+    "Keywords": "ship-mitigation;station;opponent-ship;defense-platform;pvp"
   },
   {
     "Officer": "Joaquin",
@@ -233,103 +233,71 @@
   },
   {
     "Officer": "Kati",
-    "Keywords": "critical-hit-chance;critical-hit-damage;station;defense-platform"
+    "Keywords": "critical-hit-chance;critical-hit-damage;station;defense-platform;pvp"
   },
   {
     "Officer": "Keenser",
-    "Keywords": "",
-    "Cap": "{value} to Hull Health as long as the ship is in the station. | ",
-    "Off": "{value} to Shield Health as long as the ship is in the station. | "
+    "Keywords": "hull-health;station;shield-health;pvp"
   },
   {
     "Officer": "Kerla",
-    "Keywords": "",
-    "Cap": "{value} to Dodge when the Shields are depleted | ",
-    "Off": "{value} to Critical Damage with Kinetic weapons | "
+    "Keywords": "dodge;shields;kinetic-weapons;critical-damage"
   },
   {
     "Officer": "Khan Noonien Singh",
-    "Keywords": "",
-    "Cap": "{value} chances to drastically reduce the opponent's station and ships Mitigation for 2 rounds | ",
-    "Off": "{value} to Critical Hit chances every time the ship gets hit | "
+    "Keywords": "opponent-station;mitigation;critical-hit-chance;pvp"
   },
   {
     "Officer": "Klaa",
-    "Keywords": "",
-    "Cap": "{value} to Impulse Speed | ",
-    "Off": "{value} to Critical Hit Damage | "
+    "Keywords": "impulse-speed;critical-hit-damage"
   },
   {
     "Officer": "Komal",
-    "Keywords": "",
-    "Cap": "{value} to Weapon Damage of Battleships against players | ",
-    "Off": "{value} to Kinetic Weapon Damage from enemy player's ships | "
+    "Keywords": "weapon-damage;battleship;pvp;kinetic-weapon-damage"
   },
   {
     "Officer": "Koth",
-    "Keywords": "",
-    "Cap": "{value} to Repair speed on this ship if it is an Interceptor | ",
-    "Off": "{value} to Kinetic damage while the opponent has a {buff} | [Buff] Name: Hull Breach | Type: use"
+    "Keywords": "repair-speed;interceptor;hull-breach;kinetic-damage"
   },
   {
     "Officer": "Kras",
-    "Keywords": "",
-    "Cap": "{value} to opponent's Captain's Maneuver effectiveness | ",
-    "Off": "{value} To all the stats of the opponent's Bridge Officers | "
+    "Keywords": "captains-maneuver'opponent-bridge-officers"
   },
   {
     "Officer": "Krell",
-    "Keywords": "",
-    "Cap": "{value} chance of dealing {buff} for 1 round when receiving Shield HP damage | [Buff] Name: Hull Breach | Type: use",
-    "Off": "{value} of the crew's Defense bonus to Damage against Federation ships | "
+    "Keywords": "hull-breach;shield-health;federation;defense"
   },
   {
     "Officer": "Kumak",
-    "Keywords": "",
-    "Cap": "{value} to all Officer Stats each round | ",
-    "Off": "{value} To Armor, Shield Deflection and Dodge when the opponent is {buff} | [Buff] Name: Burning | Type: use"
+    "Keywords": "officer-stats;armor;shield-deflection;dodge;burnin",
   },
   {
     "Officer": "Kuron",
-    "Keywords": "",
-    "Cap": "{value} chance to automatically recharge all kinetic weapons on the first turn | ",
-    "Off": "{value} to Impulse Speed after destroying a ship. | "
+    "Keywords": "kinetic-weapons;impulse-speed"
   },
   {
     "Officer": "K'Bisch",
-    "Keywords": "",
-    "Cap": "{value} to Tritanium mining rate | ",
-    "Off": "{value} to Damage taken when mining | "
+    "Keywords": "mining;tritanium;damage-taken"
   },
   {
     "Officer": "Leonard McCoy",
-    "Keywords": "",
-    "Cap": "{value} bonus to Officer Abilities during combat | ",
-    "Off": "{value} to the Defense of the Bridge Officers when hit | "
+    "Keywords": "officer-abilities;officers-bridge-defense"
   },
   {
     "Officer": "Linkasa",
-    "Keywords": "",
-    "Cap": "{value} to the Officers Defense for 1 min after winning | ",
-    "Off": "{value} of the crew's attack bonus to Armor | "
+    "Keywords": "officer-defense;crew-attack;armor"
   },
   {
     "Officer": "Liviana Charvanek",
-    "Keywords": "",
-    "Cap": "{value} chance to cause {buff} for 3 rounds when Hull Health is lower than 80% | [Buff] Name: Burning | Type: use",
-    "Off": "{value} of the crew's Health bonus to Armor Piercing | "
+    "Keywords": "burning;hull-health;crew-health;armor-piercing"
   },
   {
     "Officer": "Livis",
-    "Keywords": "",
-    "Cap": "{value} to Repair speed on this ship if it is a Battleship | ",
-    "Off": "{value} to this ship's max Hull Health if it is a Battleship | "
+    "Keywords": "repair-speed;battleship;hull-health"
   },
   {
     "Officer": "Lucia Gonzales",
-    "Keywords": "",
-    "Cap": "{value} to Critical chance against Hostiles | ",
-    "Off": "{value} to Critical Hit Damage against Hostiles | "
+    "Keywords": "critical-chance;hostiles;critical-hit-damage"
   },
   {
     "Officer": "L'Nar",
@@ -741,8 +709,6 @@
   },
   {
     "Officer": "Zahra",
-    "Keywords": "",
-    "Cap": "{value} to ship Hull Health when defending the Station | ",
-    "Off": "{value} to Damage dealt when defending the Station | "
+    "Keywords": "hull-health;station;pvp;damage-dealt"
   }
 ]
