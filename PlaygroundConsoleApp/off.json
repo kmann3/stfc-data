@@ -301,57 +301,39 @@
   },
   {
     "Officer": "L'Nar",
-    "Keywords": "",
-    "Cap": "{value} to the Health of the Bridge Officers | ",
-    "Off": "{value} of the crew's attack bonus to Damage against Klingon ships | "
+    "Keywords": "officer-bridge-health;crew-attack;klingon"
   },
   {
     "Officer": "Mae Darwin",
-    "Keywords": "",
-    "Cap": "{value} to Weapon Damage when attacked by a player | ",
-    "Off": "{value} to Ship XP earned on Interceptors | "
+    "Keywords": "weapon-damage;pvp;ship-xp;interceptor"
   },
   {
     "Officer": "Mara",
-    "Keywords": "",
-    "Cap": "{value} to Damage against Interceptors | ",
-    "Off": "{value}every round to opponent's Dodge when it has a {buff} | [Buff] Name: Hull Breach | Type: use"
+    "Keywords": "damage;interceptor;opponent-dodge;hull-breach"
   },
   {
     "Officer": "Marla McGivers",
-    "Keywords": "",
-    "Cap": "{value} to this ship's Repair Speed | ",
-    "Off": "{value} to this ship's Captain stats | "
+    "Keywords": "repair-speed;captain-stats"
   },
   {
     "Officer": "Marlena Moreau",
-    "Keywords": "",
-    "Cap": "{value} Shield Health healed after winning | ",
-    "Off": "{value} to Hostiles Penetration. | "
+    "Keywords": "shield-health;hostiles;penetration"
   },
   {
     "Officer": "Martok",
-    "Keywords": "",
-    "Cap": "Martok increases the ship's Kinetic Weapon Damage by {value}. | ",
-    "Off": "Martok increases the ship's Dodge by {value} of total Crew Defense. | "
+    "Keywords": "kinetic-weapon-damage;dodge;crew-defense"
   },
   {
     "Officer": "Michael Burnham",
-    "Keywords": "",
-    "Cap": "{value} to Impulse Speed | ",
-    "Off": "{value} of Attack removed from opponent's SHP | "
+    "Keywords": "impulse-speed;opponent-shield-health"
   },
   {
     "Officer": "Mirek",
-    "Keywords": "",
-    "Cap": "{value} chance to cause {buff} for 1 round when the ship is hit | [Buff] Name: Burning | Type: use",
-    "Off": "{value} of the crew's defense bonus to Damage against Federation ships | "
+    "Keywords": "burning;crew-defense;federation"
   },
   {
     "Officer": "Montgomery Scott",
-    "Keywords": "",
-    "Cap": "{value} to this ship's repair speed | ",
-    "Off": "{value} to this ship's Hull Health | "
+    "Keywords": "repair-speed;hull-health"
   },
   {
     "Officer": "M'Ral",
