@@ -133,99 +133,67 @@
   },
   {
     "Officer": "Geoffrey Hadley",
-    "Keywords": "",
-    "Cap": "{value} to warp speed | ",
-    "Off": "{value} to Experience gained on Survey ships | "
+    "Keywords": "warp-speed;ship-xp;survey"
   },
   {
     "Officer": "Geordi La Forge",
-    "Keywords": "",
-    "Cap": "{value} increased rewards from defeated Armadas | ",
-    "Off": "{value} to Weapon Damage against Klingon Hostiles/Armadas | "
+    "Keywords": "rewards;armads;weapon-damage;klingon;hostiles;armadas"
   },
   {
     "Officer": "Georgiou",
-    "Keywords": "",
-    "Cap": "{value} to opponent's Officer Attack when the opponent's ship is {buff} | [Buff] Name: Burning | Type: use",
-    "Off": "{value} chance to deal {buff} for two rounds at the start of each round | [Buff] Name: Burning | Type: use"
+    "Keywords": "burning;officer-attack;"
   },
   {
     "Officer": "Ghrush",
-    "Keywords": "",
-    "Cap": "Ghrush increases the Protected Cargo of the ship by {value}. | ",
-    "Off": "Ghrush increases the Warp Range of the ship by {value}. | "
+    "Keywords": "protected-cargo;cargo;warp-range"
   },
   {
     "Officer": "Goon",
-    "Keywords": "",
-    "Cap": "{value} to Critical Hit Chance against hostiles for the first round | ",
-    "Off": "{value} to Ship XP gained while fighting | "
+    "Keywords": "critical-hit-chance;hostiles;ship-xp"
   },
   {
     "Officer": "Gorkon",
-    "Keywords": "",
-    "Cap": "{value} bonus to Critical Hit Chances for the first 2 Rounds | ",
-    "Off": "{value} chance to cause a {buff} for 3 Rounds when hitting with a Critical Hit | [Buff] Name: Hull Breach | Type: use"
+    "Keywords": "critical-hit-chance;hull-breach;"
   },
   {
     "Officer": "Gowron",
-    "Keywords": "",
-    "Cap": "Gowron increases the ship's Energy Weapon Damage by {value}. | ",
-    "Off": "Gowron increases the ship's Shield Deflection by {value} of total Crew Health. | "
+    "Keywords": "energy-weapon-damage;total-crew-health;shield-deflection"
   },
   {
     "Officer": "Grace Chen",
-    "Keywords": "",
-    "Cap": "{value} to the Dodge, Shield Deflection and Armor of the ship against Hostiles | ",
-    "Off": "{value} To energy damage dealt by enemy Hostiles of level 51 and under. | "
+    "Keywords": "dodge;shield-deflection;armor;hostiles;energy-damage"
   },
   {
     "Officer": "Harcourt Fenton Mudd (Harry)",
-    "Keywords": "",
-    "Cap": "{value} to Armada Targets Weapon Damage when taking damage. | ",
-    "Off": "{value} to Damage when the shields are depleted. | "
+    "Keywords": "armadas;armada0target-weapon-damage;shields;damage"
   },
   {
     "Officer": "Harcourt Fenton Mudd (Mudd)",
-    "Keywords": "",
-    "Cap": "{value} chance to have 98% shield mitigation for the first two rounds of combat | ",
-    "Off": "{value} chance to double shots for the first round | "
+    "Keywords": "shield-mitigation;weapon-double-shots"
   },
   {
     "Officer": "Helvia",
-    "Keywords": "",
-    "Cap": "{value} to Parsteel mining rate | ",
-    "Off": "{value} to Warp speed when the Cargo is empty | "
+    "Keywords": "parsteel;mining;warp-speed;cargo"
   },
   {
     "Officer": "Hendorff",
-    "Keywords": "",
-    "Cap": "{value} to Dodge, Armor and Shield Deflection when Hull Health is below 60% of its Hull health at the start of the battle. | ",
-    "Off": "{value} to Ship XP on Explorers | "
+    "Keywords": "dodge;armor;shield-deflection;hull-health;ship-xp;explorer"
   },
   {
     "Officer": "Hikaru Sulu",
-    "Keywords": "",
-    "Cap": "{value} chance to Inspire {buff} after being hit by a critical hit | [Buff] Name: Morale | Type: use",
-    "Off": "{value} to Energy Damage when the ship has {buff} | [Buff] Name: Morale | Type: use"
+    "Keywords": "moral;critical-hit;energy-weapon-damage"
   },
   {
     "Officer": "Honorguard Worf",
-    "Keywords": "",
-    "Cap": "When fighting other players, Honorguard Worf increases the ship's Armor Piercing by {value} of Crew Attack whenever the ship scores a critical hit. | ",
-    "Off": "For the first 8 rounds of combat against other players, Honorguard Worf increases the Critical Hit Chance of the ship by {value}. | "
+    "Keywords": "pvp;armor-piercing;crew-attack;critical-hit;critical-hit-chance"
   },
   {
     "Officer": "Hugh Culber",
-    "Keywords": "",
-    "Cap": "{value} of Health to Armor when defending on a Capture Node | ",
-    "Off": "{value} to Jumping and Summoning Cost Efficiency | "
+    "Keywords": "health;armor;capture-node;discovery-jump;discovery-summon"
   },
   {
     "Officer": "Instructor Spock",
-    "Keywords": "",
-    "Cap": "{value} to Damage | ",
-    "Off": "{value} to Dodge, Shield Deflection and Armor | "
+    "Keywords": "damage;dodge;shield-deflection;armor"
   },
   {
     "Officer": "Jabilo M'Benga",
