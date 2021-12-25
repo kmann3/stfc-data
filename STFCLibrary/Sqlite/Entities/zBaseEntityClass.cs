@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace STFCLibrary.Sqlite.Entities;
-internal abstract class BaseTable<T> : IEntityTypeConfiguration<T> where T : class
+public abstract class BaseTable<T> : IEntityTypeConfiguration<T> where T : class
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

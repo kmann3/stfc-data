@@ -1,0 +1,842 @@
+[
+  {
+    "Officer": "Ahvix",
+    "Keywords": "critical-hit-chance;eclipse;hostiles;mitigation",
+  },
+  {
+    "Officer": "Airiam",
+    "Keywords": "isogen;mining;burning;node-defense",
+  },
+  {
+    "Officer": "Alexander Marcus",
+    "Keywords": "morale;hull-health;crew-defense;shield-piercing",
+  },
+  {
+    "Officer": "Arix",
+    "Keywords": "burning;energy-weapon;armor;hull-health",
+  },
+  {
+    "Officer": "Arkady Ivanov",
+    "Keywords": "morale;shield-health",
+  },
+  {
+    "Officer": "Ash Tyler",
+    "Keywords": "officer-attack;capture-node;burning",
+  },
+  {
+    "Officer": "Azetbur",
+    "Keywords": "hull-breach;kinetic-weapon;armor-piercing",
+  },
+  {
+    "Officer": "Barot",
+    "Keywords": "crystal;mining;hull-health",
+  },
+  {
+    "Officer": "Beverly Crusher",
+    "Keywords": "officer-health;shield-health;hostiles;armadas;mitigation",
+  },
+  {
+    "Officer": "Cadet Hikaru Sulu",
+    "Keywords": "first-round-damage;officer-attack",
+  },
+  {
+    "Officer": "Cadet James T. Kirk",
+    "Keywords": "officer-stats;weapon-damage",
+  },
+  {
+    "Officer": "Cadet Leonard McCoy",
+    "Keywords": "officer-health;captian-maneuver-effectiveness",
+  },
+  {
+    "Officer": "Cadet Montgomery Scott",
+    "Keywords": "",
+    "Cap": "{value} to Hull Health~~~~",
+    "Off": "{value} Warp Distance~~~~"
+  },
+  {
+    "Officer": "Cadet Nyota Uhura",
+    "Keywords": "",
+    "Cap": "{value} to the opponent's ship Weapon Damage~~~~",
+    "Off": "{value} to Shield Health~~~~"
+  },
+  {
+    "Officer": "Captain Tilly",
+    "Keywords": "",
+    "Cap": "{value} of Defense to Piercing  if the opponent has {buff} when attacking on a capture node (cumulative)~~~~[Buff] Name: Hull Breach | Type: use",
+    "Off": "{value} of Health to Mitigation values  if the opponent has a {buff}~~~~[Buff] Name: Hull Breach | Type: use"
+  },
+  {
+    "Officer": "Carol Marcus",
+    "Keywords": "",
+    "Cap": "{value} To Opponent Damage when defending in battle~~~~",
+    "Off": "{value} to Weapon Damage~~~~"
+  },
+  {
+    "Officer": "Chang",
+    "Keywords": "",
+    "Cap": "{value} to Damage if the opponent's Hull Health under 60%~~~~",
+    "Off": "{value} chance to delay opponent's weapon fire for 1 round with a Critical Hit on a {buff}~~~~[Buff] Name: Hull Breach | Type: use"
+  },
+  {
+    "Officer": "Christopher Pike",
+    "Keywords": "",
+    "Cap": "Two times {value} increased effectiveness to Officer Abilities that activate in combat~~~~",
+    "Off": "{value} to Ship XP earned with this ship~~~~"
+  },
+  {
+    "Officer": "Data",
+    "Keywords": "",
+    "Cap": "{value} to Critical Hit Chance against Hostiles/Armadas~~~~",
+    "Off": "{value} to all Penetration stats against non-player targets~~~~"
+  },
+  {
+    "Officer": "Deanna Troi",
+    "Keywords": "",
+    "Cap": "Deanna Troi reduces the Crit Chance of Armada Targets by {value}~~~~",
+    "Off": "Deanna Troi increases Weapon Damage against Romulan Hostiles and Armadas by {value}~~~~"
+  },
+  {
+    "Officer": "Decius",
+    "Keywords": "",
+    "Cap": "{value} to Accuracy and Armor Piercing and Shield Piercing against stronger ships~~~~",
+    "Off": "{value} to Damage each time the ship gets hit~~~~"
+  },
+  {
+    "Officer": "Domitia",
+    "Keywords": "",
+    "Cap": "{value} to Dilithium mining rate~~~~",
+    "Off": "{value} to Warp speed when the Cargo is full~~~~"
+  },
+  {
+    "Officer": "D'jaoki",
+    "Keywords": "",
+    "Cap": "{value} to the Officers Health for 1 min after winning~~~~",
+    "Off": "{value} of the crew's Health to the Armor, Shield Deflection and Dodge while {buff}~~~~[Buff] Name: Burning | Type: use"
+  },
+  {
+    "Officer": "Eight of Ten",
+    "Keywords": "",
+    "Cap": "{value} to Critical Hit Chance against Borg ships~~~~",
+    "Off": "{value} to the Attack of all Officers on the Ship~~~~"
+  },
+  {
+    "Officer": "Elea Mäkinen",
+    "Keywords": "",
+    "Cap": "{value} to base Mining Speed~~~~",
+    "Off": "{value} to Isogen Mining Speed~~~~"
+  },
+  {
+    "Officer": "Emperor Georgiou",
+    "Keywords": "",
+    "Cap": "{value} to opponent's Officer Defense~~~~",
+    "Off": "{value} to shots~~~~"
+  },
+  {
+    "Officer": "Eurydice",
+    "Keywords": "",
+    "Cap": "{value} to Damage when taking SHP damage~~~~",
+    "Off": "{value} chance to heal 5% shields when they're depleted.~~~~"
+  },
+  {
+    "Officer": "Five of Ten",
+    "Keywords": "",
+    "Cap": "{value} of the crew's Health bonus to Mitigation~~~~",
+    "Off": "{value} to resources dropped by hostiles~~~~"
+  },
+  {
+    "Officer": "Four of Ten",
+    "Keywords": "",
+    "Cap": "Four of Ten increases Ore mining speed by {value}~~~~",
+    "Off": "Four of Ten increases Cargo size by {value}~~~~"
+  },
+  {
+    "Officer": "Frank Leslie",
+    "Keywords": "",
+    "Cap": "{value} Restored to Hull Health when it is under 35%~~~~",
+    "Off": "{value} to Ship XP earned on Battleships~~~~"
+  },
+  {
+    "Officer": "Gabriel Lorca",
+    "Keywords": "",
+    "Cap": "{value} to opponent's Damage~~~~",
+    "Off": "{value} chance to inflict {buff}~~~~[Buff] Name: Hull Breach | Type: apply"
+  },
+  {
+    "Officer": "Gaila",
+    "Keywords": "",
+    "Cap": "{value} to Parsteel rewards from Hostiles~~~~",
+    "Off": "{value} to Critical Damage from Hostiles~~~~"
+  },
+  {
+    "Officer": "Gary Mitchell",
+    "Keywords": "",
+    "Cap": "{value} to all Officer Stats on Board when defending the station~~~~",
+    "Off": "{value} to Damage for one round when hit by a Critical Hit~~~~"
+  },
+  {
+    "Officer": "Geoffrey Hadley",
+    "Keywords": "",
+    "Cap": "{value} to warp speed~~~~",
+    "Off": "{value} to Experience gained on Survey ships~~~~"
+  },
+  {
+    "Officer": "Geordi La Forge",
+    "Keywords": "",
+    "Cap": "{value} increased rewards from defeated Armadas~~~~",
+    "Off": "{value} to Weapon Damage against Klingon Hostiles/Armadas~~~~"
+  },
+  {
+    "Officer": "Georgiou",
+    "Keywords": "",
+    "Cap": "{value} to opponent's Officer Attack when the opponent's ship is {buff}~~~~[Buff] Name: Burning | Type: use",
+    "Off": "{value} chance to deal {buff} for two rounds at the start of each round~~~~[Buff] Name: Burning | Type: use"
+  },
+  {
+    "Officer": "Ghrush",
+    "Keywords": "",
+    "Cap": "Ghrush increases the Protected Cargo of the ship by {value}.~~~~",
+    "Off": "Ghrush increases the Warp Range of the ship by {value}.~~~~"
+  },
+  {
+    "Officer": "Goon",
+    "Keywords": "",
+    "Cap": "{value} to Critical Hit Chance against hostiles for the first round~~~~",
+    "Off": "{value} to Ship XP gained while fighting~~~~"
+  },
+  {
+    "Officer": "Gorkon",
+    "Keywords": "",
+    "Cap": "{value} bonus to Critical Hit Chances for the first 2 Rounds~~~~",
+    "Off": "{value} chance to cause a {buff} for 3 Rounds when hitting with a Critical Hit~~~~[Buff] Name: Hull Breach | Type: use"
+  },
+  {
+    "Officer": "Gowron",
+    "Keywords": "",
+    "Cap": "Gowron increases the ship's Energy Weapon Damage by {value}.~~~~",
+    "Off": "Gowron increases the ship's Shield Deflection by {value} of total Crew Health.~~~~"
+  },
+  {
+    "Officer": "Grace Chen",
+    "Keywords": "",
+    "Cap": "{value} to the Dodge, Shield Deflection and Armor of the ship against Hostiles~~~~",
+    "Off": "{value} To energy damage dealt by enemy Hostiles of level 51 and under.~~~~"
+  },
+  {
+    "Officer": "Harcourt Fenton Mudd (Harry)",
+    "Keywords": "",
+    "Cap": "{value} to Armada Targets Weapon Damage when taking damage.~~~~",
+    "Off": "{value} to Damage when the shields are depleted.~~~~"
+  },
+  {
+    "Officer": "Harcourt Fenton Mudd (Mudd)",
+    "Keywords": "",
+    "Cap": "{value} chance to have 98% shield mitigation for the first two rounds of combat~~~~",
+    "Off": "{value} chance to double shots for the first round~~~~"
+  },
+  {
+    "Officer": "Helvia",
+    "Keywords": "",
+    "Cap": "{value} to Parsteel mining rate~~~~",
+    "Off": "{value} to Warp speed when the Cargo is empty~~~~"
+  },
+  {
+    "Officer": "Hendorff",
+    "Keywords": "",
+    "Cap": "{value} to Dodge, Armor and Shield Deflection when Hull Health is below 60% of its Hull health at the start of the battle.~~~~",
+    "Off": "{value} to Ship XP on Explorers~~~~"
+  },
+  {
+    "Officer": "Hikaru Sulu",
+    "Keywords": "",
+    "Cap": "{value} chance to Inspire {buff} after being hit by a critical hit~~~~[Buff] Name: Morale | Type: use",
+    "Off": "{value} to Energy Damage when the ship has {buff}~~~~[Buff] Name: Morale | Type: use"
+  },
+  {
+    "Officer": "Honorguard Worf",
+    "Keywords": "",
+    "Cap": "When fighting other players, Honorguard Worf increases the ship's Armor Piercing by {value} of Crew Attack whenever the ship scores a critical hit.~~~~",
+    "Off": "For the first 8 rounds of combat against other players, Honorguard Worf increases the Critical Hit Chance of the ship by {value}.~~~~"
+  },
+  {
+    "Officer": "Hugh Culber",
+    "Keywords": "",
+    "Cap": "{value} of Health to Armor when defending on a Capture Node~~~~",
+    "Off": "{value} to Jumping and Summoning Cost Efficiency~~~~"
+  },
+  {
+    "Officer": "Instructor Spock",
+    "Keywords": "",
+    "Cap": "{value} to Damage~~~~",
+    "Off": "{value} to Dodge, Shield Deflection and Armor~~~~"
+  },
+  {
+    "Officer": "Jabilo M'Benga",
+    "Keywords": "",
+    "Cap": "{value} to Armor Piercing, Shield Piercing and Accuracy when defending the Station~~~~",
+    "Off": "{value} to Dodge, Armor and Shield when defending the Station~~~~"
+  },
+  {
+    "Officer": "James T. Kirk",
+    "Keywords": "",
+    "Cap": "{value} to all Officer stats when the ship has {buff}~~~~[Buff] Name: Morale | Type: use",
+    "Off": "{value} chance to inspire {buff} to his ship each round for 2 rounds~~~~[Buff] Name: Morale | Type: apply"
+  },
+  {
+    "Officer": "Javaid",
+    "Keywords": "",
+    "Cap": "{value} to Shield Piercing~~~~",
+    "Off": "{value} to Armor if the ship is a Battleship~~~~"
+  },
+  {
+    "Officer": "Jaylah",
+    "Keywords": "",
+    "Cap": "{value} to resources dropped by hostiles when on either Franklin~~~~",
+    "Off": "{value} shots against Swarms on either Franklin.~~~~"
+  },
+  {
+    "Officer": "Jean-Luc Picard",
+    "Keywords": "",
+    "Cap": "Two times {value} increased effectiveness to Officer Abilities that activate in combat~~~~",
+    "Off": "{value} Critical Damage against Hostiles and Armadas~~~~"
+  },
+  {
+    "Officer": "Joachim",
+    "Keywords": "",
+    "Cap": "{value} chances to drastically increase the ship's mitigation against a Station for the first round.~~~~",
+    "Off": "{value} to all opponent's ships and defense platforms damage in Station Combat~~~~"
+  },
+  {
+    "Officer": "Joaquin",
+    "Keywords": "",
+    "Cap": "{value} to this ship's Protected Cargo~~~~",
+    "Off": "{value} to Corrupted and Decoded Data Mining Speed~~~~"
+  },
+  {
+    "Officer": "John Harrison",
+    "Keywords": "",
+    "Cap": "{value} to Damage against Explorers~~~~",
+    "Off": "{value} of the opponent's Shield ignored for the first round of combat.~~~~"
+  },
+  {
+    "Officer": "Kang",
+    "Keywords": "",
+    "Cap": "{value} chance to cause {buff} for 3 rounds at start of Combat~~~~[Buff] Name: Hull Breach | Type: use",
+    "Off": "{value} of the crew's Attack bonus to Accuracy~~~~"
+  },
+  {
+    "Officer": "Kati",
+    "Keywords": "",
+    "Cap": "{value} Critical Hit Chances against Defense Platforms~~~~",
+    "Off": "{value} Critical Hit Damage in Station Combat~~~~"
+  },
+  {
+    "Officer": "Keenser",
+    "Keywords": "",
+    "Cap": "{value} to Hull Health as long as the ship is in the station.~~~~",
+    "Off": "{value} to Shield Health as long as the ship is in the station.~~~~"
+  },
+  {
+    "Officer": "Kerla",
+    "Keywords": "",
+    "Cap": "{value} to Dodge when the Shields are depleted~~~~",
+    "Off": "{value} to Critical Damage with Kinetic weapons~~~~"
+  },
+  {
+    "Officer": "Khan Noonien Singh",
+    "Keywords": "",
+    "Cap": "{value} chances to drastically reduce the opponent's station and ships Mitigation for 2 rounds~~~~",
+    "Off": "{value} to Critical Hit chances every time the ship gets hit~~~~"
+  },
+  {
+    "Officer": "Klaa",
+    "Keywords": "",
+    "Cap": "{value} to Impulse Speed~~~~",
+    "Off": "{value} to Critical Hit Damage~~~~"
+  },
+  {
+    "Officer": "Komal",
+    "Keywords": "",
+    "Cap": "{value} to Weapon Damage of Battleships against players~~~~",
+    "Off": "{value} to Kinetic Weapon Damage from enemy player's ships~~~~"
+  },
+  {
+    "Officer": "Koth",
+    "Keywords": "",
+    "Cap": "{value} to Repair speed on this ship if it is an Interceptor~~~~",
+    "Off": "{value} to Kinetic damage while the opponent has a {buff}~~~~[Buff] Name: Hull Breach | Type: use"
+  },
+  {
+    "Officer": "Kras",
+    "Keywords": "",
+    "Cap": "{value} to opponent's Captain's Maneuver effectiveness~~~~",
+    "Off": "{value} To all the stats of the opponent's Bridge Officers~~~~"
+  },
+  {
+    "Officer": "Krell",
+    "Keywords": "",
+    "Cap": "{value} chance of dealing {buff} for 1 round when receiving Shield HP damage~~~~[Buff] Name: Hull Breach | Type: use",
+    "Off": "{value} of the crew's Defense bonus to Damage against Federation ships~~~~"
+  },
+  {
+    "Officer": "Kumak",
+    "Keywords": "",
+    "Cap": "{value} to all Officer Stats each round~~~~",
+    "Off": "{value} To Armor, Shield Deflection and Dodge when the opponent is {buff}~~~~[Buff] Name: Burning | Type: use"
+  },
+  {
+    "Officer": "Kuron",
+    "Keywords": "",
+    "Cap": "{value} chance to automatically recharge all kinetic weapons on the first turn~~~~",
+    "Off": "{value} to Impulse Speed after destroying a ship.~~~~"
+  },
+  {
+    "Officer": "K'Bisch",
+    "Keywords": "",
+    "Cap": "{value} to Tritanium mining rate~~~~",
+    "Off": "{value} to Damage taken when mining~~~~"
+  },
+  {
+    "Officer": "Leonard McCoy",
+    "Keywords": "",
+    "Cap": "{value} bonus to Officer Abilities during combat~~~~",
+    "Off": "{value} to the Defense of the Bridge Officers when hit~~~~"
+  },
+  {
+    "Officer": "Linkasa",
+    "Keywords": "",
+    "Cap": "{value} to the Officers Defense for 1 min after winning~~~~",
+    "Off": "{value} of the crew's attack bonus to Armor~~~~"
+  },
+  {
+    "Officer": "Liviana Charvanek",
+    "Keywords": "",
+    "Cap": "{value} chance to cause {buff} for 3 rounds when Hull Health is lower than 80%~~~~[Buff] Name: Burning | Type: use",
+    "Off": "{value} of the crew's Health bonus to Armor Piercing~~~~"
+  },
+  {
+    "Officer": "Livis",
+    "Keywords": "",
+    "Cap": "{value} to Repair speed on this ship if it is a Battleship~~~~",
+    "Off": "{value} to this ship's max Hull Health if it is a Battleship~~~~"
+  },
+  {
+    "Officer": "Lucia Gonzales",
+    "Keywords": "",
+    "Cap": "{value} to Critical chance against Hostiles~~~~",
+    "Off": "{value} to Critical Hit Damage against Hostiles~~~~"
+  },
+  {
+    "Officer": "L'Nar",
+    "Keywords": "",
+    "Cap": "{value} to the Health of the Bridge Officers~~~~",
+    "Off": "{value} of the crew's attack bonus to Damage against Klingon ships~~~~"
+  },
+  {
+    "Officer": "Mae Darwin",
+    "Keywords": "",
+    "Cap": "{value} to Weapon Damage when attacked by a player~~~~",
+    "Off": "{value} to Ship XP earned on Interceptors~~~~"
+  },
+  {
+    "Officer": "Mara",
+    "Keywords": "",
+    "Cap": "{value} to Damage against Interceptors~~~~",
+    "Off": "{value}every round to opponent's Dodge when it has a {buff}~~~~[Buff] Name: Hull Breach | Type: use"
+  },
+  {
+    "Officer": "Marla McGivers",
+    "Keywords": "",
+    "Cap": "{value} to this ship's Repair Speed~~~~",
+    "Off": "{value} to this ship's Captain stats~~~~"
+  },
+  {
+    "Officer": "Marlena Moreau",
+    "Keywords": "",
+    "Cap": "{value} Shield Health healed after winning~~~~",
+    "Off": "{value} to Hostiles Penetration.~~~~"
+  },
+  {
+    "Officer": "Martok",
+    "Keywords": "",
+    "Cap": "Martok increases the ship's Kinetic Weapon Damage by {value}.~~~~",
+    "Off": "Martok increases the ship's Dodge by {value} of total Crew Defense.~~~~"
+  },
+  {
+    "Officer": "Michael Burnham",
+    "Keywords": "",
+    "Cap": "{value} to Impulse Speed~~~~",
+    "Off": "{value} of Attack removed from opponent's SHP~~~~"
+  },
+  {
+    "Officer": "Mirek",
+    "Keywords": "",
+    "Cap": "{value} chance to cause {buff} for 1 round when the ship is hit~~~~[Buff] Name: Burning | Type: use",
+    "Off": "{value} of the crew's defense bonus to Damage against Federation ships~~~~"
+  },
+  {
+    "Officer": "Montgomery Scott",
+    "Keywords": "",
+    "Cap": "{value} to this ship's repair speed~~~~",
+    "Off": "{value} to this ship's Hull Health~~~~"
+  },
+  {
+    "Officer": "M'Ral",
+    "Keywords": "",
+    "Cap": "{value} to Armor Piercing~~~~",
+    "Off": "{value} bonus to the Attack of the bridge Officers~~~~"
+  },
+  {
+    "Officer": "Navi",
+    "Keywords": "",
+    "Cap": "{value} to Critical Hit Damage when the ship has a {buff}.~~~~[Buff] Name: Hull Breach | Type: use",
+    "Off": "{value} to Armor, Shield Deflection and Dodge when the ship has a {buff}~~~~[Buff] Name: Hull Breach | Type: use"
+  },
+  {
+    "Officer": "Nero",
+    "Keywords": "",
+    "Cap": "{value} to Damage when the enemy ship is {buff}~~~~[Buff] Name: Burning | Type: use",
+    "Off": "{value} chance to cause {buff} to the enemy when hitting it~~~~[Buff] Name: Burning | Type: use"
+  },
+  {
+    "Officer": "Next Gen Crusher",
+    "Keywords": "",
+    "Cap": "{value} to Officers Health on the ship~~~~",
+    "Off": "{value} to the effectiveness of the Captain Maneuver~~~~"
+  },
+  {
+    "Officer": "Next Gen Data",
+    "Keywords": "",
+    "Cap": "{value} to all Officer stats on the Bridge~~~~",
+    "Off": "{value} to Weapon Damage~~~~"
+  },
+  {
+    "Officer": "Next Gen La Forge",
+    "Keywords": "",
+    "Cap": "{value} to the opponent's ship Weapon Damage~~~~",
+    "Off": "{value} to Shield Health~~~~"
+  },
+  {
+    "Officer": "Next Gen Riker",
+    "Keywords": "",
+    "Cap": "{value} to Damage for the first round~~~~",
+    "Off": "{value} to the Attack of all the officers in the ship~~~~"
+  },
+  {
+    "Officer": "Next Gen Troi",
+    "Keywords": "",
+    "Cap": "{value} to Damage~~~~",
+    "Off": "{value} to Dodge, Shield Deflection and Armor~~~~"
+  },
+  {
+    "Officer": "Nine of Ten",
+    "Keywords": "",
+    "Cap": "{value} to opponent Borg Critical Hit Chance~~~~",
+    "Off": "{value} to the Defense of all Officers on the Ship~~~~"
+  },
+  {
+    "Officer": "Nyota Uhura",
+    "Keywords": "",
+    "Cap": "{value} chance to delay opponent's fire by 1 round when the Shield is depleted~~~~",
+    "Off": "{value} to this ship's Accuracy~~~~"
+  },
+  {
+    "Officer": "Officer 0718",
+    "Keywords": "",
+    "Cap": "{value} to Critical Hit chances when defending the station~~~~",
+    "Off": "{value} to the Defense of all Officers on the ship~~~~"
+  },
+  {
+    "Officer": "One of Ten",
+    "Keywords": "",
+    "Cap": "{value} damage mitigated by the shields.~~~~",
+    "Off": "{value} to the Protected Cargo of the ship~~~~"
+  },
+  {
+    "Officer": "Origins Burnham",
+    "Keywords": "",
+    "Cap": "{value} to all Officer Attack~~~~",
+    "Off": "{value} to Damage~~~~"
+  },
+  {
+    "Officer": "Origins Saru",
+    "Keywords": "",
+    "Cap": "{value} to all Officer Defense~~~~",
+    "Off": "{value} to Hull Health~~~~"
+  },
+  {
+    "Officer": "Origins Stamets",
+    "Keywords": "",
+    "Cap": "{value} to all Officer Health~~~~",
+    "Off": "{value} to Warp Speed~~~~"
+  },
+  {
+    "Officer": "Otto",
+    "Keywords": "",
+    "Cap": "{value} damage to Defense Platforms~~~~",
+    "Off": "{value} Attack to every Officer on the Bridge of the ship~~~~"
+  },
+  {
+    "Officer": "Pan",
+    "Keywords": "",
+    "Cap": "{value} to Impulse Speed~~~~",
+    "Off": "{value} chance to apply a {buff} on your own ship for three rounds~~~~[Buff] Name: Hull Breach | Type: use"
+  },
+  {
+    "Officer": "Paul Stamets",
+    "Keywords": "",
+    "Cap": "{value} to Jumping and Summoning Cost Efficiency~~~~",
+    "Off": "{value} to opponent's Armor Piercing when defending from a player~~~~"
+  },
+  {
+    "Officer": "Paul Zhou",
+    "Keywords": "",
+    "Cap": "{value} to Officer Defense on the bridge of the ship~~~~",
+    "Off": "{value} of the crew's Defense bonus to Dodge, Armor and Shield Deflection while having {buff}~~~~[Buff] Name: Morale | Type: use"
+  },
+  {
+    "Officer": "Qa'ug",
+    "Keywords": "",
+    "Cap": "{value} to all the opponent Officer stats if the player's ship receives a {buff}~~~~[Buff] Name: Hull Breach | Type: use",
+    "Off": "{value} to accuracy when the player's ship receives a {buff}~~~~[Buff] Name: Hull Breach | Type: use"
+  },
+  {
+    "Officer": "Raphaël DuPont",
+    "Keywords": "",
+    "Cap": "{value} to G3 Crystal, Gas and Ore Mining Speed~~~~",
+    "Off": "{value} to this ship's Protected Cargo~~~~"
+  },
+  {
+    "Officer": "Rima",
+    "Keywords": "",
+    "Cap": "{value} to Damage when the ship has a {buff}~~~~[Buff] Name: Hull Breach | Type: use",
+    "Off": "{value} to Critical Hit chances when the ship has a {buff}~~~~[Buff] Name: Hull Breach | Type: use"
+  },
+  {
+    "Officer": "Ro Mudd",
+    "Keywords": "",
+    "Cap": "{value} to the Captain's Stats~~~~",
+    "Off": "{value} chance to increase damage by 300% of Officers Attack~~~~"
+  },
+  {
+    "Officer": "Rukor",
+    "Keywords": "",
+    "Cap": "{value} to Weapon Damage of Explorers against players~~~~",
+    "Off": "{value} to Energy Weapon Damage against other player ships~~~~"
+  },
+  {
+    "Officer": "Saru",
+    "Keywords": "",
+    "Cap": "{value} to opponent's Critical Hit Chance when receiving a Critical Hit.~~~~",
+    "Off": "{value} to opponent's weapon damage~~~~"
+  },
+  {
+    "Officer": "Sesha",
+    "Keywords": "",
+    "Cap": "{value} chance to decrease Eclipse's hostile Critical Hit Chance by 15%~~~~",
+    "Off": "{value} to Critical Hit Damage against Eclipse hostiles~~~~"
+  },
+  {
+    "Officer": "Seven of Ten",
+    "Keywords": "",
+    "Cap": "{value} chance of adding 2 shots to each weapon when fighting Borg Tactical Probes~~~~",
+    "Off": "{value} to the Health of all Officers on the ship~~~~"
+  },
+  {
+    "Officer": "Severus",
+    "Keywords": "",
+    "Cap": "{value} to the opponent's Hull Health each round if the player's ship is {buff}~~~~[Buff] Name: Burning | Type: use",
+    "Off": "{value} to Damage if the player's ship is {buff}~~~~[Buff] Name: Burning | Type: use"
+  },
+  {
+    "Officer": "Shev Akria",
+    "Keywords": "",
+    "Cap": "{value} to Tritanium rewards from Hostiles~~~~",
+    "Off": "{value} to Energy damage against Hostiles~~~~"
+  },
+  {
+    "Officer": "Six of Ten",
+    "Keywords": "",
+    "Cap": "{value} of Defense removed from opponent's SHP when hitting the opponent~~~~",
+    "Off": "{value} of Attack added to Penetration values when firing at Armada Targets~~~~"
+  },
+  {
+    "Officer": "Spock",
+    "Keywords": "",
+    "Cap": "{value} to the ship's Accuracy at the start of each Round~~~~",
+    "Off": "{value} of total Officer Defense on the ship restored to the Shield when having {buff}~~~~[Buff] Name: Morale | Type: use"
+  },
+  {
+    "Officer": "Stonn",
+    "Keywords": "",
+    "Cap": "{value} to Ore mining rate~~~~",
+    "Off": "{value} to Cargo size~~~~"
+  },
+  {
+    "Officer": "Tal",
+    "Keywords": "",
+    "Cap": "{value} Damage against battleships~~~~",
+    "Off": "{value} of the opponent's Hull Health decrease each turn while it is {buff}~~~~[Buff] Name: Burning | Type: use"
+  },
+  {
+    "Officer": "Tasha Yar",
+    "Keywords": "",
+    "Cap": "Tasha Yar reduces the Crit Chance of Mission Hostiles (yellow hostiles) by {value}~~~~",
+    "Off": "Tasha Yar increases all Weapon Damage against non-player targets by {value}~~~~"
+  },
+  {
+    "Officer": "Ten of Ten",
+    "Keywords": "",
+    "Cap": "{value} to Parsteel, Tritanium and Dilithium Mining Speed~~~~",
+    "Off": "{value} to Mining Speed~~~~"
+  },
+  {
+    "Officer": "Three of Ten",
+    "Keywords": "",
+    "Cap": "Three of Ten increases Gas mining speed by {value}~~~~",
+    "Off": "Three of Ten increases Protected Cargo by {value}~~~~"
+  },
+  {
+    "Officer": "Tilly",
+    "Keywords": "",
+    "Cap": "{value} to opponent's Shield Health when defending from a player~~~~",
+    "Off": "{value} chance to decrease opponent's Officer Attack by 15% when hit~~~~"
+  },
+  {
+    "Officer": "Tiza",
+    "Keywords": "",
+    "Cap": "{value} to Eclipse hostile's Shield Mitigation for the first round~~~~",
+    "Off": "{value} chance to increase mitigation by 100% against Eclipse hostiles~~~~"
+  },
+  {
+    "Officer": "TOS Hikaru Sulu",
+    "Keywords": "",
+    "Cap": "{value} chance to inspire {buff} for 1 round~~~~[Buff] Name: Morale | Type: apply",
+    "Off": "{value} increase to Critical Hit Chance when aboard an Explorer that has  {buff}~~~~[Buff] Name: Morale | Type: use"
+  },
+  {
+    "Officer": "TOS James T. Kirk",
+    "Keywords": "",
+    "Cap": "{value} of Defense to energy damage~~~~",
+    "Off": "{value} chance to give {buff}~~~~[Buff] Name: Morale | Type: apply"
+  },
+  {
+    "Officer": "TOS Leonard McCoy",
+    "Keywords": "",
+    "Cap": "{value} to Dodge, Shield Deflection, and Armor when defending~~~~",
+    "Off": "{value} to Attack, Defense, and Health of all Officers when aboard an Explorer~~~~"
+  },
+  {
+    "Officer": "TOS Montgomery Scott",
+    "Keywords": "",
+    "Cap": "{value} to Warp Range for Explorers~~~~",
+    "Off": "{value} to Repair Cost Efficiency~~~~"
+  },
+  {
+    "Officer": "TOS Nyota Uhura",
+    "Keywords": "",
+    "Cap": "{value} to opponent's critical hit chance~~~~",
+    "Off": "{value} to opponent's Shield Mitigation~~~~"
+  },
+  {
+    "Officer": "TOS Pavel Chekov",
+    "Keywords": "",
+    "Cap": "{value} to Impulse Speed on Explorers~~~~",
+    "Off": "{value} to opponent's damage when attacked on nodes~~~~"
+  },
+  {
+    "Officer": "TOS Spock",
+    "Keywords": "",
+    "Cap": "{value} of Defense to SHP of all ships~~~~",
+    "Off": "{value} to opponent's Critical damage~~~~"
+  },
+  {
+    "Officer": "Two of Ten",
+    "Keywords": "",
+    "Cap": "{value} to Cargo size~~~~",
+    "Off": "{value} to G3 & G4 Mining Speed.~~~~"
+  },
+  {
+    "Officer": "T'Laan",
+    "Keywords": "",
+    "Cap": "{value} more Ship XP from battles~~~~",
+    "Off": "{value} to Kinetic Damage dealt by enemy Hostiles of level 51 and under.~~~~"
+  },
+  {
+    "Officer": "T'Pring",
+    "Keywords": "",
+    "Cap": "{value} to Gas mining rate~~~~",
+    "Off": "{value} to Protected Cargo~~~~"
+  },
+  {
+    "Officer": "Vartoq",
+    "Keywords": "",
+    "Cap": "{value} to Weapon Damage of Interceptors against players~~~~",
+    "Off": "{value} to Kinetic Weapon Damage against other player's ships~~~~"
+  },
+  {
+    "Officer": "Vella",
+    "Keywords": "",
+    "Cap": "{value} Damage if the opponent is an Explorer~~~~",
+    "Off": "{value} to Health for all Officers on this ship~~~~"
+  },
+  {
+    "Officer": "Vel K'Bentayr",
+    "Keywords": "",
+    "Cap": "{value} to Dilithium rewards from Hostiles~~~~",
+    "Off": "{value} to Kinetic damage against Hostiles~~~~"
+  },
+  {
+    "Officer": "Vemet",
+    "Keywords": "",
+    "Cap": "The ship can resurrect with {value} of the ship's hull health~~~~",
+    "Off": "{value} of total Officer Health deducted from the Shield Health of a {buff} ship each round~~~~[Buff] Name: Burning | Type: use"
+  },
+  {
+    "Officer": "Vixis",
+    "Keywords": "",
+    "Cap": "{value} chance to delay opponent's Weapons each round for 1 round~~~~",
+    "Off": "{value} less Energy Damage from player enemies~~~~"
+  },
+  {
+    "Officer": "Wesley Crusher",
+    "Keywords": "",
+    "Cap": "{value} of Attack to Damage vs. Hostiles/Armadas~~~~",
+    "Off": "{value} to own stats~~~~"
+  },
+  {
+    "Officer": "William T. Riker",
+    "Keywords": "",
+    "Cap": "{value} to Weapon Damage against Hostiles and Armadas every round (cumulative)~~~~",
+    "Off": "{value} to Weapon Damage against Federation Hostiles/Armadas~~~~"
+  },
+  {
+    "Officer": "Worf",
+    "Keywords": "",
+    "Cap": "{value} to Warp Speed after winning a battle (not cumulative)~~~~",
+    "Off": "{value} to all Mitigation against non-player targets~~~~"
+  },
+  {
+    "Officer": "Woteln",
+    "Keywords": "",
+    "Cap": "{value} to Damage if the opponent is a Battleship~~~~",
+    "Off": "{value} to Dodge when aboard an Interceptor~~~~"
+  },
+  {
+    "Officer": "Yan'agh",
+    "Keywords": "",
+    "Cap": "{value} to damage after depleting the opponent's Shield Health~~~~",
+    "Off": "{value} of the crew's Health bonus in Damage against Romulan ships~~~~"
+  },
+  {
+    "Officer": "Yuki Sulu",
+    "Keywords": "",
+    "Cap": "{value} to the Shield Health of the opponent's ship each round~~~~",
+    "Off": "{value} of the crew's Health bonus to Damage against Romulans~~~~"
+  },
+  {
+    "Officer": "Zahra",
+    "Keywords": "",
+    "Cap": "{value} to ship Hull Health when defending the Station~~~~",
+    "Off": "{value} to Damage dealt when defending the Station~~~~"
+  }
+]
