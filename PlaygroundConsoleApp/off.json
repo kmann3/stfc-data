@@ -197,63 +197,43 @@
   },
   {
     "Officer": "Jabilo M'Benga",
-    "Keywords": "",
-    "Cap": "{value} to Armor Piercing, Shield Piercing and Accuracy when defending the Station | ",
-    "Off": "{value} to Dodge, Armor and Shield when defending the Station | "
+    "Keywords": "armor-piercing;shield-piercing;accuracy;station;dodge;armor;shields"
   },
   {
     "Officer": "James T. Kirk",
-    "Keywords": "",
-    "Cap": "{value} to all Officer stats when the ship has {buff} | [Buff] Name: Morale | Type: use",
-    "Off": "{value} chance to inspire {buff} to his ship each round for 2 rounds | [Buff] Name: Morale | Type: apply"
+    "Keywords": "officer-stats;morale"
   },
   {
     "Officer": "Javaid",
-    "Keywords": "",
-    "Cap": "{value} to Shield Piercing | ",
-    "Off": "{value} to Armor if the ship is a Battleship | "
+    "Keywords": "shield-piercing;armor;battleship"
   },
   {
     "Officer": "Jaylah",
-    "Keywords": "",
-    "Cap": "{value} to resources dropped by hostiles when on either Franklin | ",
-    "Off": "{value} shots against Swarms on either Franklin. | "
+    "Keywords": "resources;hostiles;franklin;franklin-a;swarm"
   },
   {
     "Officer": "Jean-Luc Picard",
-    "Keywords": "",
-    "Cap": "Two times {value} increased effectiveness to Officer Abilities that activate in combat | ",
-    "Off": "{value} Critical Damage against Hostiles and Armadas | "
+    "Keywords": "officer-abilities;critical-damage;hostiles;armadas"
   },
   {
     "Officer": "Joachim",
-    "Keywords": "",
-    "Cap": "{value} chances to drastically increase the ship's mitigation against a Station for the first round. | ",
-    "Off": "{value} to all opponent's ships and defense platforms damage in Station Combat | "
+    "Keywords": "ship-mitigation;station;opponent-ship;defense-platform"
   },
   {
     "Officer": "Joaquin",
-    "Keywords": "",
-    "Cap": "{value} to this ship's Protected Cargo | ",
-    "Off": "{value} to Corrupted and Decoded Data Mining Speed | "
+    "Keywords": "cargo;protected-cargo;data-mining"
   },
   {
     "Officer": "John Harrison",
-    "Keywords": "",
-    "Cap": "{value} to Damage against Explorers | ",
-    "Off": "{value} of the opponent's Shield ignored for the first round of combat. | "
+    "Keywords": "explorer;damage;opponent-shield"
   },
   {
     "Officer": "Kang",
-    "Keywords": "",
-    "Cap": "{value} chance to cause {buff} for 3 rounds at start of Combat | [Buff] Name: Hull Breach | Type: use",
-    "Off": "{value} of the crew's Attack bonus to Accuracy | "
+    "Keywords": "hull-breach;crew-attack;accuracy"
   },
   {
     "Officer": "Kati",
-    "Keywords": "",
-    "Cap": "{value} Critical Hit Chances against Defense Platforms | ",
-    "Off": "{value} Critical Hit Damage in Station Combat | "
+    "Keywords": "critical-hit-chance;critical-hit-damage;station;defense-platform"
   },
   {
     "Officer": "Keenser",
