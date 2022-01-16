@@ -337,75 +337,51 @@
   },
   {
     "Officer": "M'Ral",
-    "Keywords": "",
-    "Cap": "{value} to Armor Piercing | ",
-    "Off": "{value} bonus to the Attack of the bridge Officers | "
+    "Keywords": "armor-piercing;bridge-officers"
   },
   {
     "Officer": "Navi",
-    "Keywords": "",
-    "Cap": "{value} to Critical Hit Damage when the ship has a {buff}. | [Buff] Name: Hull Breach | Type: use",
-    "Off": "{value} to Armor, Shield Deflection and Dodge when the ship has a {buff} | [Buff] Name: Hull Breach | Type: use"
+    "Keywords": "critical-hit-damage;hull-breach;armor;shield-deflection;dodge"
   },
   {
     "Officer": "Nero",
-    "Keywords": "",
-    "Cap": "{value} to Damage when the enemy ship is {buff} | [Buff] Name: Burning | Type: use",
-    "Off": "{value} chance to cause {buff} to the enemy when hitting it | [Buff] Name: Burning | Type: use"
+    "Keywords": "burning"
   },
   {
     "Officer": "Next Gen Crusher",
-    "Keywords": "",
-    "Cap": "{value} to Officers Health on the ship | ",
-    "Off": "{value} to the effectiveness of the Captain Maneuver | "
+    "Keywords": "officer-health;captain-maneuver"
   },
   {
     "Officer": "Next Gen Data",
-    "Keywords": "",
-    "Cap": "{value} to all Officer stats on the Bridge | ",
-    "Off": "{value} to Weapon Damage | "
+    "Keywords": "officer-bridge-stats;weapon-damage"
   },
   {
     "Officer": "Next Gen La Forge",
-    "Keywords": "",
-    "Cap": "{value} to the opponent's ship Weapon Damage | ",
-    "Off": "{value} to Shield Health | "
+    "Keywords": "opponent-weapon-damage;shield-health"
   },
   {
     "Officer": "Next Gen Riker",
-    "Keywords": "",
-    "Cap": "{value} to Damage for the first round | ",
-    "Off": "{value} to the Attack of all the officers in the ship | "
+    "Keywords": "damage;officer-attack"
   },
   {
     "Officer": "Next Gen Troi",
-    "Keywords": "",
-    "Cap": "{value} to Damage | ",
-    "Off": "{value} to Dodge, Shield Deflection and Armor | "
+    "Keywords": "damage;dodge;shield-defelction;armor"
   },
   {
     "Officer": "Nine of Ten",
-    "Keywords": "",
-    "Cap": "{value} to opponent Borg Critical Hit Chance | ",
-    "Off": "{value} to the Defense of all Officers on the Ship | "
+    "Keywords": "borg;critical-hit-chance;officer-defense"
   },
   {
     "Officer": "Nyota Uhura",
-    "Keywords": "",
-    "Cap": "{value} chance to delay opponent's fire by 1 round when the Shield is depleted | ",
-    "Off": "{value} to this ship's Accuracy | "
+    "Keywords": "shields;delay-opponent-weapon;accuracy"
   },
   {
     "Officer": "Officer 0718",
-    "Keywords": "",
-    "Cap": "{value} to Critical Hit chances when defending the station | ",
-    "Off": "{value} to the Defense of all Officers on the ship | "
+    "Keywords": "critical-hit-chance;station;pvp;officer-defense"
   },
   {
     "Officer": "One of Ten",
-    "Keywords": "",
-    "Cap": "{value} damage mitigated by the shields. | ",
-    "Off": "{value} to the Protected Cargo of the ship | "
+    "Keywords": "shields;cargo;protected-cargo"
   },
   {
     "Officer": "Origins Burnham",
