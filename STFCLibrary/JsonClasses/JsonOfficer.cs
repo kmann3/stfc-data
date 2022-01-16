@@ -46,6 +46,20 @@ public class Officer
             return this.Name;
         }
     }
+    public class AbilityInfo
+    {
+        [JsonProperty("captain_maneuver")]
+        public CaptainManeuver CaptainManeuver { get; set; }
+
+        [JsonProperty("officer_ability")]
+        public OfficerAbility OfficerAbility { get; set; }
+
+        public override string ToString()
+        {
+            return $"[AbilityInfo] Capt: {CaptainManeuver} | Off: {OfficerAbility}";
+        }
+    }
+
     public class CaptainManeuver
     {
         [JsonProperty("name")]
@@ -102,47 +116,6 @@ public class Officer
         }
     }
 
-    public class AbilityInfo
-    {
-        [JsonProperty("captain_maneuver")]
-        public CaptainManeuver CaptainManeuver { get; set; }
-
-        [JsonProperty("officer_ability")]
-        public OfficerAbility OfficerAbility { get; set; }
-
-        public override string ToString()
-        {
-            return $"[AbilityInfo] Capt: {CaptainManeuver} | Off: {OfficerAbility}";
-        }
-    }
-
-    public class Others
-    {
-        [JsonProperty("name")]
-        public string Name { get; set; }
-
-        [JsonProperty("value")]
-        public UInt64 Value { get; set; }
-    }
-
-    public class Requirements
-    {
-        [JsonProperty("badges")]
-        public int Badges { get; set; }
-
-        [JsonProperty("credits")]
-        public int Credits { get; set; }
-
-        [JsonProperty("others")]
-        public List<Others> Others { get; set; }
-
-        [JsonProperty("shards")]
-        public int Shards { get; set; }
-
-        [JsonProperty("xp")]
-        public int Xp { get; set; }
-    }
-
     public class Rank
     {
         [JsonProperty("name")]
@@ -162,6 +135,33 @@ public class Officer
             return $"[Rank] Name: {Name} | Value: {OfficerAbilityValue}";
         }
     }
+
+    public class Requirements
+    {
+        [JsonProperty("badges")]
+        public int Badges { get; set; }
+
+        [JsonProperty("credits")]
+        public int Credits { get; set; }
+
+        [JsonProperty("others")]
+        public List<Others> Others { get; set; }
+
+        [JsonProperty("shards")]
+        public int Shards { get; set; }
+
+        [JsonProperty("xp")]
+        public int Xp { get; set; }
+    }
+    public class Others
+    {
+        [JsonProperty("name")]
+        public string Name { get; set; }
+
+        [JsonProperty("value")]
+        public UInt64 Value { get; set; }
+    }
+
 
     public class Synergy
     {
