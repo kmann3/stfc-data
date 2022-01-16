@@ -1,14 +1,51 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using STFCLibrary.Util;
 
 namespace STFCLibrary.JsonClasses;
-public  class Officer
+public class Officer
 {
+    public class JsonOfficer : JsonHelper<JsonOfficer>.IJsonBase
+    {
+        [JsonProperty("description")]
+        public string Description { get; set; }
+
+        [JsonProperty("ability_info")]
+        public AbilityInfo AbilityInfo { get; set; }
+
+        [JsonProperty("class")]
+        public string Class { get; set; }
+
+        [JsonProperty("faction")]
+        public string Faction { get; set; }
+
+        [JsonProperty("group")]
+        public string Group { get; set; }
+
+        [JsonProperty("img_url")]
+        public string ImgUrl { get; set; }
+
+        [JsonProperty("officer_name")]
+        public string OfficerName { get; set; }
+
+        [JsonProperty("ranks")]
+        public List<Rank> Ranks { get; set; }
+
+        [JsonProperty("rarity")]
+        public string Rarity { get; set; }
+
+        [JsonProperty("synergy")]
+        public Synergy Synergy { get; set; }
+
+        [JsonProperty("traits")]
+        public List<Trait> Traits { get; set; }
+
+        public string Name => this.OfficerName;
+
+        public override string ToString()
+        {
+            return this.Name;
+        }
+    }
     public class CaptainManeuver
     {
         [JsonProperty("name")]
@@ -169,49 +206,6 @@ public  class Officer
         public override string ToString()
         {
             return $"[Trait] Name: {Name} | Levels: {Levels.Count}";
-        }
-    }
-
-    public class JsonOfficer : JsonHelper<JsonOfficer>.IJsonBase
-    {
-        [JsonProperty("description")]
-        public string Description { get; set; }
-
-        [JsonProperty("ability_info")]
-        public AbilityInfo AbilityInfo { get; set; }
-
-        [JsonProperty("class")]
-        public string Class { get; set; }
-
-        [JsonProperty("faction")]
-        public string Faction { get; set; }
-
-        [JsonProperty("group")]
-        public string Group { get; set; }
-
-        [JsonProperty("img_url")]
-        public string ImgUrl { get; set; }
-
-        [JsonProperty("officer_name")]
-        public string OfficerName { get; set; }
-
-        [JsonProperty("ranks")]
-        public List<Rank> Ranks { get; set; }
-
-        [JsonProperty("rarity")]
-        public string Rarity { get; set; }
-
-        [JsonProperty("synergy")]
-        public Synergy Synergy { get; set; }
-
-        [JsonProperty("traits")]
-        public List<Trait> Traits { get; set; }
-
-        public string Name => this.OfficerName;
-
-        public override string ToString()
-        {
-            return this.Name;
         }
     }
 }
