@@ -27,6 +27,17 @@ public class Officer : BaseTable<Officer>, IEntityTypeConfiguration<Officer>
     public byte[] ImageData { get; set; }
 
     public Rank Rank_I { get; set; }
+    public Rank Rank_II { get; set; }
+    public Rank Rank_III { get; set; }
+    public Rank Rank_IV { get; set; }
+    public Rank Rank_V { get; set; }
+
+    public Rarity Rarity { get; set; }
+
+    public double Synergy_Command { get; set; }
+    public double Synergy_Engineering { get; set; }
+    public double Synergy_Science { get; set; }
+    // Traits
 
 
 

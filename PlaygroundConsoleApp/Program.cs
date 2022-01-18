@@ -19,12 +19,10 @@ Dictionary<string, string> rarityDictionary = new Dictionary<string, string>();
 string folder = @"STFCCommunity-data.git\";
 var officerList = JsonHelper<STFCLibrary.JsonClasses.Officer.JsonOfficer>.GetListFromJsonFolder(folder + "officers");
 
-//DoStuff();
-
+//Foo
 
 Console.WriteLine("~~~~~~~~~~~~~~~~");
 Console.WriteLine("Fully loaded");
-
 
 
 static void WriteGroup(string name, Dictionary<string, string> group)

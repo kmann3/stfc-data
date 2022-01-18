@@ -162,7 +162,6 @@ public class Officer
         public UInt64 Value { get; set; }
     }
 
-
     public class Synergy
     {
         [JsonProperty("command")]
@@ -177,19 +176,6 @@ public class Officer
         public override string ToString()
         {
             return $"[Synergy] C: {Command} E: {Engineering} S: {Science}";
-        }
-    }
-    public partial class Level
-    {
-        [JsonProperty("level")]
-        public long LevelLevel { get; set; }
-
-        [JsonProperty("trait_xp")]
-        public long TraitXp { get; set; }
-
-        public override string ToString()
-        {
-            return $"Level: {LevelLevel} | Trait XP: {TraitXp}";
         }
     }
     public partial class Trait
@@ -208,4 +194,18 @@ public class Officer
             return $"[Trait] Name: {Name} | Levels: {Levels.Count}";
         }
     }
+    public partial class Level
+    {
+        [JsonProperty("level")]
+        public long LevelLevel { get; set; }
+
+        [JsonProperty("trait_xp")]
+        public long TraitXp { get; set; }
+
+        public override string ToString()
+        {
+            return $"Level: {LevelLevel} | Trait XP: {TraitXp}";
+        }
+    }
+
 }
