@@ -17,4 +17,7 @@ public class StfcLibDbContext : DbContext
     public DbSet<Faction> Factions { get; set; }
     public DbSet<Group> Groups { get; set; }
     public DbSet<Officer> Officers { get; set; }
+    public DbSet<Rank> Ranks { get; set; }
+    public DbSet<Rarity> Raritys { get; set; }
+    public DbSet<Trait> Traits { get; set; }
 }

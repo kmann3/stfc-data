@@ -37,7 +37,8 @@ public class Officer : BaseTable<Officer>, IEntityTypeConfiguration<Officer>
     public double Synergy_Command { get; set; }
     public double Synergy_Engineering { get; set; }
     public double Synergy_Science { get; set; }
-    // Traits
+    
+    public ICollection<Trait> Traits { get; set; }
 
 
 
